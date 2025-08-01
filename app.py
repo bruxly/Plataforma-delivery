@@ -64,16 +64,18 @@ if "has_run" not in st.session_state:
     )  # se inicializa la base  de datos de firebase
 
     # inicia el cliente de google
-    st.session_state.google_client_id = os.environ.get(
-        "GOOGLE_CLIENT_ID"
-    )  # cliente ID de google
-    st.session_state.google_client_secret = os.environ.get(
-        "GOOGLE_SECRET_ID"
-    )  # secreto del cliente de google
+    # inicia el cliente de google
+    # st.session_state.google_client_id = os.environ.get(
+    #     "GOOGLE_CLIENT_ID"
+    # )  # cliente ID de google
+    # st.session_state.google_client_secret = os.environ.get(
+    #     "GOOGLE_SECRET_ID"
+    # )  # secreto del cliente de google
 
+    st.session_state.google_client_id = st.secrets['GOOGLE_CLIENT_ID']
+    st.session_state.google_client_secret = st.secrets['GOOGLE_SECRET_ID']
     # Inicializa el carrito de compras
     st.session_state.cart = []  # lista vacia para el carrito de compras
-
 
 # Autenticación con Google
 def google_auth():
