@@ -70,6 +70,7 @@ if "has_run" not in st.session_state:
     st.session_state.google_client_secret = st.secrets["GOOGLE_SECRET_ID"]
 
 
+
 # Autenticación con Google
 def google_auth():
     # url de autenticacion de google
