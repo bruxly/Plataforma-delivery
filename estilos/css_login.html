@@ -1,0 +1,178 @@
+<style>
+    /*Ocultar elementos de Streamlit*/
+    /*oculta la cabezera de streamlit */
+    .stApp > header {visibility: hidden;}
+    /*oculta el pie de pagina(footer), donde aparece el mensaje 'Made with Streamlit'*/
+    .stApp > footer {visibility: hidden;}
+    /*oculta el menu principal (los tres puntos en la esquina superior derecha)*/
+    #MainMenu {visibility: hidden;}
+    /*oculta el boton de despliegue (deploy) que aparece en la interfaz de Streamlit Cloud*/
+    .stDeployButton {display: none;}
+    /*oculta la barra de herramientas, que puede incluir opcones de recarga,compartir,ect.*/
+    .stToolbar {display: none;} 
+
+     /*tipo de color a la pantalla inicio google */
+    .stApp {
+        background: #0055cc;
+        min-height: 100vh;
+    }
+
+    /*oculta el boton que permite mostrar/ocultar la barras lateral (sidebar)*/
+    [data-testid="stSidebarCollapsedControl"] {
+        visibility: hidden;
+    }
+    /*oculta el encabezado (header) de la aplicacion  Streamlit*/
+    [data-testid="stHeader"] {
+        display: none;
+    }
+    /*oculta completamente la barra lateral  (sidebar) de Streamlit, incluyendo su contenido*/
+    [data-testid="stSidebar"] {
+        display: none;
+    }
+
+    /*contenedor principal google*/
+    .main-container {
+        /*este bloque centra el contenido principal horizontalmente, lo alinea de arriba y le da un margen interno*/
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    /*añade un espacio interno alrededor del contenido principal*/
+    [data-testid="stMainBlockContainer"] {
+        padding-top: 3rem; 
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Tarjeta de inicio de sesion */
+    .login-card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 60px 40px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        animation: fadeIn 0.8s ease-out;
+    }
+
+    /* Logo de la marca */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    /* Logo y título */
+    .brand-logo {
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: #2c3e50;
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+        font-family: 'Playfair Display', serif;
+    }
+    
+    .brand-subtitle {
+        font-size: 0.9rem;
+        color: #7f8c8d;
+        margin-bottom: 40px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+      /* Mensaje de bienvenida */
+    .welcome-message {
+        font-size: 1.1rem;
+        color: #34495e;
+        margin-bottom: 30px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+    
+    /* Botón de Google */
+    .google-login-btn {
+        background: #ffffff;
+        border: 2px solid #e0e0e0;
+        border-radius: 50px;
+        padding: 15px 30px;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #333;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+    
+    .google-login-btn:hover {
+        background: #f8f9fa;
+        border-color: #4285f4;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(66, 133, 244, 0.2);
+    }
+    
+    .google-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    /* Texto legal */
+    .legal-text {
+        font-size: 0.75rem;
+        color: #95a5a6;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
+
+      .legal-text a {
+        color: #667eea;
+        text-decoration: none;
+    }
+    
+    .legal-text a:hover {
+        text-decoration: underline;
+    }
+
+    /* liena corta entre el titulo el mensaje*/
+    .decoration-line {
+        width: 60px;
+        height: 2px;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        margin: 20px auto;
+        border-radius: 2px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .login-card {
+            padding: 40px 30px;
+            margin: 20px;
+        }
+        
+        .brand-logo {
+            font-size: 2rem;
+        }
+    }
+
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
