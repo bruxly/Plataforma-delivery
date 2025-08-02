@@ -1209,7 +1209,7 @@ st.markdown("---")
 st.markdown(
     """
     <div style="text-align: center; padding: 2rem;">
-        <p>🛵 DOMIRAY SAS - Empresa de domicilios Casanareña</p>
+        <p>🛵 DOMIRAY SAS - Empresa de domicilios Casanareña cccccccc</p>
         <p>Esta app fue desarrollada por Rodrigo Patiño usando Streamlit, Firebase y Stripe</p>
     </div>
     """,
