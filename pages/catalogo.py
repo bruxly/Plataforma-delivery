@@ -1187,20 +1187,31 @@ if products:
                         'image': product['image']
                     }
                 
-                  
-# Mostrar botón externo Wompi
-wompi_url = "https://checkout.wompi.co/l/VPOS_s3EEBF" 
+                    # Verificar si ya existe en el carrito
+                    existing_item = next((item for item in st.session_state.cart if item['name'] == product['name']), None)
+                    if existing_item:
+                        existing_item['quantity'] += 1
+                    else:
+                        st.session_state.cart.append(cart_item)
 
-st.markdown(
-    f"""
-    <a href="{wompi_url}" target="_blank">
-        <button style="background-color:#00B86B;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;">
-            Ir a pagar con Wompi 💳
-        </button>
-    </a>
-    """,
-    unsafe_allow_html=True
-)
+                    st.success(f"✅ {product['name']} agregado al carrito!")
+                    st.rerun()
+
+# Enlace de pago de Wompi (reemplaza por el tuyo real)
+wompi_url = "https://checkout.wompi.co/l/VPOS_s3EEBF"
+
+# Mostrar botón con HTML solo si el carrito tiene algo
+if st.session_state.cart:
+    st.markdown(
+        f"""
+        <a href="{wompi_url}" target="_blank">
+            <button style="background-color:#00B86B;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;">
+                Ir a pagar con Wompi 💳
+            </button>
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
 
     
 
