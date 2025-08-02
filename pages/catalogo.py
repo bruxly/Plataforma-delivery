@@ -1178,7 +1178,7 @@ if products:
 
             col4, col5, col6 = st.columns([0.5,2,0.5])
             with col5:
-                if st.button(f"🛒 Agregar al Carrito", key=f"add_{product.get('id', idx)}"):
+                if st.button(f"Pagar el producto", key=f"add_{product.get('id', idx)}"):
                     # Agregar al carrito en memoria (para demo)
                     cart_item = {
                         'name': product['name'],
@@ -1209,7 +1209,7 @@ st.markdown("---")
 st.markdown(
     """
     <div style="text-align: center; padding: 2rem;">
-        <p>🛵 DOMIRAY SAS - Empresa de domicilios Casanareña cccccccc</p>
+        <p>🛵 DOMIRAY SAS - Empresa de domicilios Casanareña</p>
         <p>Esta app fue desarrollada por Rodrigo Patiño usando Streamlit, Firebase y Stripe</p>
     </div>
     """,
