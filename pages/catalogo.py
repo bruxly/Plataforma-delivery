@@ -1187,16 +1187,7 @@ if products:
                         'image': product['image']
                     }
                 
-                    # Verificar si ya existe en el carrito
-                    existing_item = next((item for item in st.session_state.cart if item['name'] == product['name']), None)
-                    if existing_item:
-                        existing_item['quantity'] += 1
-                    else:
-                        st.session_state.cart.append(cart_item)
-                    
-                    st.success(f"✅ {product['name']} agregado al carrito!")
-                    st.rerun()
-
+                  
 # Mostrar botón externo Wompi
 wompi_url = "https://checkout.wompi.co/l/tu-enlace-personalizado"  # <-- Reemplaza esto con tu link real
 
