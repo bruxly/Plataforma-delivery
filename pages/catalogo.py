@@ -1194,8 +1194,7 @@ if products:
                             gap: 10px;
                             cursor: pointer;
                             ">
-                              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..." alt="icono" style="width: 20px; height: 20px;" />
-                              Cerrar Sesión
+                             
                             </button>
                                 Pagar el producto
                         </button>
