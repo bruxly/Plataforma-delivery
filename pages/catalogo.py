@@ -1181,7 +1181,7 @@ if products:
                 st.markdown(
                     f"""
                     <a href="https://checkout.wompi.co/l/VPOS_s3EEBF" target="_blank">
-                        <button style="background-color: #FF4B4B; color: white; border: none; padding: 0.5em 1em; border-radius: 8px; cursor: pointer;">
+                        <button style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
                             Pagar el producto
                         </button>
                     </a>
