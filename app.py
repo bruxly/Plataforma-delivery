@@ -227,7 +227,7 @@ def google_login_button():
     """
 
     button_html = f"""<button class="google-login-btn">{google_svg}Continue with Google</button>"""
-    return f"""<a href="{google_auth()}" target="_self" style="text-decoration: none;">{button_html}</a>"""
+    return f"""<a href="{google_auth()}" target="_blank" style="text-decoration: none;">{button_html}</a>"""
 
 
 # funcion para recupoerar el usuario basado em session_id
@@ -350,5 +350,6 @@ else:
     with st.spinner("Todo listo! Redireccionando a la plataforma..."):
         st.session_state.login = True
         st.switch_page("pages/catalogo.py")
+
 
 
