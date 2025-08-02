@@ -1189,7 +1189,7 @@ if products:
                 
                   
 # Mostrar botón externo Wompi
-wompi_url = "https://checkout.wompi.co/l/tu-enlace-personalizado"  # <-- Reemplaza esto con tu link real
+wompi_url = "https://checkout.wompi.co/l/VPOS_s3EEBF" 
 
 st.markdown(
     f"""
