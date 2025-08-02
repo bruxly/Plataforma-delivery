@@ -1202,10 +1202,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-      
-                
-else:
-    st.info("No se encontraron productos en esta categoría.")
+    
 
 
            
