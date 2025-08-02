@@ -1178,40 +1178,17 @@ if products:
 
             col4, col5, col6 = st.columns([0.5,2,0.5])
             with col5:
-               if st.button(f"Pagar el producto", key=f"add_{product.get('id', idx)}"):
-                    # Agregar al carrito en memoria (para demo)
-                    cart_item = {
-                        'name': product['name'],
-                        'price': product['price'],
-                        'quantity': 1,
-                        'image': product['image']
-                    }
-                
-                    # Verificar si ya existe en el carrito
-                    existing_item = next((item for item in st.session_state.cart if item['name'] == product['name']), None)
-                    if existing_item:
-                        existing_item['quantity'] += 1
-                    else:
-                        st.session_state.cart.append(cart_item)
+                st.markdown(
+                    f"""
+                    <a href="https://checkout.wompi.co/l/VPOS_s3EEBF" target="_blank">
+                        <button style="background-color: #FF4B4B; color: white; border: none; padding: 0.5em 1em; border-radius: 8px; cursor: pointer;">
+                            Pagar el producto
+                        </button>
+                    </a>
+                    """,
+                    unsafe_allow_html=True
+                )
 
-                    st.success(f"✅ {product['name']} agregado al carrito!")
-                    st.rerun()
-
-# Enlace de pago de Wompi (reemplaza por el tuyo real)
-wompi_url = "https://checkout.wompi.co/l/VPOS_s3EEBF"
-
-# Mostrar botón con HTML solo si el carrito tiene algo
-if st.session_state.cart:
-    st.markdown(
-        f"""
-        <a href="{wompi_url}" target="_blank">
-            <button style="background-color:#00B86B;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;">
-                Ir a pagar con Wompi 💳
-            </button>
-        </a>
-        """,
-        unsafe_allow_html=True
-    )
 
     
 
