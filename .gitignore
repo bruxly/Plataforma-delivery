@@ -1,0 +1,37 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Ignore virtual environments
+env/
+venv/
+.venv/
+*.env
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Streamlit secrets
+.streamlit/secrets.toml
+
+# Ignore Firebase credentials
+*.json
+*.pem
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# VS Code config (si usas VSCode)
+.vscode/
+
+# Ignore temporary files
+*.bak
+*.swp
+*.tmp
