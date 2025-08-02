@@ -1177,7 +1177,7 @@ if products:
             """, unsafe_allow_html=True)
 
             col4, col5, col6 = st.columns([0.5,2,0.5])
-             with col5:
+            with col5:
                 if st.button(f"🛒 Agregar al Carrito", key=f"add_{product.get('id', idx)}"):
                     # Agregar al carrito en memoria (para demo)
                     cart_item = {
