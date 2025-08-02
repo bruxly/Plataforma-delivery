@@ -1189,6 +1189,8 @@ if products:
                             padding: 0.75rem 2rem;
                             font-weight: bold;
                             cursor: pointer;
+                            position: pointer;
+                            z-index:9999;
                         ">
                             Pagar el producto
                         </button>
