@@ -1181,23 +1181,7 @@ if products:
                 st.markdown(
                     f"""
                     <a href="https://checkout.wompi.co/l/VPOS_s3EEBF" target="_blank">
-                        <button style="
-                            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-                            border: none;
-                            border-radius: 50px;
-                            color: white;
-                            padding: 12px 24px;
-                            font-size: 16px;
-                            font-weight: bold;
-                            display: flex;
-                            align-items: center;
-                            gap: 10px;
-                            cursor: pointer;
-                            ">
-                             
-                          
-                                Pagar el producto
-                        </button>
+                        <button style=" background: linear-gradient(45deg, #667eea, #764ba2)>Pagar el producto</button>
                     </a>
                         """,
                         unsafe_allow_html=True
