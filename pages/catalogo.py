@@ -1181,13 +1181,28 @@ if products:
                 st.markdown(
                     f"""
                     <a href="https://checkout.wompi.co/l/VPOS_s3EEBF" target="_blank">
-                        <button style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                            Pagar el producto
+                        <button style="
+                            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+                            border: none;
+                            border-radius: 50px;
+                            color: white;
+                            padding: 12px 24px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            cursor: pointer;
+                            ">
+                              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..." alt="icono" style="width: 20px; height: 20px;" />
+                              Cerrar Sesión
+                            </button>
+                                Pagar el producto
                         </button>
                     </a>
-                    """,
-                    unsafe_allow_html=True
-                )
+                        """,
+                        unsafe_allow_html=True
+                    )
 
 
     
