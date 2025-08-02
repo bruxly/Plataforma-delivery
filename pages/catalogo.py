@@ -1195,7 +1195,7 @@ if products:
                             cursor: pointer;
                             ">
                              
-                            </button>
+                          
                                 Pagar el producto
                         </button>
                     </a>
