@@ -1177,25 +1177,7 @@ if products:
             """, unsafe_allow_html=True)
 
             col4, col5, col6 = st.columns([0.5,2,0.5])
-            with col5:
-                if st.button(f"🛒 Agregar al Carrito", key=f"add_{product.get('id', idx)}"):
-                    # Agregar al carrito en memoria (para demo)
-                    cart_item = {
-                        'name': product['name'],
-                        'price': product['price'],
-                        'quantity': 1,
-                        'image': product['image']
-                    }
-
-                         # Verificar si ya existe en el carrito
-                    existing_item = next((item for item in st.session_state.cart if item['name'] == product['name']), None)
-                    if existing_item:
-                        existing_item['quantity'] += 1
-                    else:
-                        st.session_state.cart.append(cart_item)
-                    
-                    st.success(f"✅ {product['name']} agregado al carrito!")
-                    st.rerun()
+           
       
                 
 else:
