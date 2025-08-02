@@ -1178,7 +1178,7 @@ if products:
 
             col4, col5, col6 = st.columns([0.5,2,0.5])
             with col5:
-                if st.button(f"Pagar el producto", key=f"add_{product.get('id', idx)}"):
+               if st.button(f"Pagar el producto", key=f"add_{product.get('id', idx)}"):
                     # Agregar al carrito en memoria (para demo)
                     cart_item = {
                         'name': product['name'],
@@ -1186,8 +1186,8 @@ if products:
                         'quantity': 1,
                         'image': product['image']
                     }
-
-                         # Verificar si ya existe en el carrito
+                
+                    # Verificar si ya existe en el carrito
                     existing_item = next((item for item in st.session_state.cart if item['name'] == product['name']), None)
                     if existing_item:
                         existing_item['quantity'] += 1
@@ -1196,6 +1196,21 @@ if products:
                     
                     st.success(f"✅ {product['name']} agregado al carrito!")
                     st.rerun()
+
+# Mostrar botón externo Wompi
+wompi_url = "https://checkout.wompi.co/l/tu-enlace-personalizado"  # <-- Reemplaza esto con tu link real
+
+st.markdown(
+    f"""
+    <a href="{wompi_url}" target="_blank">
+        <button style="background-color:#00B86B;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;">
+            Ir a pagar con Wompi 💳
+        </button>
+    </a>
+    """,
+    unsafe_allow_html=True
+)
+
       
                 
 else:
