@@ -979,7 +979,7 @@ def create_checkout_session(items, user_email):
     
     except Exception as e:
         st.error(f"Error al crear sesión de pago: {str(e)}")
-        return None,None
+        return None
 
 
 
