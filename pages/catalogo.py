@@ -34,6 +34,7 @@ stripe.api_key = os.environ.get("STRIPE_API_KEY")
 
 # funciones de firestore
 def get_products():
+    global DEV_MODE
     products_ref = st.session_state.db.collection("products")
 
     if DEV_MODE:
