@@ -34,866 +34,862 @@ stripe.api_key = os.environ.get("STRIPE_API_KEY")
 
 # funciones de firestore
 def get_products():
-    """Obtiene productos desde Firestore"""
-    try:
-        products_ref = st.session_state.db.collection('products')
-        docs = products_ref.stream()
-        
-        products = []
-        for doc in docs:
-            product = doc.to_dict()
-            product['id'] = doc.id
-            products.append(product)
-        
-        # Si no hay productos, crear algunos de ejemplo
-        if not products:
-        # 🧩 Productos locales (puedes editarlos)
-            sample_products = [
-                
-                #el corral
-                
-                {
-                    "name": "Todoterreno Clasica en combo",
-                    "price": 43900,
-                    "image": "https://i.imgur.com/l4Nb5BG.jpeg",
-                    "description": "dos carnes de 125g cada una",
-                    "category": "El corral",
-                },
+    products_ref = st.session_state.db.collection("products")
+
+    if DEV_MODE:
+        # 🧹 Elimina productos existentes
+        for doc in products_ref.stream():
+            doc.reference.delete()
+
+            # 🧩 Productos locales (puedes editarlos)
+        sample_products = [
             
-                {
-                    "name": "Todoterreno Tocineta en Combo",
-                    "price": 45900,
-                    "image": "https://i.imgur.com/xgFtkGx.jpeg",
-                    "description": "dos carnes de 125g cada una",
-                    "category": "El corral",
-                },
+            #el corral
+                
+            {
+                "name": "Todoterreno Clasica en combo",
+                "price": 43900,
+                "image": "https://i.imgur.com/l4Nb5BG.jpeg",
+                "description": "dos carnes de 125g cada una",
+                "category": "El corral",       
+            },
+            
+            {
+                "name": "Todoterreno Tocineta en Combo",
+                "price": 45900,
+                "image": "https://i.imgur.com/xgFtkGx.jpeg",
+                "description": "dos carnes de 125g cada una",
+                "category": "El corral",
+            },
 
-                {
-                    "name": "Todoterreno Clasica",
-                    "price": 35900,
-                    "image": "https://i.imgur.com/7i5h1T4.jpeg",
-                    "description": "dos carnes de 125g cada una",
-                    "category": "El corral",
-                },
+            {
+                "name": "Todoterreno Clasica",
+                "price": 35900,
+                "image": "https://i.imgur.com/7i5h1T4.jpeg",
+                "description": "dos carnes de 125g cada una",
+                "category": "El corral",
+            },
 
-                {
-                    "name": "Todoterreno Callejera",
-                    "price": 37900,
-                    "image": "https://i.imgur.com/PsjQLna.jpeg",
-                    "description": "dos carnes de 125g cada una",
-                    "category": "El corral",
-                },
-                {
-                    "name": "Todoterreno Tocineta",
-                    "price": 37900,
-                    "image": "https://i.imgur.com/XTBJnYc.jpeg",
-                    "description": "dos carnes de 125g cada una",
-                    "category": "El corral",
-                },
+            {
+                "name": "Todoterreno Callejera",
+                "price": 37900,
+                "image": "https://i.imgur.com/PsjQLna.jpeg",
+                "description": "dos carnes de 125g cada una",
+                "category": "El corral",
+            },
+            {
+                "name": "Todoterreno Tocineta",
+                "price": 37900,
+                "image": "https://i.imgur.com/XTBJnYc.jpeg",
+                "description": "dos carnes de 125g cada una",
+                "category": "El corral",
+            },
 
-                {
-                    "name": "Corralita",
-                    "price": 22900,
-                    "image": "https://i.imgur.com/a3H6uCS.jpeg",
-                    "description": "Carne de 90g,tomate y cebolla en rodajas",
-                    "category": "El corral",
-                },
+            {
+                "name": "Corralita",
+                "price": 22900,
+                "image": "https://i.imgur.com/a3H6uCS.jpeg",
+                "description": "Carne de 90g,tomate y cebolla en rodajas",
+                "category": "El corral",
+            },
 
-                {
-                    "name": "Corral",
-                    "price": 23900,
-                    "image": "https://i.imgur.com/l9VNcfu.jpeg",
-                    "description": "Carne de 125g,tomate y cebolla en rodajas",
-                    "category": "El corral",
-                },
+            {  
+                "name": "Corral",
+                "price": 23900,
+                "image": "https://i.imgur.com/l9VNcfu.jpeg",
+                "description": "Carne de 125g,tomate y cebolla en rodajas",
+                "category": "El corral",
+            },
 
-                {
-                    "name": "Corral Pollo",
-                    "price": 25900,
-                    "image": "https://i.imgur.com/dK9p11X.jpeg",
-                    "description": "Pechuga de pollo de 154g con salsa bbq.",
-                    "category": "El corral",
-                },
+            {
+                "name": "Corral Pollo",
+                "price": 25900,
+                "image": "https://i.imgur.com/dK9p11X.jpeg",
+                "description": "Pechuga de pollo de 154g con salsa bbq.",
+                "category": "El corral",
+            },
 
                 
-                {
-                    "name": "Callejero En Combo",
-                    "price": 28900,
-                    "image": "https://i.imgur.com/3bJtjzW.png",
-                    "description": "Con salchicha de 115g a la parrilla.",
-                    "category": "El corral",
-                },
+            {
+                "name": "Callejero En Combo",
+                "price": 28900,
+                "image": "https://i.imgur.com/3bJtjzW.png",
+                "description": "Con salchicha de 115g a la parrilla.",
+                "category": "El corral",
+            },
 
-                {
-                    "name": "Hawaiano Combo",
-                    "price": 32900,
-                    "image": "https://i.imgur.com/pfkNBGy.jpeg",
-                    "description": "Con salchicha a la parrilla, queso,piña y salsas",
-                    "category": "El corral",
-                },
-                #EL CARRIEL
-                {
-                    "name": "El Carriel",
-                    "price": 32000,
-                    "image": "https://i.imgur.com/xAvOav3.png",
-                    "description": "Un Kilo bien chimba de arroz paisa con chicharron te alcanza pa' 2 personas o 3 si necesitas 😉🌾",
-                    "category": "El carriel",
-                },
-                #EL CARRIEL
-                {
-                    "name": "El Carriel",
-                    "price": 18000,
-                    "image": "https://i.imgur.com/tHviOSw.jpeg",
-                    "description": "Personal con papitas, Porción personal de arroz paisa con papitas y limonada",
-                    "category": "El carriel",
-                },
+            {
+                "name": "Hawaiano Combo",
+                "price": 32900,
+                "image": "https://i.imgur.com/pfkNBGy.jpeg",
+                "description": "Con salchicha a la parrilla, queso,piña y salsas",
+                "category": "El corral",
+            },
+            #EL CARRIEL
+            {
+                "name": "El Carriel",
+                "price": 32000,
+                "image": "https://i.imgur.com/xAvOav3.png",
+                "description": "Un Kilo bien chimba de arroz paisa con chicharron te alcanza pa' 2 personas o 3 si necesitas 😉🌾",
+                "category": "El carriel",
+            },
+            #EL CARRIEL
+            {
+                "name": "El Carriel",
+                "price": 18000,
+                "image": "https://i.imgur.com/tHviOSw.jpeg",
+                "description": "Personal con papitas, Porción personal de arroz paisa con papitas y limonada",
+                "category": "El carriel",
+            },
             #    
 
-                #MAGDALENA
-                {
-                    "name": "Magdalena",
-                    "price": 48000,
-                    "image": "https://i.imgur.com/VX1OoNT.png",
-                    "description": "💌 Mulata 🧋 Torta a elección: chocolate, zanahoria o naranja 🎂",
-                    "category": "magdalena",
-                },
-                #MAGDALENA
-                {
-                    "name": "Magdalena",
-                    "price": 78000,
-                    "image": "https://i.imgur.com/05RR79d.png",
-                    "description": "Me Latte 🧋Elixir de frutas 🍓Sándwich Llanero 🥪",
-                    "category": "magdalena",
-                },
+            #MAGDALENA
+            {
+                "name": "Magdalena",
+                "price": 48000,
+                "image": "https://i.imgur.com/VX1OoNT.png",
+                "description": "💌 Mulata 🧋 Torta a elección: chocolate, zanahoria o naranja 🎂",
+                "category": "magdalena",
+            },
+             #MAGDALENA
+            {
+                "name": "Magdalena",
+                "price": 78000,
+                "image": "https://i.imgur.com/05RR79d.png",
+                "description": "Me Latte 🧋Elixir de frutas 🍓Sándwich Llanero 🥪",
+                "category": "magdalena",
+            },
 
-                #MAGDALENA
-                {
-                    "name": "Magdalena",
-                    "price": 59000,
-                    "image": "https://i.imgur.com/lZGVX0C.png",
-                    "description": "Antojo ácido 🥭🧋Mini fresas🍓Sandwich de pollo Napoleón",
-                    "category": "magdalena",
-                },
+            #MAGDALENA
+            {
+                "name": "Magdalena",
+                "price": 59000,
+                "image": "https://i.imgur.com/lZGVX0C.png",
+                "description": "Antojo ácido 🥭🧋Mini fresas🍓Sandwich de pollo Napoleón",
+                "category": "magdalena",
+            },
 
-                #MAGDALENA
+            #MAGDALENA
                 {
-                    "name": "Magdalena",
-                    "price": 52000,
-                    "image": "https://i.imgur.com/XPuJn5F.png",
-                    "description": "Cherrymocca🧋Sándwich Marco polo🥪",
-                    "category": "magdalena",
-                },
+                "name": "Magdalena",
+                "price": 52000,
+                "image": "https://i.imgur.com/XPuJn5F.png",
+                "description": "Cherrymocca🧋Sándwich Marco polo🥪",
+                "category": "magdalena",
+            },
 
-                #MAGDALENA
-                {
-                    "name": "Magdalena",
-                    "price": 46000,
-                    "image": "https://i.imgur.com/JHY6d7o.png",
-                    "description": "Smoothie frutos rojos 🥤Torta de chocolate, zanahoria o naranja🎂",
-                    "category": "magdalena",
-                },
+            #MAGDALENA
+            {
+                "name": "Magdalena",
+                "price": 46000,
+                "image": "https://i.imgur.com/JHY6d7o.png",
+                "description": "Smoothie frutos rojos 🥤Torta de chocolate, zanahoria o naranja🎂",
+                "category": "magdalena",
+            },
 
-                #MAGDALENA
-                {
-                    "name": "Magdalena",
-                    "price": 65000,
-                    "image": "https://i.imgur.com/IaUeplo.png",
-                    "description": "Me Latte🧋Mini Elixir ✨Sándwich de pollo Napoleón🥪",
-                    "category": "magdalena",
-                },
-
-            
-                #MAGDALENA
-                {
-                    "name": "Magdalena",
-                    "price": 23000,
-                    "image": "https://i.imgur.com/MaI4Nox.png",
-                    "description": "Con crema chantilly, topping de chocolate o lecherita.",
-                    "category": "magdalena",
-                },
+            #MAGDALENA
+            {
+                "name": "Magdalena",
+                "price": 65000,
+                "image": "https://i.imgur.com/IaUeplo.png",
+                "description": "Me Latte🧋Mini Elixir ✨Sándwich de pollo Napoleón🥪",
+                "category": "magdalena",
+            },
 
             
-                #MAGDALENA
-                {
-                    "name": "Magdalena",
-                    "price": 23000,
-                    "image": "https://i.imgur.com/ldV1vj7.png",
-                    "description": "Fressas con durazno🍓🍑Con crema chantilly, topping de chocolate o lecherita.",
-                    "category": "magdalena",
-                },
+            #MAGDALENA
+            {
+                "name": "Magdalena",
+                "price": 23000,
+                "image": "https://i.imgur.com/MaI4Nox.png",
+                "description": "Con crema chantilly, topping de chocolate o lecherita.",
+                "category": "magdalena",
+            },
 
-                #MAGDALENA
-                {
-                    "name": "Magdalena",
-                    "price": 18000,
-                    "image": "https://i.imgur.com/HsqYXky.png",
-                    "description": "Delicioso Bowl fresas con helado.",
-                    "category": "magdalena",
-                },
+            
+            #MAGDALENA
+            {
+                "name": "Magdalena",
+                "price": 23000,
+                "image": "https://i.imgur.com/ldV1vj7.png",
+                "description": "Fressas con durazno🍓🍑Con crema chantilly, topping de chocolate o lecherita.",
+                "category": "magdalena",
+            },
 
-                #MAGDALENA
-                {
-                    "name": "Magdalena",
-                    "price": 25000,
-                    "image": "https://i.imgur.com/e897HRS.png",
-                    "description": "Mini fresas kiwi X3, durazno con chantilly y topping de chocolate.",
-                    "category": "magdalena",
-                },
+            #MAGDALENA
+            {
+                "name": "Magdalena",
+                "price": 18000,
+                "image": "https://i.imgur.com/HsqYXky.png",
+                "description": "Delicioso Bowl fresas con helado.",
+                 "category": "magdalena",
+            },
+
+            #MAGDALENA
+            {
+                "name": "Magdalena",
+                "price": 25000,
+                "image": "https://i.imgur.com/e897HRS.png",
+                "description": "Mini fresas kiwi X3, durazno con chantilly y topping de chocolate.",
+                "category": "magdalena",
+            },
 
 
 
 
 
-                # QUBANO
-                {
-                    "name": "Qbano",
-                    "price": 30600,
-                    "image": "https://i.imgur.com/tyul788.jpeg",
-                    "description": "Sándwich Ropa Vieja En Combo",
-                    "category": "Qbano",
-                },
-                {
-                    "name": "Qbano",
-                    "price": 24600,
-                    "image": "https://i.imgur.com/4EXltWq.jpeg",
-                    "description": "Sándwich Especial Combo",
-                    "category": "Qbano",
-                },
-                {
-                    "name": "Qbano",
-                    "price": 27600,
-                    "image": "https://i.imgur.com/1UhLhOe.jpeg",
-                    "description": "Sándwich Súper Especial Combo",
-                    "category": "Qbano",
-                },
-                {
-                    "name": "Qbano",
-                    "price": 29600,
-                    "image": "https://i.imgur.com/NVfqHoc.jpeg",
-                    "description": "Sándwich Roast Beef Combo",
-                    "category": "Qbano",
-                },
+            # QUBANO
+            {
+                "name": "Qbano",
+                "price": 30600,
+                "image": "https://i.imgur.com/tyul788.jpeg",
+                "description": "Sándwich Ropa Vieja En Combo",
+                "category": "Qbano",
+            },
+            {
+                "name": "Qbano",
+                "price": 24600,
+                "image": "https://i.imgur.com/4EXltWq.jpeg",
+                "description": "Sándwich Especial Combo",
+                "category": "Qbano",
+            },
+            {
+                "name": "Qbano",
+                "price": 27600,
+                "image": "https://i.imgur.com/1UhLhOe.jpeg",
+                "description": "Sándwich Súper Especial Combo",
+                "category": "Qbano",
+            },
+            {
+                "name": "Qbano",
+                "price": 29600,
+                "image": "https://i.imgur.com/NVfqHoc.jpeg",
+                "description": "Sándwich Roast Beef Combo",
+                "category": "Qbano",
+            },
 
             
 
-                {
-                    "name": "Qbano",
-                    "price": 29600,
-                    "image": "https://i.imgur.com/0U7wPHo.jpeg",
-                    "description": "Sándwich Cordero Combo",
-                    "category": "Qbano",
-                },
+            {
+                "name": "Qbano",
+                "price": 29600,
+                "image": "https://i.imgur.com/0U7wPHo.jpeg",
+                "description": "Sándwich Cordero Combo",
+                "category": "Qbano",
+            },
 
-                {
-                    "name": "Qbano",
-                    "price": 29600,
-                    "image": "https://i.imgur.com/2IRMt6B.jpeg",
-                    "description": "Sándwich Pollo Combo",
-                    "category": "Qbano",
-                },
+            {
+                "name": "Qbano",
+                "price": 29600,
+                "image": "https://i.imgur.com/2IRMt6B.jpeg",
+                "description": "Sándwich Pollo Combo",
+                "category": "Qbano",
+            },
                 
-                #comida china
-                {
-                    "name": "Combo Pollo",
-                    "price": 39000,
-                    "image": "https://i.imgur.com/UajBfHQ.jpeg",
-                    "description": "1/4 de pollo, papas y arroz.",
-                    "category": "comida china",
-                },
-                #comida china
-                {
-                    "name": "Media Valenciana",
-                    "price": 39000,
-                    "image": "https://i.imgur.com/2ZXIdcA.jpeg",
-                    "description": "1/4 de pollo, arroz chino.",
-                    "category": "comida china",
-                },
-                #comida china
-                {
-                    "name": "Combo Chop Suey",
-                    "price": 39000,
-                    "image": "https://i.imgur.com/7iCQYxg.jpeg",
-                    "description": "papas,chop suey y arroz chino.",
-                    "category": "comida china",
-                },
-                
-
-                #supermercados
-                
-                {
-                    "name": "Los Ocobos",
-                    "price": 11400,
-                    "image": "https://i.imgur.com/IGHnkaE.jpeg",
-                    "description": "Aceite 900ml",
-                    "category": "supermercado",
-                },
+            #comida china
+            {
+                "name": "Combo Pollo",
+                "price": 39000,
+                "image": "https://i.imgur.com/UajBfHQ.jpeg",
+                "description": "1/4 de pollo, papas y arroz.",
+                "category": "comida china",
+            },
+            #comida china
+            {
+                "name": "Media Valenciana",
+                "price": 39000,
+                "image": "https://i.imgur.com/2ZXIdcA.jpeg",
+                "description": "1/4 de pollo, arroz chino.",
+                "category": "comida china",
+            },
+            #comida china
+            {
+                "name": "Combo Chop Suey",
+                "price": 39000,
+                "image": "https://i.imgur.com/7iCQYxg.jpeg",
+                "description": "papas,chop suey y arroz chino.",
+                "category": "comida china",
+            },
                 
 
-                {
-                    "name": "Los Ocobos",
-                    "price": 14500,
-                    "image": "https://i.imgur.com/BTWJj1W.jpeg",
-                    "description": "Cubeta de huevos",
-                    "category": "supermercado",
-                },
+             #supermercados
+                
+            {
+                "name": "Los Ocobos",
+                "price": 11400,
+                "image": "https://i.imgur.com/IGHnkaE.jpeg",
+                "description": "Aceite 900ml",
+                "category": "supermercado",
+            },
+                
+
+            {
+                "name": "Los Ocobos",
+                "price": 14500,
+                "image": "https://i.imgur.com/BTWJj1W.jpeg",
+                "description": "Cubeta de huevos",
+                "category": "supermercado",
+            },
 
                 
-                {
-                    "name": "Los Ocobos",
-                    "price": 6100,
-                    "image": "https://i.imgur.com/alzkciX.jpeg",
-                    "description": "Salchicha Zenú, 5 und",
-                    "category": "supermercado",
-                },
+            {
+                "name": "Los Ocobos",
+                "price": 6100,
+                "image": "https://i.imgur.com/alzkciX.jpeg",
+                "description": "Salchicha Zenú, 5 und",
+                "category": "supermercado",
+            },
 
-                {
-                    "name": "Los Ocobos",
-                    "price": 2200,
-                    "image": "https://i.imgur.com/vUyo1uM.jpeg",
-                    "description": "Arroz 460g ",
-                    "category": "supermercado",
-                },
-                {
-                    "name": "Los Ocobos",
-                    "price": 6800,
-                    'image':'https://i.imgur.com/CdWQwAS.jpeg',
-                    "description": "DON CAT 500g",
-                    "category": "supermercado",
-                },
+            {
+                "name": "Los Ocobos",
+                "price": 2200,
+                "image": "https://i.imgur.com/vUyo1uM.jpeg",
+                "description": "Arroz 460g ",
+                "category": "supermercado",
+            },
+            {
+                "name": "Los Ocobos",
+                "price": 6800,
+                'image':'https://i.imgur.com/CdWQwAS.jpeg',
+                "description": "DON CAT 500g",
+                "category": "supermercado",
+            },
 
-                {
-                    "name": "Los Ocobos",
-                    "price": 8500,
-                    "image": "https://i.imgur.com/8mYeRbM.png",
-                    "description": "Coca-cola 2.5lts",
-                    "category": "supermercado",
-                },
+            {
+                "name": "Los Ocobos",
+                "price": 8500,
+                "image": "https://i.imgur.com/8mYeRbM.png",
+                "description": "Coca-cola 2.5lts",
+                "category": "supermercado",
+            },
                 
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 3050,
-                    "image": "https://i.imgur.com/zqm2ji5.png",
-                    "description": "Deslactosada 900ml",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 3350,
-                    "image": "https://i.imgur.com/toiCwNd.png",
-                    "description": "Leche Entera 900ml",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 3050,
+                "image": "https://i.imgur.com/zqm2ji5.png",
+                "description": "Deslactosada 900ml",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 3350,
+                "image": "https://i.imgur.com/toiCwNd.png",
+                "description": "Leche Entera 900ml",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
 
-                {
-                    "name": "Tiendas D1",
-                    "price": 8300,
-                    "image": "https://i.imgur.com/IEdmQX3.png",
-                    "description": "En Polvo Entera 350g",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 1200,
-                    "image": "https://i.imgur.com/86A2hwi.png",
-                    "description": "Leche Entera 200ml",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 1990,
-                    "image": "https://i.imgur.com/PNtDPaH.png",
-                    "description": "Arepa Minitela 600g",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 1890,
-                    "image": "https://i.imgur.com/BB48JmZ.png",
-                    "description": "Arepa Blanca 500g",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 9300,
-                    "image": "https://i.imgur.com/gnC8O4x.png",
-                    "description": "Salchicha Camprestre 400g",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 7990,
-                    "image": "https://i.imgur.com/FuUuoUV.png",
-                    "description": "Chorizo Santarrosano 225g",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 7990,
-                    "image": "https://i.imgur.com/v7J7Klr.png",
-                    "description": "Chorizo Antioqueño 225g",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 5490,
-                    "image": "https://i.imgur.com/hSNhJGd.png",
-                    "description": "Queso Mozzarella Bufala 100g",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 8750,
-                    "image": "https://i.imgur.com/LzbTraU.png",
-                    "description": "Queso Campesino Bloque 350g",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 3300,
-                    "image": "https://i.imgur.com/2FRw5OC.png",
-                    "description": "Queso Crema 200g",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 13650,
-                    "image": "https://i.imgur.com/1Z4zfQQ.png",
-                    "description": "Queso Parmesano Alpina 120g",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 3400,
-                    "image": "https://i.imgur.com/Iohkn2c.png",
-                    "description": "Vinagre de Limpieza 1 Litro",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 4990,
-                    "image": "https://i.imgur.com/6oH9v21.png",
-                    "description": "Toalla de Papel Green 3h 80 Hojas",
-                    "category": "tiendas D1",
-                },
-                #Tiendas D1
-                {
-                    "name": "Tiendas D1",
-                    "price": 2200,
-                    "image": "https://i.imgur.com/A1hnmlq.png",
-                    "description": "Esponja Multiusos 2 und",
-                    "category": "tiendas D1",
-                },
+            {
+                "name": "Tiendas D1",
+                "price": 8300,
+                "image": "https://i.imgur.com/IEdmQX3.png",
+                "description": "En Polvo Entera 350g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 1200,
+                "image": "https://i.imgur.com/86A2hwi.png",
+                "description": "Leche Entera 200ml",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 1990,
+                "image": "https://i.imgur.com/PNtDPaH.png",
+                "description": "Arepa Minitela 600g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 1890,
+                "image": "https://i.imgur.com/BB48JmZ.png",
+                "description": "Arepa Blanca 500g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 9300,
+                "image": "https://i.imgur.com/gnC8O4x.png",
+                "description": "Salchicha Camprestre 400g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 7990,
+                "image": "https://i.imgur.com/FuUuoUV.png",
+                "description": "Chorizo Santarrosano 225g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 7990,
+                "image": "https://i.imgur.com/v7J7Klr.png",
+                "description": "Chorizo Antioqueño 225g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 5490,
+                "image": "https://i.imgur.com/hSNhJGd.png",
+                "description": "Queso Mozzarella Bufala 100g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 8750,
+                "image": "https://i.imgur.com/LzbTraU.png",
+                "description": "Queso Campesino Bloque 350g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 3300,
+                "image": "https://i.imgur.com/2FRw5OC.png",
+                "description": "Queso Crema 200g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 13650,
+                "image": "https://i.imgur.com/1Z4zfQQ.png",
+                "description": "Queso Parmesano Alpina 120g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 3400,
+                "image": "https://i.imgur.com/Iohkn2c.png",
+                "description": "Vinagre de Limpieza 1 Litro",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 4990,
+                "image": "https://i.imgur.com/6oH9v21.png",
+                "description": "Toalla de Papel Green 3h 80 Hojas",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 2200,
+                "image": "https://i.imgur.com/A1hnmlq.png",
+                "description": "Esponja Multiusos 2 und",
+                "category": "tiendas D1",
+            },
 
-                #TIENDAS D1 JABONES
-                {
-                    "name": "Tiendas D1",
-                    "price": 4990,
-                    "image": "https://i.imgur.com/B9i9eMg.png",
-                    "description": "Jabón Líquido Aloe Vera 1000ml",
-                    "category": "tiendas D1",
-                },
-                #TIENDAS D1 JABONES
-                {
-                    "name": "Tiendas D1",
-                    "price": 4450,
-                    "image": "https://i.imgur.com/XRVq0dJ.png",
-                    "description": "Jabón Liquido King 1000ml",
-                    "category": "tiendas D1",
-                },
-                #TIENDAS D1 JABONES
-                {
-                    "name": "Tiendas D1",
-                    "price": 12600,
-                    "image": "https://i.imgur.com/NK302TQ.png",
-                    "description": "Jabón Liquido King 3 litros",
-                    "category": "tiendas D1",
-                },
-                #TIENDAS D1 JABONES
-                {
-                    "name": "Tiendas D1",
-                    "price": 8990,
-                    "image": "https://i.imgur.com/wel8N6J.png",
-                    "description": "Suavisante Floral 3 litros",
-                    "category": "tiendas D1",
-                },
-                #TIENDAS D1 JABONES
-                {
-                    "name": "Tiendas D1",
-                    "price": 3850,
-                    "image": "https://i.imgur.com/cXarf1W.png",
-                    "description": "Quitamanchas Liquido 1 Litro",
-                    "category": "tiendas D1",
-                },
-                #TIENDAS D1 JABONES
-                {
-                    "name": "Tiendas D1",
-                    "price": 2900,
-                    "image": "https://i.imgur.com/Zus88nZ.png",
-                    "description": "Ropa Color",
-                    "category": "tiendas D1",
-                },
-                #TIENDAS D1 JABONES
-                {
-                    "name": "Tiendas D1",
-                    "price": 3500,
-                    "image": "https://i.imgur.com/uk04WVV.png",
-                    "description": "Detergente Multiusos 900g",
-                    "category": "tiendas D1",
+            #TIENDAS D1 JABONES
+            {
+                "name": "Tiendas D1",
+                "price": 4990,
+                "image": "https://i.imgur.com/B9i9eMg.png",
+                "description": "Jabón Líquido Aloe Vera 1000ml",
+                "category": "tiendas D1",
+            },
+            #TIENDAS D1 JABONES
+            {
+                "name": "Tiendas D1",
+                "price": 4450,
+                "image": "https://i.imgur.com/XRVq0dJ.png",
+                "description": "Jabón Liquido King 1000ml",
+                "category": "tiendas D1",
+            },
+            #TIENDAS D1 JABONES
+            {
+                "name": "Tiendas D1",
+                "price": 12600,
+                "image": "https://i.imgur.com/NK302TQ.png",
+                "description": "Jabón Liquido King 3 litros",
+                "category": "tiendas D1",
+            },
+            #TIENDAS D1 JABONES
+            {
+                "name": "Tiendas D1",
+                "price": 8990,
+                "image": "https://i.imgur.com/wel8N6J.png",
+                "description": "Suavisante Floral 3 litros",
+                "category": "tiendas D1",
+            },
+            #TIENDAS D1 JABONES
+            {
+                "name": "Tiendas D1",
+                "price": 3850,
+                "image": "https://i.imgur.com/cXarf1W.png",
+                "description": "Quitamanchas Liquido 1 Litro",
+                "category": "tiendas D1",
+            },
+            #TIENDAS D1 JABONES
+            {
+                "name": "Tiendas D1",
+                "price": 2900,
+                "image": "https://i.imgur.com/Zus88nZ.png",
+                "description": "Ropa Color",
+                "category": "tiendas D1",
+            },
+            #TIENDAS D1 JABONES
+            {
+                "name": "Tiendas D1",
+                "price": 3500,
+                "image": "https://i.imgur.com/uk04WVV.png",
+                "description": "Detergente Multiusos 900g",
+                "category": "tiendas D1",
                     
-                },
-                #TIENDAS D1 JABONES
-                {
-                    "name": "Tiendas D1",
-                    "price": 2550,
-                    "image": "https://i.imgur.com/msG0WSF.png",
-                    "description": "Crema Lavaloza King 500g",
-                    "category": "tiendas D1", 
-                },
-                #TIENDAS D1 JABONES
-                {
-                    "name": "Tiendas D1",
-                    "price": 2600,
-                    "image": "https://i.imgur.com/t2ugmq4.jpg",
-                    "description": "Lavaloza King 500g",
-                    "category": "tiendas D1", 
-                },
-                #TIENDAS D1 GASEOSAS
-                {
-                    "name": "Tiendas D1",
-                    "price": 5650,
-                    "image": "https://i.imgur.com/z3iXdbD.jpeg",
-                    "description": "Coca-Cola Zero 1750ml",
-                    "category": "tiendas D1", 
-                },
+            },
+            #TIENDAS D1 JABONES
+            {
+                "name": "Tiendas D1",
+                "price": 2550,
+                "image": "https://i.imgur.com/msG0WSF.png",
+                "description": "Crema Lavaloza King 500g",
+                "category": "tiendas D1", 
+            },
+            #TIENDAS D1 JABONES
+            {
+                "name": "Tiendas D1",
+                "price": 2600,
+                "image": "https://i.imgur.com/t2ugmq4.jpg",
+                "description": "Lavaloza King 500g",
+                "category": "tiendas D1", 
+            },
+            #TIENDAS D1 GASEOSAS
+            {
+                "name": "Tiendas D1",
+                "price": 5650,
+                "image": "https://i.imgur.com/z3iXdbD.jpeg",
+                "description": "Coca-Cola Zero 1750ml",
+                "category": "tiendas D1", 
+            },
 
-                #TIENDAS D1 GASEOSAS
-                {
-                    "name": "Tiendas D1",
-                    "price": 13750,
-                    "image": "https://i.imgur.com/f7kFe65.jpeg",
-                    "description": "Coca-Cola Zero 2x2.5L",
-                    "category": "tiendas D1", 
-                },
-                #TIENDAS D1 GASEOSAS
-                {
-                    "name": "Tiendas D1",
-                    "price": 14450,
-                    "image": "https://i.imgur.com/fshZ1Cx.jpeg",
-                    "description": "Coca-Cola 2x2.5L",
-                    "category": "tiendas D1", 
-                },
+            #TIENDAS D1 GASEOSAS
+            {
+                "name": "Tiendas D1",
+                "price": 13750,
+                "image": "https://i.imgur.com/f7kFe65.jpeg",
+                "description": "Coca-Cola Zero 2x2.5L",
+                "category": "tiendas D1", 
+            },
+            #TIENDAS D1 GASEOSAS
+            {
+                "name": "Tiendas D1",
+                "price": 14450,
+                "image": "https://i.imgur.com/fshZ1Cx.jpeg",
+                "description": "Coca-Cola 2x2.5L",
+                "category": "tiendas D1", 
+            },
                 
             
-                #TIENDAS D1 GASEOSAS
-                {
-                    "name": "Tiendas D1",
-                    "price": 2990,
-                    "image": "https://i.imgur.com/0Quuyks.png",
-                    "description": "Gaseosa Cola Negra 1700ml",
-                    "category": "tiendas D1", 
-                },
-                #TIENDAS D1 GASEOSAS
-                {
-                    "name": "Tiendas D1",
-                    "price": 5950,
-                    "image": "https://i.imgur.com/2SKowfM.jpeg",
-                    "description": "Pony Malta 2 Litros",
-                    "category": "tiendas D1", 
-                },
-                #TIENDAS D1 GASEOSAS
-                {
-                    "name": "Tiendas D1",
-                    "price": 1300,
-                    "image": "https://i.imgur.com/oJXFpvw.jpeg",
-                    "description": "Pony Malta 200 ml",
-                    "category": "tiendas D1", 
-                },
-                #TIENDAS D1 ARENAS PARA GATOS
-                {
-                    "name": "Tiendas D1",
-                    "price": 14850,
-                    "image": "https://i.imgur.com/SYwZkz9.jpeg",
-                    "description": "Arena Para Gatos 4500g",
-                    "category": "tiendas D1", 
-                },
-                #TIENDAS D1 COMIDAS PARA GATOS
-                {
-                    "name": "Tiendas D1",
-                    "price": 6250,
-                    "image": "https://i.imgur.com/Gcoj65q.png",
-                    "description": "Alimento Para Gatos 1000g",
-                    "category": "tiendas D1", 
-                },
-                #TIENDAS D1 COMIDAS PARA GATOS
-                {
-                    "name": "Tiendas D1",
-                    "price": 10950,
-                    "image": "https://i.imgur.com/HoYUpfp.jpeg",
-                    "description": "Alimento Para Gatos 1000g",
-                    "category": "tiendas D1", 
-                },
+            #TIENDAS D1 GASEOSAS
+            {
+                "name": "Tiendas D1",
+                "price": 2990,
+                "image": "https://i.imgur.com/0Quuyks.png",
+                "description": "Gaseosa Cola Negra 1700ml",
+                "category": "tiendas D1", 
+            },
+            #TIENDAS D1 GASEOSAS
+            {
+                "name": "Tiendas D1",
+                "price": 5950,
+                "image": "https://i.imgur.com/2SKowfM.jpeg",
+                "description": "Pony Malta 2 Litros",
+                "category": "tiendas D1", 
+            },
+            #TIENDAS D1 GASEOSAS
+            {
+                "name": "Tiendas D1",
+                "price": 1300,
+                "image": "https://i.imgur.com/oJXFpvw.jpeg",
+                "description": "Pony Malta 200 ml",
+                "category": "tiendas D1", 
+            },
+            #TIENDAS D1 ARENAS PARA GATOS
+            {
+                "name": "Tiendas D1",
+                "price": 14850,
+                "image": "https://i.imgur.com/SYwZkz9.jpeg",
+                "description": "Arena Para Gatos 4500g",
+                "category": "tiendas D1", 
+            },
+            #TIENDAS D1 COMIDAS PARA GATOS
+            {
+                "name": "Tiendas D1",
+                "price": 6250,
+                "image": "https://i.imgur.com/Gcoj65q.png",
+                "description": "Alimento Para Gatos 1000g",
+                "category": "tiendas D1", 
+            },
+            #TIENDAS D1 COMIDAS PARA GATOS
+            {
+                "name": "Tiendas D1",
+                "price": 10950,
+                "image": "https://i.imgur.com/HoYUpfp.jpeg",
+                "description": "Alimento Para Gatos 1000g",
+                "category": "tiendas D1", 
+            },
 
 
-                #cobijas y cortinas
-                {
-                    "name": "Sabanas",
-                    "price": 70000.00,
-                    "image": "https://i.imgur.com/l8UwyeX.jpeg",
-                    "description": "Medidas 1*40 cama doble",
-                    "category": "cobijas y cortinas",
-                },
+            #cobijas y cortinas
+            {
+                "name": "Sabanas",
+                "price": 70000.00,
+                "image": "https://i.imgur.com/l8UwyeX.jpeg",
+                "description": "Medidas 1*40 cama doble",
+                "category": "cobijas y cortinas",
+            },
 
-                {
-                    "name": "Sabanas",
-                    "price": 70000.00,
-                    "image": "https://i.imgur.com/2mOIbYN.png",
-                    "description": "Medidas 1*40 cama doble",
-                    "category": "cobijas y cortinas",
-                },
+            {
+                "name": "Sabanas",
+                "price": 70000.00,
+                "image": "https://i.imgur.com/2mOIbYN.png",
+                "description": "Medidas 1*40 cama doble",
+                "category": "cobijas y cortinas",
+            },
 
-                {
-                    "name": "Sabanas",
-                    "price": 70000.00,
-                    "image": "https://i.imgur.com/Z6aagAl.jpeg",
-                    "description": "Medidas 1*40 cama doble",
-                    "category": "cobijas y cortinas",
-                },
-                #sabanas
-                {
-                    "name": "Sabanas",
-                    "price": 70000.00,
-                    "image": "https://i.imgur.com/lrQu2L7.jpeg",
-                    "description": "Medidas 1*40 cama doble",
-                    "category": "cobijas y cortinas",
-                },
-                #sabanas
-                {
-                    "name": "Sabanas",
-                    "price": 70000.00,
-                    "image": "https://i.imgur.com/uAgl7a3.jpeg",
-                    "description": "Medidas 1*40 cama doble",
-                    "category": "cobijas y cortinas",
-                },
-                #sabanas
-                {
-                    "name": "Sabanas",
-                    "price": 70000.00,
-                    "image": "https://i.imgur.com/CkgTyHn.jpeg",
-                    "description": "Medidas 1*40 cama doble",
-                    "category": "cobijas y cortinas",
-                },
-                #sabanas
-                {
-                    "name": "Sabanas",
-                    "price": 70000.00,
-                    "image": "https://i.imgur.com/OtQ8AwC.jpeg",
-                    "description": "Medidas 1*40 cama doble",
-                    "category": "cobijas y cortinas",
-                },
-                #sabanas
-                {
-                    "name": "Sabanas",
-                    "price": 70000.00,
-                    "image": "https://i.imgur.com/Mfb4TJz.jpeg",
-                    "description": "Medidas 1*40 cama doble",
-                    "category": "cobijas y cortinas",
-                },
-                #sabanas
-                {
-                    "name": "Sabanas",
-                    "price": 70000.00,
-                    "image": "https://i.imgur.com/PGUS60t.jpeg",
-                    "description": "Medidas 1*40 cama doble",
-                    "category": "cobijas y cortinas",
-                },
-                #sabanas
-                {
-                    "name": "Sabanas",
-                    "price": 85000.00,
-                    "image": "https://i.imgur.com/Lmpcch4.jpeg",
-                    "description": "Medidas 1*60",
-                    "category": "cobijas y cortinas",
-                },
-                #sabanas
-                {
-                    "name": "Sabanas",
-                    "price": 85000.00,
-                    "image": "https://i.imgur.com/fT7vokK.jpeg",
-                    "description": "Medidas 1*60",
-                    "category": "cobijas y cortinas",
-                },
-                #sabanas
-                {
-                    "name": "Sabanas",
-                    "price": 85000.00,
-                    "image": "https://i.imgur.com/4srDLKY.jpeg",
-                    "description": "Medidas 1*60",
-                    "category": "cobijas y cortinas",
-                },
+            {
+                "name": "Sabanas",
+                "price": 70000.00,
+                "image": "https://i.imgur.com/Z6aagAl.jpeg",
+                "description": "Medidas 1*40 cama doble",
+                "category": "cobijas y cortinas",
+            },
+            #sabanas
+            {
+                "name": "Sabanas",
+                "price": 70000.00,
+                "image": "https://i.imgur.com/lrQu2L7.jpeg",
+                "description": "Medidas 1*40 cama doble",
+                "category": "cobijas y cortinas",
+            },
+            #sabanas
+            {
+                "name": "Sabanas",
+                "price": 70000.00,
+                "image": "https://i.imgur.com/uAgl7a3.jpeg",
+                "description": "Medidas 1*40 cama doble",
+                "category": "cobijas y cortinas",
+            },
+            #sabanas
+            {
+                "name": "Sabanas",
+                "price": 70000.00,
+                "image": "https://i.imgur.com/CkgTyHn.jpeg",
+                "description": "Medidas 1*40 cama doble",
+                "category": "cobijas y cortinas",
+            },
+            #sabanas
+            {
+                "name": "Sabanas",
+                "price": 70000.00,
+                "image": "https://i.imgur.com/OtQ8AwC.jpeg",
+                "description": "Medidas 1*40 cama doble",
+                "category": "cobijas y cortinas",
+            },
+            #sabanas
+            {
+                "name": "Sabanas",
+                "price": 70000.00,
+                "image": "https://i.imgur.com/Mfb4TJz.jpeg",
+                "description": "Medidas 1*40 cama doble",
+                "category": "cobijas y cortinas",
+            },
+            #sabanas
+            {
+                "name": "Sabanas",
+                "price": 70000.00,
+                "image": "https://i.imgur.com/PGUS60t.jpeg",
+                "description": "Medidas 1*40 cama doble",
+                "category": "cobijas y cortinas",
+            },
+            #sabanas
+            {
+                "name": "Sabanas",
+                "price": 85000.00,
+                "image": "https://i.imgur.com/Lmpcch4.jpeg",
+                "description": "Medidas 1*60",
+                "category": "cobijas y cortinas",
+            },
+            #sabanas
+            {
+                "name": "Sabanas",
+                "price": 85000.00,
+                "image": "https://i.imgur.com/fT7vokK.jpeg",
+                "description": "Medidas 1*60",
+                "category": "cobijas y cortinas",
+            },
+            #sabanas
+            {
+                "name": "Sabanas",
+                "price": 85000.00,
+                "image": "https://i.imgur.com/4srDLKY.jpeg",
+                "description": "Medidas 1*60",
+                "category": "cobijas y cortinas",
+            },
 
-                #sabanas
-                {
-                    "name": "Sabanas",
-                    "price": 85000.00,
-                    "image": "https://i.imgur.com/4lFRmLs.jpeg",
-                    "description": "Medidas 1*60",
-                    "category": "cobijas y cortinas",
-                },
-                #sabanas
-                {
-                    "name": "Sabanas",
-                    "price": 85000.00,
-                    "image": "https://i.imgur.com/cPKUoOt.jpeg",
-                    "description":"Medidas 1*60",
-                    "category": "cobijas y cortinas",
-                },
-                #sabanas
-                {
-                    "name": "Sabanas",
-                    "price": 85000.00,
-                    "image": "https://i.imgur.com/DVyzfIY.jpeg",
-                    "description": "Medidas 1*60",
-                    "category": "cobijas y cortinas",
-                },
-                #sabanas
-                {
-                    "name": "Sabanas",
-                    "price": 85000.00,
-                    "image": "https://i.imgur.com/QmBsDzU.jpeg",
-                    "description": "Medidas 1*60",
-                    "category": "cobijas y cortinas",
-                },
-                #sabanas
-                {
-                    "name": "Sabanas",
-                    "price": 85000.00,
-                    "image": "https://i.imgur.com/KdsDNmJ.jpeg",
-                    "description": "Medidas 1*60",
-                    "category": "cobijas y cortinas",
-                },
-                #cubrelecho
-                {
-                    "name": "Cubrelecho",
-                    "price": 130000.00,
-                    "image": "https://i.imgur.com/KdsDNmJ.jpeg",
-                    "description": "Doble fax cama doble",
-                    "category": "cobijas y cortinas",
-                },
-                #cubrelecho
-                {
-                    "name": "Cubrelecho",
-                    "price": 130000.00,
-                    "image": "https://i.imgur.com/TmCQlTN.jpeg",
-                    "description": "Doble fax cama doble",
-                    "category": "cobijas y cortinas",
-                },
-                #cubrelecho
-                {
-                    "name": "Cubrelecho",
-                    "price": 130000.00,
-                    "image": "https://i.imgur.com/5MMhfSs.jpeg",
-                    "description": "Doble fax cama doble",
-                    "category": "cobijas y cortinas",
-                },
-                #cubrelecho
-                {
-                    "name": "Cubrelecho",
-                    "price": 130000.00,
-                    "image": "https://i.imgur.com/D35igbw.jpeg",
-                    "description": "Doble fax cama doble",
-                    "category": "cobijas y cortinas",
-                },
-                #cubrelecho
-                {
-                    "name": "Cubrelecho",
-                    "price": 130000.00,
-                    "image": "https://i.imgur.com/XZq06Uo.jpeg",
-                    "description": "Doble fax cama doble",
-                    "category": "cobijas y cortinas",
-                },
-                #cubrelecho
-                {
-                    "name": "Cubrelecho",
-                    "price": 130000.00,
-                    "image": "https://i.imgur.com/IpWOowz.jpeg",
-                    "description": "Doble fax cama doble",
-                    "category": "cobijas y cortinas",
-                },
+            #sabanas
+            {
+                "name": "Sabanas",
+                "price": 85000.00,
+                "image": "https://i.imgur.com/4lFRmLs.jpeg",
+                "description": "Medidas 1*60",
+                "category": "cobijas y cortinas",
+            },
+            #sabanas
+            {
+                "name": "Sabanas",
+                "price": 85000.00,
+                "image": "https://i.imgur.com/cPKUoOt.jpeg",
+                "description":"Medidas 1*60",
+                "category": "cobijas y cortinas",
+            },
+            #sabanas
+            {
+                "name": "Sabanas",
+                "price": 85000.00,
+                "image": "https://i.imgur.com/DVyzfIY.jpeg",
+                "description": "Medidas 1*60",
+                "category": "cobijas y cortinas",
+            },
+            #sabanas
+            {
+                "name": "Sabanas",
+                "price": 85000.00,
+                "image": "https://i.imgur.com/QmBsDzU.jpeg",
+                "description": "Medidas 1*60",
+                "category": "cobijas y cortinas",
+            },
+            #sabanas
+            {
+                "name": "Sabanas",
+                 "price": 85000.00,
+                 "image": "https://i.imgur.com/KdsDNmJ.jpeg",
+                 "description": "Medidas 1*60",
+                 "category": "cobijas y cortinas",
+            },
+            #cubrelecho
+            {
+                "name": "Cubrelecho",
+                "price": 130000.00,
+                "image": "https://i.imgur.com/KdsDNmJ.jpeg",
+                "description": "Doble fax cama doble",
+                "category": "cobijas y cortinas",
+            },
+            #cubrelecho
+            {
+                "name": "Cubrelecho",
+                "price": 130000.00,
+                "image": "https://i.imgur.com/TmCQlTN.jpeg",
+                "description": "Doble fax cama doble",
+                "category": "cobijas y cortinas",
+            },
+            #cubrelecho
+            {
+                "name": "Cubrelecho",
+                "price": 130000.00,
+                "image": "https://i.imgur.com/5MMhfSs.jpeg",
+                "description": "Doble fax cama doble",
+                "category": "cobijas y cortinas",
+            },
+            #cubrelecho
+            {
+                "name": "Cubrelecho",
+                "price": 130000.00,
+                "image": "https://i.imgur.com/D35igbw.jpeg",
+                "description": "Doble fax cama doble",
+                "category": "cobijas y cortinas",
+            },
+            #cubrelecho
+            {
+                "name": "Cubrelecho",
+                "price": 130000.00,
+                "image": "https://i.imgur.com/XZq06Uo.jpeg",
+                "description": "Doble fax cama doble",
+                "category": "cobijas y cortinas",
+            },
+            #cubrelecho
+            {
+                "name": "Cubrelecho",
+                "price": 130000.00,
+                "image": "https://i.imgur.com/IpWOowz.jpeg",
+                "description": "Doble fax cama doble",
+                "category": "cobijas y cortinas",
+            },
             
                 #cubrelecho
-                {
-                    "name": "Cubrelecho",
-                    "price": 130000.00,
-                    "image": "https://i.imgur.com/wKu5z8j.jpeg",
-                    "description": "Doble fax cama doble",
-                    "category": "cobijas y cortinas",
-                },
+            {
+                "name": "Cubrelecho",
+                "price": 130000.00,
+                "image": "https://i.imgur.com/wKu5z8j.jpeg",
+                "description": "Doble fax cama doble",
+                "category": "cobijas y cortinas",
+            },
                 #cortinas
-                {
-                    "name": "Cortinas",
-                    "price": 70000.00,
-                    "image": "https://i.imgur.com/8NsXakw.jpeg",
-                    "description": "gran variedad de colores",
-                    "category": "cobijas y cortinas",
-                },
+            {
+                "name": "Cortinas",
+                "price": 70000.00,
+                "image": "https://i.imgur.com/8NsXakw.jpeg",
+                "description": "gran variedad de colores",
+                "category": "cobijas y cortinas",
+            },
 
-                 #PLOMEROS
-                {
-                    "name": "Plomeros",
-                    "price": 0.00,
-                    "image": "https://i.imgur.com/EHKPRbc.jpeg",
-                    "description": "Impermeabilización Canales y Techos",
-                    "category": "plomeros",
-                },
+
                 #PLOMEROS
-                {
-                    "name": "Plomeros",
-                    "price": 0.00,
-                    "image": "https://i.imgur.com/LRTnmuS.jpeg",
-                    "description": "Mantenimiento de Tuberias",
-                    "category": "plomeros",
-                },
-                #PLOMEROS
+            {
+                "name": "Plomeros",
+                "price": 0.00,
+                "image": "https://i.imgur.com/EHKPRbc.jpeg",
+                "description": "Impermeabilización Canales y Techos",
+                "category": "plomeria",
+            },
+            #PLOMEROS
+            {
+                "name": "Plomeros",
+                "price": 0.00,
+                "image": "https://i.imgur.com/LRTnmuS.jpeg",
+                "description": "Mantenimiento de Tuberias",
+                "category": "plomeria",
+            },
+            #PLOMEROS
 
-                {
-                    "name": "Plomeros",
-                    "price": 0.00,
-                    "image": "https://i.imgur.com/rWeKPRu.jpeg",
-                    "description": "Construimos tu Vivienda desde Cero",
-                    "category": "plomeros",
-                }
-               
+            {
+                "name": "Plomeros",
+                "price": 0.00,
+                "image": "https://i.imgur.com/rWeKPRu.jpeg",
+                "description": "Construimos tu Vivienda desde Cero",
+                "category": "plomeria",
+            }
                 
-                # Puedes añadir más productos aquí
-            ]
+            #Puedes añadir más productos aquí
+        ]
 
-            # Agregar productos de ejemplo a Firestore
-            for product in sample_products:
-                st.session_state.db.collection('products').add(product)
-                
-            return sample_products
-           
-        return products
+        for product in sample_products:
+            products_ref.add(product)
 
-    except Exception as e:
-            st.error(f"Error al obtener productos: {str(e)}")
+        print("🔁 Productos cargados desde código (modo DEV).")
+        return sample_products
+    else:
+        try:
+            docs = products_ref.stream()
+            products = [doc.to_dict() | {"id": doc.id} for doc in docs]
+            print("✅ Productos cargados desde Firebase.")
+            return products
+        except Exception as e:
+            st.error(f"Error al cargar productos: {str(e)}")
             return []
-        
 
 def add_to_cart(product_id, user_id):
     """Agrega producto al carrito"""
