@@ -1121,7 +1121,6 @@ st.markdown("## 🛍️ Catálogo de Productosy Servicios")
 col1, col2 = st.columns([1, 3])
 with col1:
     categories = [
-        
             "comida china",
             "El corral",
             'El carriel',
@@ -1130,7 +1129,7 @@ with col1:
             "supermercado",
             "tiendas D1",
             "cobijas y cortinas",
-            "plomeros"
+            "plomeros",
             
     ]
     selected_category = st.selectbox("Categoría", categories,index=0)
