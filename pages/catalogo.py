@@ -872,16 +872,10 @@ def get_products():
                 "image": "https://i.imgur.com/rWeKPRu.jpeg",
                 "description": "Construimos tu Vivienda desde Cero",
                 "category": "plomeros",
-            }
+            },
                 
             #Puedes añadir más productos aquí
-             {
-                "name": "Prueba",
-                "price": 0.00,
-                "image": "https://www.bing.com/th/id/OIP.2m9aX7OiEgNBuwT724iDUwHaE8?w=251&h=211&c=8&rs=1&qlt=70&o=7&cb=thws4&pid=3.1&rm=3",
-                "description": "Construimos tu Vivienda desde Cero",
-                "category": "prueba",
-            }
+            
         ]
 
         for product in sample_products:
@@ -1138,7 +1132,7 @@ with col1:
             "tiendas D1",
             "cobijas y cortinas",
             "plomeros",
-            'prueba',
+            
             
     ]
     selected_category = st.selectbox("Categoría", categories,index=0)
