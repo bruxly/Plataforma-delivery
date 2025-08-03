@@ -887,6 +887,8 @@ def get_products():
                 st.session_state.db.collection('products').add(product)
                 
             return sample_products
+            unique = {(p["name"], p["image"], p["category"]): p for p in productos}
+            productos = list(unique.values())
         return products
 
     except Exception as e:
