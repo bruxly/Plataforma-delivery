@@ -1088,33 +1088,34 @@ with st.sidebar:
     st.markdown("---")
 
     # Carrito de compras
-    st.markdown("### 🛒 Carrito")
-    if st.session_state.cart:
-        total = 0
-        for item in st.session_state.cart:
-            st.markdown(f"""
-            <div class="cart-item">
-                <strong>{item['name']}</strong><br>
-                ${item['price']:.2f} x {item['quantity']}
-            </div>
-            """,unsafe_allow_html=True)
-            total += item["price"] * item["quantity"]
+    # st.markdown("### 🛒 Carrito")
+    # if st.session_state.cart:
+    #     total = 0
+    #     for item in st.session_state.cart:
+    #         st.markdown(f"""
+    #         <div class="cart-item">
+    #             <strong>{item['name']}</strong><br>
+    #             ${item['price']:.2f} x {item['quantity']}
+    #         </div>
+    #         """,unsafe_allow_html=True)
+    #         total += item["price"] * item["quantity"]
 
-        st.markdown(f"**Total: ${total:.2f}**")
+    #     st.markdown(f"**Total: ${total:.2f}**")
 
-        stripe_button = create_stripe_button(
-            st.session_state.cart, 
-            st.session_state['usuario']['email'], 
-            st.session_state['usuario']['uid']
-        )
+    #     stripe_button = create_stripe_button(
+    #         st.session_state.cart, 
+    #         st.session_state['usuario']['email'], 
+    #         st.session_state['usuario']['uid']
+    #     )
 
-        if stripe_button:
-            st.markdown(stripe_button, unsafe_allow_html=True)
-        else:
-            st.error("Error al crear la sesión de pago")
+    #     if stripe_button:
+    #         st.markdown(stripe_button, unsafe_allow_html=True)
+    #     else:
+    #         st.error("Error al crear la sesión de pago")
 
-    else:
-        st.info("Tu carrito está vacío")   
+    # else:
+    #     st.info("Tu carrito está vacío")   
+
 
 # Contenido principal - Catálogo de productos
 st.markdown("## 🛍️ Catálogo de Productosy Servicios")
