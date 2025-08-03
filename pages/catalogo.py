@@ -1121,7 +1121,7 @@ st.markdown("## 🛍️ Catálogo de Productosy Servicios")
 col1, col2 = st.columns([1, 3])
 with col1:
     categories = [
-            'Todos',
+            'todos',
             "comida china",
             "El corral",
             'El carriel',
