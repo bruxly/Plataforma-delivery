@@ -1121,6 +1121,7 @@ st.markdown("## 🛍️ Catálogo de Productosy Servicios")
 col1, col2 = st.columns([1, 3])
 with col1:
     categories = [
+            'todos',
             "comida china",
             "El corral",
             'El carriel',
@@ -1138,7 +1139,7 @@ if 'productos' not in st.session_state:
         st.session_state['productos'] = get_products()
 
 products = st.session_state['productos']
-if selected_category != "comida china":
+if selected_category != "todos":
     products = [p for p in products if p.get('category') == selected_category]
             
 
