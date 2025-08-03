@@ -893,35 +893,7 @@ def get_products():
     except Exception as e:
             st.error(f"Error al obtener productos: {str(e)}")
             return []
-# 🔻 Pegas esto justo después de get_products()
-def eliminar_duplicados_plomeros():
-    try:
-        productos = db.collection('products') \
-            .where("name", "==", "Plomeros") \
-            .where("category", "==", "plomeria") \
-            .get()
-
-        agrupados_por_imagen = {}
-        for doc in productos:
-            data = doc.to_dict()
-            imagen = data.get("image")
-            if imagen in agrupados_por_imagen:
-                agrupados_por_imagen[imagen].append(doc.id)
-            else:
-                agrupados_por_imagen[imagen] = [doc.id]
-
-        eliminados = 0
-        for ids in agrupados_por_imagen.values():
-            if len(ids) > 1:
-                for doc_id in ids[1:]:  # Deja solo uno
-                    db.collection('products').document(doc_id).delete()
-                    eliminados += 1
-
-        st.success(f"✅ Eliminados {eliminados} productos duplicados de 'Plomeros'")
-    except Exception as e:
-        st.error(f"❌ Error al eliminar duplicados: {str(e)}")
-
-    
+        
 
 def add_to_cart(product_id, user_id):
     """Agrega producto al carrito"""
