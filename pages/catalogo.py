@@ -1191,7 +1191,7 @@ if products:
                             cursor: pointer;
                             position: pointer;
                             z-index:9999;
-                            margin-botton: 1.5rem;
+                            margin-bottom: 1.5rem;
                         ">
                             Pagar el producto
                         </button>
