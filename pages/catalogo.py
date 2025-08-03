@@ -1124,51 +1124,26 @@ st.markdown("## 🛍️ Catálogo de Productosy Servicios")
 col1, col2 = st.columns([1, 3])
 with col1:
     categories = [
-        'Todos',
-        "comida china",
-        "comidas rápidas", 
-        "El corral",
-        "El carriel",
-        "Qbano",
-        "magdalena",
-        "supermercado",
-        "tiendas D1",
-        "cobijas y cortinas",
-        "plomeria"
+            "comida china",
+            "El corral",
+            'El carriel',
+            "Qbano",
+            'magdalena',
+            "supermercado",
+            "tiendas D1",
+            "cobijas y cortinas",
+            "plomeria"
+            
     ]
+    selected_category = st.selectbox("Categoría", categories,index=0)
+if 'productos' not in st.session_state:
+    with st.spinner("🛵 Cargando productos disponibles..."):
+        st.session_state['productos'] = get_products()
 
-    # Diccionario de subcategorías
-    subcategorias = {
-        "comidas rápidas": ["Toxiburger", "Tribu", "Qiubo perro"]
-    }
-
-    # Selector de categoría
-    selected_category = st.selectbox("Categoría", categories, index=0)
-
-    # Selector de subcategoría si aplica
-    select_subcategory = None
-    if selected_category in subcategorias:
-        select_subcategory = st.selectbox("Subcategoría", subcategorias[selected_category])
-
-    # Obtener productos si aún no están cargados
-    if 'productos' not in st.session_state:
-        with st.spinner("🛵 Cargando productos disponibles..."):
-            st.session_state['productos'] = get_products()  # corregido: st.session['prodcutos'] → st.session_state['productos']
-
-    products = st.session_state['productos']
-
-    # Filtrar productos por categoría y subcategoría
-    if selected_category != "Todos": 
-        if selected_category in subcategorias and select_subcategory:
-            products = [p for p in products if p.get('category') == select_subcategory]
-        else:
-            products = [p for p in products if p.get('category') == selected_category]
-
-    # Mostrar productos
-    st.write(f"Productos para: {selected_category} {select_subcategory if select_subcategory else ''}")
-    for p in products:
-        st.write(p["name"])
-
+products = st.session_state['productos']
+if selected_category != "todos":
+    products = [p for p in products if p.get('category') == selected_category]
+            
 
     # Mostrar productos en grid
 if products:
