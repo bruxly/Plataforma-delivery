@@ -1,7 +1,7 @@
-🛍️ Servicio delivery
-Una aplicación de e-commerce moderna y elegante desarrollada con Streamlit, que ofrece una experiencia de compra premium, gestión de carrito y procesamiento de pagos seguro.
+🛍️ Servicio delivery<br>
+Una aplicación de e-commerce moderna y elegante desarrollada con Streamlit, que ofrece una experiencia de compra premium, gestión de carrito y procesamiento de pagos seguro.<br><br>
 
-Interactúa con el proyecto desplegado aquí:
+Interactúa con el proyecto desplegado aquí:<br>
 
 ✨ Características Principales
 •  	🔐 Autenticación OAuth con Google: Inicio de sesión seguro y sin fricciones
@@ -89,5 +89,6 @@ Streamlit Cloud
 	Análisis de ventas
 	Tener una subcategoría de productos
  
+
 
 
