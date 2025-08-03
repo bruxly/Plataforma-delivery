@@ -853,7 +853,7 @@ def get_products():
                 "price": 0.00,
                 "image": "https://i.imgur.com/EHKPRbc.jpeg",
                 "description": "Impermeabilización Canales y Techos",
-                "category": "plomeria",
+                "category": "plomeros",
             },
             #PLOMEROS
             {
@@ -861,7 +861,7 @@ def get_products():
                 "price": 0.00,
                 "image": "https://i.imgur.com/LRTnmuS.jpeg",
                 "description": "Mantenimiento de Tuberias",
-                "category": "plomeria",
+                "category": "plomeros",
             },
             #PLOMEROS
 
@@ -870,7 +870,7 @@ def get_products():
                 "price": 0.00,
                 "image": "https://i.imgur.com/rWeKPRu.jpeg",
                 "description": "Construimos tu Vivienda desde Cero",
-                "category": "plomeria",
+                "category": "plomeros",
             }
                 
             #Puedes añadir más productos aquí
