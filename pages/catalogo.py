@@ -1124,8 +1124,9 @@ st.markdown("## 🛍️ Catálogo de Productosy Servicios")
 col1, col2 = st.columns([1, 3])
 with col1:
     categories = [
+        'Todos',
         "comida china",
-        "comidas rápidas",  # corregido: tildes consistentes
+        "comidas rápidas", 
         "El corral",
         "El carriel",
         "Qbano",
@@ -1157,7 +1158,7 @@ with col1:
     products = st.session_state['productos']
 
     # Filtrar productos por categoría y subcategoría
-    if selected_category != "comida china":  # aquí filtras solo si no es comida china
+    if selected_category != "Todos": 
         if selected_category in subcategorias and select_subcategory:
             products = [p for p in products if p.get('category') == select_subcategory]
         else:
