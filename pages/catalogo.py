@@ -852,7 +852,31 @@ def get_products():
                     "category": "cobijas y cortinas",
                 },
 
+                 #PLOMEROS
+                {
+                    "name": "Plomeros",
+                    "price": 0.00,
+                    "image": "https://i.imgur.com/EHKPRbc.jpeg",
+                    "description": "Impermeabilización Canales y Techos",
+                    "category": "plomeros",
+                },
+                #PLOMEROS
+                {
+                    "name": "Plomeros",
+                    "price": 0.00,
+                    "image": "https://i.imgur.com/LRTnmuS.jpeg",
+                    "description": "Mantenimiento de Tuberias",
+                    "category": "plomeros",
+                },
+                #PLOMEROS
 
+                {
+                    "name": "Plomeros",
+                    "price": 0.00,
+                    "image": "https://i.imgur.com/rWeKPRu.jpeg",
+                    "description": "Construimos tu Vivienda desde Cero",
+                    "category": "plomeros",
+                }
                
                 
                 # Puedes añadir más productos aquí
