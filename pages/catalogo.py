@@ -1137,7 +1137,7 @@ if 'productos' not in st.session_state:
         st.session_state['productos'] = get_products()
 
 products = st.session_state['productos']
-if selected_category != "todos":
+if selected_category != "comida china":
     products = [p for p in products if p.get('category') == selected_category]
             
 
