@@ -889,7 +889,7 @@ def get_products():
             return sample_products
             unique = {(p["name"], p["image"], p["category"]): p for p in productos}
             productos = list(unique.values())
-        #return products
+        return products
 
     except Exception as e:
             st.error(f"Error al obtener productos: {str(e)}")
