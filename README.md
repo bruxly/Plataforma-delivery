@@ -1,3 +1,5 @@
+app: https://plataforma-delivery-casanareyopal.streamlit.app/catalogo   <br>
+
 🛍️ Servicio delivery<br>
 Una aplicación de e-commerce moderna y elegante desarrollada con Streamlit, que ofrece una experiencia de compra premium, gestión de carrito y procesamiento de pagos seguro.<br><br>
 
@@ -89,6 +91,7 @@ Streamlit Cloud<br>
 	Análisis de ventas<br>
 	Tener una subcategoría de productos<br>
  
+
 
 
 
