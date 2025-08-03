@@ -9,7 +9,7 @@ import hashlib
 
 
 
-DEV_MODE = True  # Cambia a False en producción
+DEV_MODE = False  # Cambia a False en producción
 
 
 # verifica si la clave login no esta presente en el estado de inicio de Stremalit, indica que el usuario no iniciado sesion correctamente
