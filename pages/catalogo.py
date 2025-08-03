@@ -877,7 +877,7 @@ def get_products():
                     "image": "https://i.imgur.com/rWeKPRu.jpeg",
                     "description": "Construimos tu Vivienda desde Cero",
                     "category": "plomeria",
-                }
+                },
                 
                 # Puedes añadir más productos aquí
             ]
