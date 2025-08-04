@@ -878,7 +878,7 @@ def get_products():
             {
                 "name": "Plo",
                 "price": 0.00,
-                "image": "https://i.imgur.com/rWeKPRu.jpeg",
+                "image": "https://www.elcorral.com/_next/image?url=https%3A%2F%2Fd3u2roexu5gmas.cloudfront.net%2Fproducts%2F68642966e2945_Vaquero%20hawaiano%20en%20combo.jpg&w=128&q=100",
                 "description": "Construimos tu Vivienda desde Cero",
                 "category": "plo",
             }
