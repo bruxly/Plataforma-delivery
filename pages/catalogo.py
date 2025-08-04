@@ -165,6 +165,14 @@ def get_products():
                 "image": "https://i.imgur.com/qvPftTI.jpeg",
                 "description": "cod:05. Donde come 8 comen 10, EXTRA FAMILIAR con semejante merrada de arroz Paisa.",
                 "category": "El carriel",
+            }, 
+             #el carriel
+            {
+                "name": "El carriel",
+                "price": 18000,
+                "image": "https://i.imgur.com/pDfMwf6.jpeg",
+                "description": "cod:06. Cajita personal con una libra de arroz paisa y vaso de limonada del día ",
+                "category": "El carriel",
             },    
 
             #MAGDALENA
