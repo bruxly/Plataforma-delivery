@@ -124,7 +124,7 @@ def get_products():
                 "name": "Hawaiano Combo",
                 "price": 32900,
                 "image": "https://i.imgur.com/pfkNBGy.jpeg",
-                "description": "Con salchicha a la parrilla, queso,piña y salsas",
+                "description": "cod:10. Con salchicha a la parrilla, queso,piña y salsas",
                 "category": "El corral",
             },
             #EL CARRIEL
