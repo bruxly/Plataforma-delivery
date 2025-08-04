@@ -142,14 +142,30 @@ def get_products():
                 "description": "cod:02. Personal con papitas, Porción personal de arroz paisa con papitas y limonada",
                 "category": "El carriel",
             },
-               {
+            #el carriel
+            {
                 "name": "El carriel",
                 "price": 60000,
                 "image": "https://i.imgur.com/sVWsjG8.jpeg",
                 "description": "cod:03. merrada de dos kilos de arroz Paisa y Chicharrón. Oiga! Y rinde hasta pa' 6 personas ",
                 "category": "El carriel",
             },
-            #    
+            #el carriel
+            {
+                "name": "El carriel",
+                "price": 32000,
+                "image": "https://i.imgur.com/t0xczti.jpeg",
+                "description": "cod:04. 750 Grs de Arroz Paisa acompañados de papitas a la francesa ideal para compartir",
+                "category": "El carriel",
+            },
+            #el carriel
+            {
+                "name": "El carriel",
+                "price": 90000,
+                "image": "https://i.imgur.com/qvPftTI.jpeg",
+                "description": "cod:05. Donde come 8 comen 10, EXTRA FAMILIAR con semejante merrada de arroz Paisa.",
+                "category": "El carriel",
+            },    
 
             #MAGDALENA
             {
