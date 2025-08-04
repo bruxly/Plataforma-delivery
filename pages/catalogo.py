@@ -144,11 +144,11 @@ def get_products():
             },
                {
                 "name": "El carriel",
-                "price": 60000.00,
+                "price": 60000,
                 "image": "https://i.imgur.com/sVWsjG8.jpeg",
                 "description": "cod:01, Una merrada de dos kilos de arroz Paisa 🤠🥘 y buen Chicharrón 🐽, listo pa' todo el parche. Oiga! 🧏 Y rinde hasta pa' 6 personas ",
                 "category": "El carriel",
-            }
+            },
             #    
 
             #MAGDALENA
