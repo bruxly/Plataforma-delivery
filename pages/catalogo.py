@@ -142,6 +142,13 @@ def get_products():
                 "description": "Personal con papitas, Porción personal de arroz paisa con papitas y limonada",
                 "category": "El carriel",
             },
+               {
+                "name": "El carriel",
+                "price": 60000.00,
+                "image": "https://i.imgur.com/sVWsjG8.jpeg",
+                "description": "cod:01, Una merrada de dos kilos de arroz Paisa 🤠🥘 y buen Chicharrón 🐽, listo pa' todo el parche. Oiga! 🧏 Y rinde hasta pa' 6 personas ",
+                "category": "El carriel",
+            }
             #    
 
             #MAGDALENA
@@ -875,13 +882,7 @@ def get_products():
             },
                 
             #Puedes añadir más productos aquí
-            {
-                "name": "Plo",
-                "price": 0.00,
-                "image": "https://www.elcorral.com/_next/image?url=https%3A%2F%2Fd3u2roexu5gmas.cloudfront.net%2Fproducts%2F68642966e2945_Vaquero%20hawaiano%20en%20combo.jpg&w=128&q=100",
-                "description": "Construimos tu Vivienda desde Cero",
-                "category": "plo",
-            }
+         
             
         ]
 
