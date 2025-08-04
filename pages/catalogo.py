@@ -879,7 +879,7 @@ def get_products():
                 "image": "https://i.imgur.com/rWeKPRu.jpeg",
                 "description": "Construimos tu Vivienda desde Cero",
                 "category": "plomeros",
-            },
+            }
                 
             #Puedes añadir más productos aquí
          
@@ -1140,7 +1140,7 @@ with col1:
             "tiendas D1",
             "cobijas y cortinas",
             "plomeros",
-            'plo',
+            
             
             
     ]
