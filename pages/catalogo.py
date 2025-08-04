@@ -280,14 +280,14 @@ def get_products():
                 "name": "Qbano",
                 "price": 24600,
                 "image": "https://i.imgur.com/4EXltWq.jpeg",
-                "description": "Sándwich Especial Combo",
+                "description": "cod:02. Sándwich Especial Combo",
                 "category": "Qbano",
             },
             {
                 "name": "Qbano",
                 "price": 27600,
                 "image": "https://i.imgur.com/1UhLhOe.jpeg",
-                "description": "cod:02. Sándwich Súper Especial Combo",
+                "description": "cod:03. Sándwich Súper Especial Combo",
                 "category": "Qbano",
             },
              # QUBANO
@@ -295,7 +295,7 @@ def get_products():
                 "name": "Qbano",
                 "price": 29600,
                 "image": "https://i.imgur.com/NVfqHoc.jpeg",
-                "description": "cod:03. Sándwich Roast Beef Combo",
+                "description": "cod:04. Sándwich Roast Beef Combo",
                 "category": "Qbano",
             },
 
@@ -305,7 +305,7 @@ def get_products():
                 "name": "Qbano",
                 "price": 29600,
                 "image": "https://i.imgur.com/0U7wPHo.jpeg",
-                "description": "cod:04. Sándwich Cordero Combo",
+                "description": "cod:05. Sándwich Cordero Combo",
                 "category": "Qbano",
             },
              # QUBANO
@@ -313,7 +313,7 @@ def get_products():
                 "name": "Qbano",
                 "price": 29600,
                 "image": "https://i.imgur.com/2IRMt6B.jpeg",
-                "description": "cod:05. Sándwich Pollo Combo",
+                "description": "cod:06. Sándwich Pollo Combo",
                 "category": "Qbano",
             },
                 
@@ -322,7 +322,7 @@ def get_products():
                 "name": "Combo Pollo",
                 "price": 39000,
                 "image": "https://i.imgur.com/UajBfHQ.jpeg",
-                "description": "1/4 de pollo, papas y arroz.",
+                "description": "cod:01. 1/4 de pollo, papas y arroz.",
                 "category": "comida china",
             },
             #comida china
@@ -330,7 +330,7 @@ def get_products():
                 "name": "Media Valenciana",
                 "price": 39000,
                 "image": "https://i.imgur.com/2ZXIdcA.jpeg",
-                "description": "1/4 de pollo, arroz chino.",
+                "description": "cod:02. 1/4 de pollo, arroz chino.",
                 "category": "comida china",
             },
             #comida china
@@ -338,7 +338,7 @@ def get_products():
                 "name": "Combo Chop Suey",
                 "price": 39000,
                 "image": "https://i.imgur.com/7iCQYxg.jpeg",
-                "description": "papas,chop suey y arroz chino.",
+                "description": "cod:03. papas,chop suey y arroz chino.",
                 "category": "comida china",
             },
                 
