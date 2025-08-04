@@ -875,6 +875,13 @@ def get_products():
             },
                 
             #Puedes añadir más productos aquí
+            {
+                "name": "Plo",
+                "price": 0.00,
+                "image": "https://i.imgur.com/rWeKPRu.jpeg",
+                "description": "Construimos tu Vivienda desde Cero",
+                "category": "plo",
+            },
             
         ]
 
@@ -1132,6 +1139,7 @@ with col1:
             "tiendas D1",
             "cobijas y cortinas",
             "plomeros",
+            'plo',
             
             
     ]
