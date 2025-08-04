@@ -881,7 +881,7 @@ def get_products():
                 "image": "https://i.imgur.com/rWeKPRu.jpeg",
                 "description": "Construimos tu Vivienda desde Cero",
                 "category": "plo",
-            },
+            }
             
         ]
 
