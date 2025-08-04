@@ -51,46 +51,47 @@ def get_products():
                 "name": "Todoterreno Clasica en combo",
                 "price": 43900,
                 "image": "https://i.imgur.com/l4Nb5BG.jpeg",
-                "description": "dos carnes de 125g cada una",
+                "description": "cod:01. dos carnes de 125g cada una",
                 "category": "El corral",       
             },
-            
+            #el corral
             {
                 "name": "Todoterreno Tocineta en Combo",
                 "price": 45900,
                 "image": "https://i.imgur.com/xgFtkGx.jpeg",
-                "description": "dos carnes de 125g cada una",
+                "description": "cod:02. dos carnes de 125g cada una",
                 "category": "El corral",
             },
-
+            #el corral
             {
                 "name": "Todoterreno Clasica",
                 "price": 35900,
                 "image": "https://i.imgur.com/7i5h1T4.jpeg",
-                "description": "dos carnes de 125g cada una",
+                "description": "cod:03. dos carnes de 125g cada una",
                 "category": "El corral",
             },
-
+            #el corral
             {
                 "name": "Todoterreno Callejera",
                 "price": 37900,
                 "image": "https://i.imgur.com/PsjQLna.jpeg",
-                "description": "dos carnes de 125g cada una",
+                "description": "cod:04. dos carnes de 125g cada una",
                 "category": "El corral",
             },
+            #el corral
             {
                 "name": "Todoterreno Tocineta",
                 "price": 37900,
                 "image": "https://i.imgur.com/XTBJnYc.jpeg",
-                "description": "dos carnes de 125g cada una",
+                "description": "cod:05. dos carnes de 125g cada una",
                 "category": "El corral",
             },
-
+            #el corral
             {
                 "name": "Corralita",
                 "price": 22900,
                 "image": "https://i.imgur.com/a3H6uCS.jpeg",
-                "description": "Carne de 90g,tomate y cebolla en rodajas",
+                "description": "cod:06. Carne de 90g,tomate y cebolla en rodajas",
                 "category": "El corral",
             },
 
@@ -98,27 +99,27 @@ def get_products():
                 "name": "Corral",
                 "price": 23900,
                 "image": "https://i.imgur.com/l9VNcfu.jpeg",
-                "description": "Carne de 125g,tomate y cebolla en rodajas",
+                "description": "cod:07. Carne de 125g,tomate y cebolla en rodajas",
                 "category": "El corral",
             },
-
+            #el corral
             {
                 "name": "Corral Pollo",
                 "price": 25900,
                 "image": "https://i.imgur.com/dK9p11X.jpeg",
-                "description": "Pechuga de pollo de 154g con salsa bbq.",
+                "description": "cod:08. Pechuga de pollo de 154g con salsa bbq.",
                 "category": "El corral",
             },
 
-                
+              #el corral  
             {
                 "name": "Callejero En Combo",
                 "price": 28900,
                 "image": "https://i.imgur.com/3bJtjzW.png",
-                "description": "Con salchicha de 115g a la parrilla.",
+                "description": "cod:09. Con salchicha de 115g a la parrilla.",
                 "category": "El corral",
             },
-
+            #el corral
             {
                 "name": "Hawaiano Combo",
                 "price": 32900,
@@ -188,7 +189,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 78000,
                 "image": "https://i.imgur.com/05RR79d.png",
-                "description": "Me Latte 🧋Elixir de frutas 🍓Sándwich Llanero 🥪",
+                "description": "cod:01. Me Latte 🧋Elixir de frutas 🍓Sándwich Llanero 🥪",
                 "category": "magdalena",
             },
 
@@ -197,7 +198,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 59000,
                 "image": "https://i.imgur.com/lZGVX0C.png",
-                "description": "Antojo ácido 🥭🧋Mini fresas🍓Sandwich de pollo Napoleón",
+                "description": "cod:02. Antojo ácido 🥭🧋Mini fresas🍓Sandwich de pollo Napoleón",
                 "category": "magdalena",
             },
 
@@ -206,7 +207,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 52000,
                 "image": "https://i.imgur.com/XPuJn5F.png",
-                "description": "Cherrymocca🧋Sándwich Marco polo🥪",
+                "description": "cod:03. Cherrymocca🧋Sándwich Marco polo🥪",
                 "category": "magdalena",
             },
 
@@ -215,7 +216,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 46000,
                 "image": "https://i.imgur.com/JHY6d7o.png",
-                "description": "Smoothie frutos rojos 🥤Torta de chocolate, zanahoria o naranja🎂",
+                "description": "cod:04. Smoothie frutos rojos 🥤Torta de chocolate, zanahoria o naranja🎂",
                 "category": "magdalena",
             },
 
@@ -224,7 +225,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 65000,
                 "image": "https://i.imgur.com/IaUeplo.png",
-                "description": "Me Latte🧋Mini Elixir ✨Sándwich de pollo Napoleón🥪",
+                "description": "cod:05. Me Latte🧋Mini Elixir ✨Sándwich de pollo Napoleón🥪",
                 "category": "magdalena",
             },
 
@@ -234,7 +235,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 23000,
                 "image": "https://i.imgur.com/MaI4Nox.png",
-                "description": "Con crema chantilly, topping de chocolate o lecherita.",
+                "description": "cod:06. Con crema chantilly, topping de chocolate o lecherita.",
                 "category": "magdalena",
             },
 
@@ -244,7 +245,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 23000,
                 "image": "https://i.imgur.com/ldV1vj7.png",
-                "description": "Fressas con durazno🍓🍑Con crema chantilly, topping de chocolate o lecherita.",
+                "description": "cod:07. Fressas con durazno🍓🍑Con crema chantilly, topping de chocolate o lecherita.",
                 "category": "magdalena",
             },
 
@@ -253,7 +254,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 18000,
                 "image": "https://i.imgur.com/HsqYXky.png",
-                "description": "Delicioso Bowl fresas con helado.",
+                "description": "cod:08. Delicioso Bowl fresas con helado.",
                  "category": "magdalena",
             },
 
@@ -262,22 +263,19 @@ def get_products():
                 "name": "Magdalena",
                 "price": 25000,
                 "image": "https://i.imgur.com/e897HRS.png",
-                "description": "Mini fresas kiwi X3, durazno con chantilly y topping de chocolate.",
+                "description": "cod:09. Mini fresas kiwi X3, durazno con chantilly y topping de chocolate.",
                 "category": "magdalena",
             },
-
-
-
-
 
             # QUBANO
             {
                 "name": "Qbano",
                 "price": 30600,
                 "image": "https://i.imgur.com/tyul788.jpeg",
-                "description": "Sándwich Ropa Vieja En Combo",
+                "description": "cod:01. Sándwich Ropa Vieja En Combo",
                 "category": "Qbano",
             },
+             # QUBANO
             {
                 "name": "Qbano",
                 "price": 24600,
@@ -289,32 +287,33 @@ def get_products():
                 "name": "Qbano",
                 "price": 27600,
                 "image": "https://i.imgur.com/1UhLhOe.jpeg",
-                "description": "Sándwich Súper Especial Combo",
+                "description": "cod:02. Sándwich Súper Especial Combo",
                 "category": "Qbano",
             },
+             # QUBANO
             {
                 "name": "Qbano",
                 "price": 29600,
                 "image": "https://i.imgur.com/NVfqHoc.jpeg",
-                "description": "Sándwich Roast Beef Combo",
+                "description": "cod:03. Sándwich Roast Beef Combo",
                 "category": "Qbano",
             },
 
-            
+             # QUBANO
 
             {
                 "name": "Qbano",
                 "price": 29600,
                 "image": "https://i.imgur.com/0U7wPHo.jpeg",
-                "description": "Sándwich Cordero Combo",
+                "description": "cod:04. Sándwich Cordero Combo",
                 "category": "Qbano",
             },
-
+             # QUBANO
             {
                 "name": "Qbano",
                 "price": 29600,
                 "image": "https://i.imgur.com/2IRMt6B.jpeg",
-                "description": "Sándwich Pollo Combo",
+                "description": "cod:05. Sándwich Pollo Combo",
                 "category": "Qbano",
             },
                 
