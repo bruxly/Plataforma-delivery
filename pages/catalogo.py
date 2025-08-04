@@ -181,7 +181,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 48000,
                 "image": "https://i.imgur.com/VX1OoNT.png",
-                "description": "💌 Mulata 🧋 Torta a elección: chocolate, zanahoria o naranja 🎂",
+                "description": "cod:01. Mulata Torta a elección: chocolate, zanahoria o naranja ",
                 "category": "magdalena",
             },
              #MAGDALENA
@@ -189,7 +189,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 78000,
                 "image": "https://i.imgur.com/05RR79d.png",
-                "description": "cod:01. Me Latte 🧋Elixir de frutas 🍓Sándwich Llanero 🥪",
+                "description": "cod:02. Me Latte Elixir de frutas Sándwich Llanero",
                 "category": "magdalena",
             },
 
@@ -198,7 +198,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 59000,
                 "image": "https://i.imgur.com/lZGVX0C.png",
-                "description": "cod:02. Antojo ácido 🥭🧋Mini fresas🍓Sandwich de pollo Napoleón",
+                "description": "cod:03. Antojo ácido 🥭🧋Mini fresas🍓Sandwich de pollo Napoleón",
                 "category": "magdalena",
             },
 
@@ -207,7 +207,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 52000,
                 "image": "https://i.imgur.com/XPuJn5F.png",
-                "description": "cod:03. Cherrymocca🧋Sándwich Marco polo🥪",
+                "description": "cod:04. Cherrymocca🧋Sándwich Marco polo🥪",
                 "category": "magdalena",
             },
 
@@ -216,7 +216,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 46000,
                 "image": "https://i.imgur.com/JHY6d7o.png",
-                "description": "cod:04. Smoothie frutos rojos 🥤Torta de chocolate, zanahoria o naranja🎂",
+                "description": "cod:05. Smoothie frutos rojos 🥤Torta de chocolate, zanahoria o naranja🎂",
                 "category": "magdalena",
             },
 
@@ -225,7 +225,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 65000,
                 "image": "https://i.imgur.com/IaUeplo.png",
-                "description": "cod:05. Me Latte🧋Mini Elixir ✨Sándwich de pollo Napoleón🥪",
+                "description": "cod:06. Me Latte🧋Mini Elixir ✨Sándwich de pollo Napoleón🥪",
                 "category": "magdalena",
             },
 
@@ -235,7 +235,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 23000,
                 "image": "https://i.imgur.com/MaI4Nox.png",
-                "description": "cod:06. Con crema chantilly, topping de chocolate o lecherita.",
+                "description": "cod:07. Con crema chantilly, topping de chocolate o lecherita.",
                 "category": "magdalena",
             },
 
@@ -245,7 +245,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 23000,
                 "image": "https://i.imgur.com/ldV1vj7.png",
-                "description": "cod:07. Fressas con durazno🍓🍑Con crema chantilly, topping de chocolate o lecherita.",
+                "description": "cod:08. Fressas con durazno Con crema chantilly, topping de chocolate o lecherita.",
                 "category": "magdalena",
             },
 
@@ -254,7 +254,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 18000,
                 "image": "https://i.imgur.com/HsqYXky.png",
-                "description": "cod:08. Delicioso Bowl fresas con helado.",
+                "description": "cod:09. Delicioso Bowl fresas con helado.",
                  "category": "magdalena",
             },
 
@@ -263,7 +263,7 @@ def get_products():
                 "name": "Magdalena",
                 "price": 25000,
                 "image": "https://i.imgur.com/e897HRS.png",
-                "description": "cod:09. Mini fresas kiwi X3, durazno con chantilly y topping de chocolate.",
+                "description": "cod:10. Mini fresas kiwi X3, durazno con chantilly y topping de chocolate.",
                 "category": "magdalena",
             },
 
