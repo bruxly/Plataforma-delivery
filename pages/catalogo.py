@@ -131,7 +131,7 @@ def get_products():
                 "name": "El Carriel",
                 "price": 32000,
                 "image": "https://i.imgur.com/xAvOav3.png",
-                "description": "Un Kilo bien chimba de arroz paisa con chicharron te alcanza pa' 2 personas o 3 si necesitas 😉🌾",
+                "description": "cod:01. Un Kilo de arroz paisa con chicharron te alcanza pa' 2 o 3 personas",
                 "category": "El carriel",
             },
             #EL CARRIEL
@@ -139,14 +139,14 @@ def get_products():
                 "name": "El Carriel",
                 "price": 18000,
                 "image": "https://i.imgur.com/tHviOSw.jpeg",
-                "description": "Personal con papitas, Porción personal de arroz paisa con papitas y limonada",
+                "description": "cod:02. Personal con papitas, Porción personal de arroz paisa con papitas y limonada",
                 "category": "El carriel",
             },
                {
                 "name": "El carriel",
                 "price": 60000,
                 "image": "https://i.imgur.com/sVWsjG8.jpeg",
-                "description": "cod:01, Una merrada de dos kilos de arroz Paisa 🤠🥘 y buen Chicharrón 🐽, listo pa' todo el parche. Oiga! 🧏 Y rinde hasta pa' 6 personas ",
+                "description": "cod:03. merrada de dos kilos de arroz Paisa y Chicharrón. Oiga! Y rinde hasta pa' 6 personas ",
                 "category": "El carriel",
             },
             #    
