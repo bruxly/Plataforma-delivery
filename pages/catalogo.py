@@ -1191,7 +1191,7 @@ with col1:
      # Mostrar productos en grid
 if products:
             # Crear grid de productos
-cols = st.columns(3)
+    cols = st.columns(3)
 
     for idx, product in enumerate(products):
         with cols[idx % 3]:
