@@ -1178,15 +1178,15 @@ with col1:
         selected_category = st.selectbox("Categoría", categories, index=0)
 
     # Inicializar productos
-    products = st.session_state['productos']
+products = st.session_state['productos']
 
     # Filtrado
-    if selected_category == "restaurantes":
-        subcat = st.selectbox("Restaurantes disponibles", subcategorias_restaurantes, index=0, key="subcat")
-        products = [p for p in products if p.get('category') == subcat]
+if selected_category == "restaurantes":
+     subcat = st.selectbox("Restaurantes disponibles", subcategorias_restaurantes, index=0, key="subcat")
+     products = [p for p in products if p.get('category') == subcat]
 
-    elif selected_category != "todos":
-        products = [p for p in products if p.get('category') == selected_category]
+elif selected_category != "todos":
+    products = [p for p in products if p.get('category') == selected_category]
     
 # Mostrar productos en grid
 if products:
