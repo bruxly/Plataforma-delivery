@@ -1154,6 +1154,7 @@ col1, col2 = st.columns([1, 3])
 with col1:
     categories = [
             'todos',
+            'Restaurantes',
             "comida china",
             "El corral",
             'El carriel',
@@ -1167,19 +1168,29 @@ with col1:
             
             
     ]
-    selected_category = st.selectbox("Categoría", categories,index=0)
-if 'productos' not in st.session_state:
-    with st.spinner("🛵 Cargando productos disponibles..."):
-        st.session_state['productos'] = get_products()
+    # Subcategorías de restaurantes
+    subcategorias_restaurantes = [
+        "comida china",
+        "el buen sazón"
+    ]
+    col1, col2 = st.columns([1, 3])
+    with col1:
+        selected_category = st.selectbox("Categoría", categorias, index=0)
 
-products = st.session_state['productos']
-if selected_category != "todos":
-    products = [p for p in products if p.get('category') == selected_category]
-            
+    # Inicializar productos
+    products = st.session_state['productos']
 
-    # Mostrar productos en grid
-if products:
-    # Crear grid de productos
+    # Filtrado
+    if selected_category == "restaurantes":
+        subcat = st.selectbox("Restaurantes disponibles", subcategorias_restaurantes, index=0, key="subcat")
+        products = [p for p in products if p.get('category') == subcat]
+
+    elif selected_category != "todos":
+        products = [p for p in products if p.get('category') == selected_category]
+    
+     # Mostrar productos en grid
+    if products:
+            # Crear grid de productos
     cols = st.columns(3)
 
     for idx, product in enumerate(products):
