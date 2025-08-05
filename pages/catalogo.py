@@ -1165,7 +1165,7 @@ with col1:
             "plomeros",
             
     ]
-     selected_category = st.selectbox("Categoría", categories,index=0)
+    selected_category = st.selectbox("Categoría", categories,index=0)
 if 'productos' not in st.session_state:
     with st.spinner("🛵 Cargando productos disponibles..."):
         st.session_state['productos'] = get_products()
