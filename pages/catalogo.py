@@ -1175,7 +1175,7 @@ with col1:
     ]
     col1, col2 = st.columns([1, 3])
     with col1:
-        selected_category = st.selectbox("Categoría", categorias, index=0)
+        selected_category = st.selectbox("Categoría", categories, index=0)
 
     # Inicializar productos
     products = st.session_state['productos']
@@ -1188,7 +1188,7 @@ with col1:
     elif selected_category != "todos":
         products = [p for p in products if p.get('category') == selected_category]
     
-     # Mostrar productos en grid
+# Mostrar productos en grid
 if products:
             # Crear grid de productos
     cols = st.columns(3)
