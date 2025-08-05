@@ -1189,9 +1189,9 @@ with col1:
         products = [p for p in products if p.get('category') == selected_category]
     
      # Mostrar productos en grid
-    if products:
+if products:
             # Crear grid de productos
-    cols = st.columns(3)
+cols = st.columns(3)
 
     for idx, product in enumerate(products):
         with cols[idx % 3]:
