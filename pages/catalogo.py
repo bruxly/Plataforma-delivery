@@ -1168,26 +1168,35 @@ with col1:
             
             
     ]
-    # Subcategorías de restaurantes
-    subcategorias_restaurantes = [
-        "comida china",
-        "el buen sazón"
-    ]
-    col1, col2 = st.columns([1, 3])
-    with col1:
-        selected_category = st.selectbox("Categoría", categories, index=0)
+    selected_category = st.selectbox("Categoría", categories, index=0)
 
-    # Inicializar productos
-products = st.session_state['productos']
+# Verificación para evitar error si no hay productos en el estado
+if 'productos' not in st.session_state:
+    st.error("No se han cargado productos.")
+    st.stop()
 
-    # Filtrado
-if selected_category == "restaurantes":
-     subcat = st.selectbox("Restaurantes disponibles", subcategorias_restaurantes, index=0, key="subcat")
-     products = [p for p in products if p.get('category') == subcat]
+# Obtener productos
+productos = st.session_state['productos']
+
+# Filtrado según categoría
+if selected_category == "Restaurantes":
+    subcat = st.selectbox("Restaurantes disponibles", subcategorias_restaurantes, index=0, key="subcat")
+    productos_filtrados = [p for p in productos if p.get('category') == subcat]
 
 elif selected_category != "todos":
-    products = [p for p in products if p.get('category') == selected_category]
-    
+    productos_filtrados = [p for p in productos if p.get('category') == selected_category]
+else:
+    productos_filtrados = productos
+
+# Mostrar productos filtrados
+with col2:
+    st.subheader("Productos disponibles")
+    if productos_filtrados:
+        for p in productos_filtrados:
+            st.markdown(f"**{p['name']}** - ${p['price']:,}")
+    else:
+        st.warning("No hay productos disponibles para esta categoría.")
+
 # Mostrar productos en grid
 if products:
             # Crear grid de productos
