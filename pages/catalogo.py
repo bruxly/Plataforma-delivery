@@ -1154,7 +1154,7 @@ col1, col2 = st.columns([1, 3])
 with col1:
     categories = [
             'todos',
-            'Restaurantes',
+            
             "comida china",
             "El corral",
             'El carriel',
@@ -1168,35 +1168,15 @@ with col1:
             
             
     ]
-    selected_category = st.selectbox("Categoría", categories, index=0)
-
-# Verificación para evitar error si no hay productos en el estado
+     selected_category = st.selectbox("Categoría", categories,index=0)
 if 'productos' not in st.session_state:
-    st.error("No se han cargado productos.")
-    st.stop()
+    with st.spinner("🛵 Cargando productos disponibles..."):
+        st.session_state['productos'] = get_products()
 
-# Obtener productos
-productos = st.session_state['productos']
-
-# Filtrado según categoría
-if selected_category == "Restaurantes":
-    subcat = st.selectbox("Restaurantes disponibles", subcategorias_restaurantes, index=0, key="subcat")
-    productos_filtrados = [p for p in productos if p.get('category') == subcat]
-
-elif selected_category != "todos":
-    productos_filtrados = [p for p in productos if p.get('category') == selected_category]
-else:
-    productos_filtrados = productos
-
-# Mostrar productos filtrados
-with col2:
-    st.subheader("Productos disponibles")
-    if productos_filtrados:
-        for p in productos_filtrados:
-            st.markdown(f"**{p['name']}** - ${p['price']:,}")
-    else:
-        st.warning("No hay productos disponibles para esta categoría.")
-
+products = st.session_state['productos']
+if selected_category != "todos":
+    products = [p for p in products if p.get('category') == selected_category]
+            
 # Mostrar productos en grid
 if products:
             # Crear grid de productos
