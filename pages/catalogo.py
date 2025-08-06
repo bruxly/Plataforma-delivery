@@ -102,6 +102,22 @@ def get_products():
                 "description": "cod:07. Choriperro.",
                 "category": "La tribu",       
             },
+             #la tribu
+            {
+                "name": "La tribu",
+                "price": 21500,
+                "image": "https://i.imgur.com/BPtYSRR.jpeg",
+                "description": "cod:08. Hamburguesa BBQ 150 g de carne, queso de doble crema, costilla bbq, huevo, tocineta y papas a la francesa.",
+                "category": "La tribu",       
+            },
+             #la tribu
+            {
+                "name": "La tribu",
+                "price": 24000,
+                "image": "https://i.imgur.com/KGtDc8f.jpeg",
+                "description": "cod:09. Costillas BBQ 250 g de costilla bbq, papa francesa, ensalada y salsa de la casa.",
+                "category": "La tribu",       
+            },
             
 
 
