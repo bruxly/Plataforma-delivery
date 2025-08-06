@@ -551,6 +551,53 @@ def get_products():
                 "description": "cod:04 Leche Entera 200ml",
                 "category": "tiendas D1",
             },
+
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 19950,
+                "image": "blob:https://imgur.com/b47c9b1e-4c04-472e-a7da-a99964b82d5b",
+                "description": "cod:04 Aceite de oliva extra virgen 500ml",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 6600,
+                "image": "blob:https://imgur.com/c398aab1-e96b-46e2-986b-15f3a00e65ac",
+                "description": "cod:04 saltin noe, 5 tacos 410 gms",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 4150,
+                "image": "https://i.imgur.com/ydGhqpe.jpeg",
+                "description": "cod:04 Azucar morena 10000 grs",
+                "category": "tiendas D1",
+            },
+            
+            {
+                "name": "Tiendas D1",
+                "price": 23000,
+                "image": "https://i.imgur.com/Xq3Pfit.jpeg",
+                "description": "cod:04 Bicarbonato de sodio 200 grs",
+                "category": "tiendas D1",
+            },
+            {
+                "name": "Tiendas D1",
+                "price": 6150,
+                "image": "https://i.imgur.com/JQD4LEm.jpeg",
+                "description": "cod:04 Endulzante con stevia natri 180 grs",
+                "category": "tiendas D1",
+            },
+             {
+                "name": "Tiendas D1",
+                "price": 4650,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005070/galletas-happy-wafer-x-12-und-288g-01.png",
+                "description": "cod: Galletas happy wafer 12 unidades ",
+                "category": "tiendas D1",
+            },
             #Tiendas D1
             {
                 "name": "Tiendas D1",
