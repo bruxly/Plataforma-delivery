@@ -78,7 +78,17 @@ def get_products():
                 "description": "cod:04. Mazorcada tradicional,carne,pollo,salchicha,chorizo,papa francesa y maiz.",
                 "category": "La tribu",       
             },
+             #la tribu
+            {
+                "name": "La tribu",
+                "price": 27000,
+                "image": "https://i.imgur.com/8RAX5Xi.jpeg",
+                "description": "cod:05. Costillas BBQ, plátano chips, carne, pollo, salchicha, chorizo, queso gratinado y papa francesa.",
+                "category": "La tribu",       
+            },
             
+
+
             
             #el corral
                 
