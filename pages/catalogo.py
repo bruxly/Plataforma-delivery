@@ -75,7 +75,7 @@ def get_products():
                 "name": "La tribu",
                 "price": 17000,
                 "image": "https://i.imgur.com/WpAu4Hk.jpeg",
-                "description": "cod:03. Mazorcada tradicional,carne,pollo,salchicha,chorizo,papa francesa y maiz.",
+                "description": "cod:04. Mazorcada tradicional,carne,pollo,salchicha,chorizo,papa francesa y maiz.",
                 "category": "La tribu",       
             },
             
@@ -1198,7 +1198,7 @@ with col1:
             "supermercado",
             "tiendas D1",
             "cobijas y cortinas",
-            "plomeros"
+            "plomeros",
             
     ]
     selected_category = st.selectbox("Categoría", categories,index=0)
