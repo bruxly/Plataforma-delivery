@@ -46,12 +46,19 @@ def get_products():
         sample_products = [
 
             #la tribu
-                
             {
                 "name": "La tribu",
                 "price": 20000,
                 "image": "https://i.imgur.com/JMWsAMd.jpeg",
                 "description": "cod:01. 10 piezas de alitas, papa francesa, ensalada y cascajos verdes",
+                "category": "La tribu",       
+            },
+            #la tribu
+            {
+                "name": "La tribu",
+                "price": 24000,
+                "image": "https://i.imgur.com/dAkTO5v.jpeg",
+                "description": "cod:02. 250 gr de carne, papa francesa, plátano chip y ensalada DM ",
                 "category": "La tribu",       
             },
             
