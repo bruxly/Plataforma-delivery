@@ -86,6 +86,22 @@ def get_products():
                 "description": "cod:05. Costillas BBQ, plátano chips, carne, pollo, salchicha, chorizo, queso gratinado y papa francesa.",
                 "category": "La tribu",       
             },
+            #la tribu
+            {
+                "name": "La tribu",
+                "price": 15000,
+                "image": "https://i.imgur.com/fUhVmxi.jpeg",
+                "description": "cod:06. Carne, pollo, salchicha, chorizo, queso gratinado, papa francesa y papa fosforito.",
+                "category": "La tribu",       
+            },
+             #la tribu
+            {
+                "name": "La tribu",
+                "price": 10000,
+                "image": "https://i.imgur.com/knXC1RY.jpeg",
+                "description": "cod:07. Choriperro.",
+                "category": "La tribu",       
+            },
             
 
 
