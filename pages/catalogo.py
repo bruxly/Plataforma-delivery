@@ -44,6 +44,16 @@ def get_products():
 
             # 🧩 Productos locales (puedes editarlos)
         sample_products = [
+
+            #la tribu
+                
+            {
+                "name": "La tribu",
+                "price": 20000,
+                "image": "https://i.imgur.com/JMWsAMd.jpeg",
+                "description": "cod:01. 10 piezas de alitas, papa francesa, ensalada y cascajos verdes",
+                "category": "La tribu",       
+            },
             
             #el corral
                 
