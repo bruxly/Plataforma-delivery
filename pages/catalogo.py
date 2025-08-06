@@ -1181,6 +1181,7 @@ col1, col2 = st.columns([1, 3])
 with col1:
     categories = [
             'todos',
+            'La tribu',
             "comida china",
             "El corral",
             'El carriel',
