@@ -1190,7 +1190,7 @@ with col1:
             "supermercado",
             "tiendas D1",
             "cobijas y cortinas",
-            "plomeros",
+            "plomeros"
             
     ]
     selected_category = st.selectbox("Categoría", categories,index=0)
