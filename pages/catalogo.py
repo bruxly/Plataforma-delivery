@@ -457,6 +457,14 @@ def get_products():
                 "description": "cod:06. Arroz con camaron para dos personas y una porción de papas.",
                 "category": "comida china",
             },
+            #comida china
+            {
+                "name": "Yon Chow Fan",
+                "price": 57000,
+                "image": "https://i.imgur.com/BH2d8Ho.jpeg",
+                "description": "cod:07. Arroz,carne,jamon,pollo desmechado,raizes chinas,verduras y camaron grande,.",
+                "category": "comida china",
+            },
                 
 
              #supermercados
