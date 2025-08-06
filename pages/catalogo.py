@@ -556,7 +556,7 @@ def get_products():
             {
                 "name": "Tiendas D1",
                 "price": 19950,
-                "image": "blob:https://imgur.com/b47c9b1e-4c04-472e-a7da-a99964b82d5b",
+                "image": "https://i.imgur.com/r4FmWWM_d.jpeg?maxwidth=520&shape=thumb&fidelity=high",
                 "description": "cod:04 Aceite de oliva extra virgen 500ml",
                 "category": "tiendas D1",
             },
@@ -564,7 +564,7 @@ def get_products():
             {
                 "name": "Tiendas D1",
                 "price": 6600,
-                "image": "blob:https://imgur.com/c398aab1-e96b-46e2-986b-15f3a00e65ac",
+                "image": "https://i.imgur.com/pChtWsT_d.jpeg?maxwidth=520&shape=thumb&fidelity=high",
                 "description": "cod:04 saltin noe, 5 tacos 410 gms",
                 "category": "tiendas D1",
             },
