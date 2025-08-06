@@ -412,7 +412,7 @@ def get_products():
             #comida china
             {
                 "name": "Combo Pollo",
-                "price": 39000,
+                "price": 33000,
                 "image": "https://i.imgur.com/UajBfHQ.jpeg",
                 "description": "cod:01. 1/4 de pollo, papas y arroz.",
                 "category": "comida china",
@@ -428,9 +428,16 @@ def get_products():
             #comida china
             {
                 "name": "Combo Chop Suey",
-                "price": 39000,
+                "price": 33000,
                 "image": "https://i.imgur.com/7iCQYxg.jpeg",
                 "description": "cod:03. papas,chop suey y arroz chino.",
+                "category": "comida china",
+            },
+            {
+                "name": "Valenciana",
+                "price": 46000,
+                "image": "https://i.imgur.com/cKI8mR9.jpeg",
+                "description": "cod:04. Arroz para 4 personas y medio pollo.",
                 "category": "comida china",
             },
                 
