@@ -433,11 +433,28 @@ def get_products():
                 "description": "cod:03. papas,chop suey y arroz chino.",
                 "category": "comida china",
             },
+            #comida china
             {
                 "name": "Valenciana",
                 "price": 46000,
                 "image": "https://i.imgur.com/cKI8mR9.jpeg",
-                "description": "cod:04. Arroz para 4 personas y medio pollo.",
+                "description": "cod:04. Arroz para 4 personas y medio pollo frito.",
+                "category": "comida china",
+            },
+            #comida china
+            {
+                "name": "Arroz Chino",
+                "price": 46000,
+                "image": "https://i.imgur.com/evczF8R.jpeg",
+                "description": "cod:05. Arroz para 4 personas con pollo desmellado.",
+                "category": "comida china",
+            },
+            #comida china
+            {
+                "name": "Combo Camaron",
+                "price": 33000,
+                "image": "https://i.imgur.com/U4UKNAI.jpeg",
+                "description": "cod:06. Arroz con camaron para dos personas y una porción de papas.",
                 "category": "comida china",
             },
                 
