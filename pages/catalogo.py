@@ -70,6 +70,14 @@ def get_products():
                 "description": "cod:03. Pechuga en salsa camarones, toxineta,queso gratinado,papa francesa,modedas verdes y aguacate  ",
                 "category": "La tribu",       
             },
+            #la tribu
+            {
+                "name": "La tribu",
+                "price": 17000,
+                "image": "https://i.imgur.com/WpAu4Hk.jpeg",
+                "description": "cod:03. Mazorcada tradicional,carne,pollo,salchicha,chorizo,papa francesa y maiz.",
+                "category": "La tribu",       
+            },
             
             
             #el corral
