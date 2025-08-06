@@ -61,6 +61,16 @@ def get_products():
                 "description": "cod:02. 250 gr de carne, papa francesa, plátano chip y ensalada DM ",
                 "category": "La tribu",       
             },
+
+            #la tribu
+            {
+                "name": "La tribu",
+                "price": 30000,
+                "image": "https://i.imgur.com/F27p0hz.jpeg",
+                "description": "cod:03. Pechuga en salsa camarones, toxineta,queso gratinado,papa francesa,modedas verdes y aguacate  ",
+                "category": "La tribu",       
+            },
+            
             
             #el corral
                 
