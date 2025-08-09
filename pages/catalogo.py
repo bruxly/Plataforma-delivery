@@ -133,9 +133,23 @@ def get_products():
                 "description": "cod:10. Hot dog Ranchero.",
                 "category": "La tribu",       
             },
-            
+             #la tribu
+            {
+                "name": "La tribu",
+                "price": 14000,
+                "image": "https://i.imgur.com/FnxomFP.jpeg",
+                "description": "cod:10. Hot dog Ranchero.",
+                "category": "La tribu",       
+            },
 
-
+            #vaquita costeña
+            {
+                "name": "Vaquita Costeña",
+                "price": 0,
+                "image": "https://i.imgur.com/eNn0Blr.jpeg",
+                "description": "cod:10. Vaquita Quesuda papa francesa, cerdo, pollo, ranchera, maiz, queso, cabello de angel, lechuga..",
+                "category": "Vaquita costeña",       
+            },
             
             #el corral
                 
@@ -1326,6 +1340,7 @@ with col1:
     categories = [
             'todos',
             'La tribu',
+            'vaquita costeña',
             "comida china",
             "El corral",
             'El carriel',
