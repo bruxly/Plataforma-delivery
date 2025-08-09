@@ -150,6 +150,15 @@ def get_products():
                 "description": "cod:10. Vaquita Quesuda papa francesa, cerdo, pollo, ranchera, maiz, queso, cabello de angel, lechuga..",
                 "category": "vaquita costeña",       
             },
+            #vaquita costeña
+            {
+                "name": "Vaquita Costeña",
+                "price": 0,
+                "image": "https://i.imgur.com/EdvytEF.jpeg",
+                "description": "cod:10. Picada Mixta papa francesa, carne, pollo, chorizo, butifarra, maíz, cabello de ángel, lechuga, queso costeño.",
+                "category": "vaquita costeña",       
+            },
+            
             
             #el corral
                 
