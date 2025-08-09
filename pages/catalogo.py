@@ -148,7 +148,7 @@ def get_products():
                 "price": 0,
                 "image": "https://i.imgur.com/eNn0Blr.jpeg",
                 "description": "cod:10. Vaquita Quesuda papa francesa, cerdo, pollo, ranchera, maiz, queso, cabello de angel, lechuga..",
-                "category": "Vaquita costeña",       
+                "category": "vaquita costeña",       
             },
             
             #el corral
