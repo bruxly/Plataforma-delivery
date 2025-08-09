@@ -147,7 +147,7 @@ def get_products():
                 "name": "Vaquita Costeña",
                 "price": 0,
                 "image": "https://i.imgur.com/eNn0Blr.jpeg",
-                "description": "cod:10. Vaquita Quesuda papa francesa, cerdo, pollo, ranchera, maiz, queso, cabello de angel, lechuga..",
+                "description": "cod:01. Vaquita Quesuda papa francesa, cerdo, pollo, ranchera, maiz, queso, cabello de angel, lechuga..",
                 "category": "vaquita costeña",       
             },
             #vaquita costeña
@@ -155,7 +155,7 @@ def get_products():
                 "name": "Vaquita Costeña",
                 "price": 0,
                 "image": "https://i.imgur.com/EdvytEF.jpeg",
-                "description": "cod:10. Picada Mixta papa francesa, carne, pollo, chorizo, butifarra, maíz, cabello de ángel, lechuga, queso costeño.",
+                "description": "cod:02. Picada Mixta papa francesa, carne, pollo, chorizo, butifarra, maíz, cabello de ángel, lechuga, queso costeño.",
                 "category": "vaquita costeña",       
             },
             
