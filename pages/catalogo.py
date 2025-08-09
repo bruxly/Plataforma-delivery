@@ -126,21 +126,7 @@ def get_products():
                 "description": "cod:10. Hot dog Ranchero.",
                 "category": "La tribu",       
             },
-            {
-                "name": "La tribu",
-                "price": 14000,
-                "image": "https://i.imgur.com/FnxomFP.jpeg",
-                "description": "cod:10. Hot dog Ranchero.",
-                "category": "La tribu",       
-            },
-             #la tribu
-            {
-                "name": "La tribu",
-                "price": 14000,
-                "image": "https://i.imgur.com/FnxomFP.jpeg",
-                "description": "cod:10. Hot dog Ranchero.",
-                "category": "La tribu",       
-            },
+           
 
             #vaquita costeña
             {
