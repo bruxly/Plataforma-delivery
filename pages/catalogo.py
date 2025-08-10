@@ -567,7 +567,7 @@ def get_products():
                 "category": "supermercado",
             },
                 
-            #Tiendas D1 leche
+           #Tiendas D1 leche
             {
                 "name": "Tiendas D1",
                 "price": 3050,
@@ -609,7 +609,7 @@ def get_products():
                 "description": "cod:10 Queso Mozzarella Bufala 100g",
                 "category": "tiendas D1",
             },
-            #Tiendas D1 Queso
+            #Tiendas D1 Queso 
             {
                 "name": "Tiendas D1",
                 "price": 8750,
@@ -617,7 +617,7 @@ def get_products():
                 "description": "Queso Campesino Bloque 350g",
                 "category": "tiendas D1",
             },
-            #Tiendas D1
+            #Tiendas D1 ueso
             {
                 "name": "Tiendas D1",
                 "price": 3300,
@@ -633,6 +633,22 @@ def get_products():
                 "description": "cod:12 Queso Parmesano Alpina 120g",
                 "category": "tiendas D1",
             },
+            #Tiendas D1 Queso
+            {
+                "name": "Tiendas D1",
+                "price": 9900,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000084/queso-mozzarella-tajado-latti-400-grs-01.png",
+                "description": "cod:12 Queso tajado 18 tajadas 400 grs",
+                "category": "tiendas D1",
+            },
+            {
+                "name": "Tiendas D1",
+                "price": 9300,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12006207/queso-mozzarella-tajado-x-250g-latti-01.png",
+                "description": "cod:12 Queso tajado 15 tajadas 250 grs",
+                "category": "tiendas D1",
+            },
+            
 
             
 
@@ -674,6 +690,14 @@ def get_products():
             #Tiendas D1 galletas
             {
                 "name": "Tiendas D1",
+                "price": 5700,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000096/galleta-2-tacos-ducales-noel-241-grs-01.png",
+                "description": "cod:04 Galletas 2 tacos noel 241g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1 galletas
+            {
+                "name": "Tiendas D1",
                 "price": 4650,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005070/galletas-happy-wafer-x-12-und-288g-01.png",
                 "description": "cod: Galletas happy wafer 12 unidades ",
@@ -695,6 +719,56 @@ def get_products():
                 "description": "cod:04 Endulzante con stevia natri 180 grs",
                 "category": "tiendas D1",
             },
+            #tiendas d1 arvejas
+            {
+                "name": "Tiendas D1",
+                "price": 5990,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12006459/arveja-verde-congelada-cooltivo-500-g-01.png",
+                "description": "cod:06 Arveja verde congelada 500g",
+                "category": "tiendas D1",
+            },
+            #tiendas d1 lenteja
+            {
+                "name": "Tiendas D1",
+                "price": 3200,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000042/lenteja-el-estio-500-grs-01.png",
+                "description": "cod:06 Lenteja el estio 500g",
+                "category": "tiendas D1",
+            },
+            #tiendas d1 arina de trigo
+            {
+                "name": "Tiendas D1",
+                "price": 1700,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12001162/harina-de-trigo-cereales-harinas-y-premezclas-12001162-1.png",
+                "description": "cod:06 Harina de trigo quicksy 500g",
+                "category": "tiendas D1",
+            },
+            #tiendas d1 arina de trigo en plovo
+            {
+                "name": "Tiendas D1",
+                "price": 2150,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12003539/0722.png",
+                "description": "cod:06 Harina de trigo con plovo para hornear 500g",
+                "category": "tiendas D1",
+            },
+            #tiendas d1 arroz
+            {
+                "name": "Tiendas D1",
+                "price": 1990,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12002073/arroz-diana-500-g-01.png",
+                "description": "cod:06 Arroz Diana 500g",
+                "category": "tiendas D1",
+            },
+
+            #Tiendas D1 SAL
+            {
+                "name": "Tiendas D1",
+                "price": 2550,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12002874/caldo-de-gallina-condimentos-12002946-1.png",
+                "description": "cod:04 sal refisal 1000 g ",
+                "category": "tiendas D1",
+            },
+
             
             #Tiendas D1 ACEITES
             {
@@ -704,7 +778,49 @@ def get_products():
                 "description": "cod:04 Aceite de oliva extra virgen 500ml",
                 "category": "tiendas D1",
             },
+            #Tiendas D1 ATUN
+            {
+                "name": "Tiendas D1",
+                "price": 5990,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005690/duopack-atun-en-agua-c-f-160-g-neto-01.png",
+                "description": "cod:04 Atún en agua x 2",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1 ATUN
+            {
+                "name": "Tiendas D1",
+                "price": 7990,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12004368/duopack-atun-a.oliva-cf-160-g-neto-01.png",
+                "description": "cod:04 Atún x 2 aceite de oliva",
+                "category": "tiendas D1",
+            },
+
+
+            #Tiendas D1 Avena hojuelas
+            {
+                "name": "Tiendas D1",
+                "price": 1400,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000457/avena-en-hojuelas-fit-graan-250-g-01.png",
+                "description": "cod:04 Avena en hojuelas fit graan 250g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1 cafe
+            {
+                "name": "Tiendas D1",
+                "price": 16950,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12006609/cafe-sello-rojo-300g-01.png",
+                "description": "cod:04 Cafe sello rojo 300g",
+                "category": "tiendas D1",
+            },
             
+            #Tiendas D1 salsa de tomate
+            {
+                "name": "Tiendas D1",
+                "price": 4490,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000266/salsa-de-tomate-zev-500-g-01.png",
+                "description": "cod:04 Salsa de tomate zev 500g",
+                "category": "tiendas D1",
+            },
             
             
             #Tiendas D1 arepas
@@ -721,6 +837,161 @@ def get_products():
                 "price": 1890,
                 "image": "https://i.imgur.com/BB48JmZ.png",
                 "description": "cod:06 Arepa Blanca 500g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1 pan tajado
+            {
+                "name": "Tiendas D1",
+                "price": 5990,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005835/pan-tajado-multigranos-450-g-01.png",
+                "description": "cod:06 Pan tajado multigranos 450g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1 pan tajado
+            {
+                "name": "Tiendas D1",
+                "price": 3650,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005834/pan-tajado-mantequilla-450g-01.png",
+                "description": "cod:06 Pan tajado mantequilla 450g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1 pan tajado
+            {
+                "name": "Tiendas D1",
+                "price": 6900,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12004942/pan-tajado-brioche-horneaditos-380-g-01.png",
+                "description": "cod:06 Pan tajado brioche horneaditos 380g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1 manzana
+            {
+                "name": "Tiendas D1",
+                "price": 10100,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12006029/manzana-verde-850-g-01.png",
+                "description": "cod:06 Manzana verde 850g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1  manzana
+            {
+                "name": "Tiendas D1",
+                "price": 10990,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000109/manzana-royal-gala-1000-grs-01.png",
+                "description": "cod:06 Manzana royal gala 1000g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1  papaya
+            {
+                "name": "Tiendas D1",
+                "price": 8200,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12006187/papaya-unidad-01.png",
+                "description": "cod:06 Papaya unidad",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1  Banano
+            {
+                "name": "Tiendas D1",
+                "price": 450,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005468/banano-unidad-01.png",
+                "description": "cod:06 Banano unidad",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1  Banano
+            {
+                "name": "Tiendas D1",
+                "price": 5990,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12002531/fresa-congelada-tree-fruts-500-g-01.png",
+                "description": "cod:06 Fresacongelada tree fruts 500g",
+                "category": "tiendas D1",
+            },
+
+
+            #tiendas d1 champiñon
+            {
+                "name": "Tiendas D1",
+                "price": 7200,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12006032/champinon-250-gr-01.png",
+                "description": "cod:06 Champiñon 1 bandeja 250g",
+                "category": "tiendas D1",
+            },
+            #tiendas d1 brocoli
+            {
+                "name": "Tiendas D1",
+                "price": 6990,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12006464/brocoli-congelado-cooltivo-500g-01.png",
+                "description": "cod:06 Brocoli congelado cooltivo 500g",
+                "category": "tiendas D1",
+            },
+
+            #tiendas d1 tomate
+            {
+                "name": "Tiendas D1",
+                "price": 4800,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005556/tomate-chonto-x-1000-g-01.png",
+                "description": "cod:06 tomate chonto 1000g",
+                "category": "tiendas D1",
+            },
+            #tiendas d1 zanahoria
+            {
+                "name": "Tiendas D1",
+                "price": 4300,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12002258/zanahoria-x-1000-g-01.png",
+                "description": "cod:06 Zanahoria 1000g",
+                "category": "tiendas D1",
+            },
+            #tiendas d1 pimenton
+            {
+                "name": "Tiendas D1",
+                "price": 1250,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005183/pimenton-unidad-01.png",
+                "description": "cod:06 Pimenton unidad",
+                "category": "tiendas D1",
+            },
+            #tiendas d1 cebolla cabezona
+            {
+                "name": "Tiendas D1",
+                "price": 3300,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005767/cebolla-cabezona-x-1000g-01.png",
+                "description": "cod:06 Cebolla cabezona 1000g",
+                "category": "tiendas D1",
+            },
+            #tiendas d1 cebolla larga
+            {
+                "name": "Tiendas D1",
+                "price": 3900,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12003363/cebolla-larga-500-gr-01.png",
+                "description": "cod:06 Cebolla larga 500g",
+                "category": "tiendas D1",
+            },
+            #tiendas d1 lechuga crespa
+            {
+                "name": "Tiendas D1",
+                "price": 2200,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005805/lechuga-verde-crespa-x-180-g-01.png",
+                "description": "cod:06 Lechuga verde crespa 180g",
+                "category": "tiendas D1",
+            },
+            #tiendas d1 piña
+            {
+                "name": "Tiendas D1",
+                "price": 5990,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12003720/pinas-golden-unidad-01.png",
+                "description": "cod:06 Piña golden unidad",
+                "category": "tiendas D1",
+            },
+            #tiendas d1 naranjas
+            {
+                "name": "Tiendas D1",
+                "price": 4500,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000182/naranja-x-2000-gr-01.png",
+                "description": "cod:06 naranja x 2000 gr",
+                "category": "tiendas D1",
+            },
+            #tiendas d1 fazenda
+            {
+                "name": "Tiendas D1",
+                "price": 7950,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005983/chicharron-500-g-01.png",
+                "description": "codi Chicarron 500g",
                 "category": "tiendas D1",
             },
 
