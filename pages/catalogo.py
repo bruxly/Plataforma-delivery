@@ -609,7 +609,7 @@ def get_products():
                 "description": "cod:10 Queso Mozzarella Bufala 100g",
                 "category": "tiendas D1",
             },
-            #Tiendas D1
+            #Tiendas D1 Queso
             {
                 "name": "Tiendas D1",
                 "price": 8750,
@@ -625,7 +625,7 @@ def get_products():
                 "description": "cod:11 Queso Crema 200g",
                 "category": "tiendas D1",
             },
-            #Tiendas D1
+            #Tiendas D1 Queso
             {
                 "name": "Tiendas D1",
                 "price": 13650,
@@ -634,7 +634,10 @@ def get_products():
                 "category": "tiendas D1",
             },
 
-            #Tiendas D1
+            
+
+            #Tiendas D1 chorizo
+            
             {
                 "name": "Tiendas D1",
                 "price": 19950,
