@@ -662,15 +662,7 @@ def get_products():
                 "category": "tiendas D1",
             },
 
-             #Tiendas D1 arepas
-            
-            {
-                "name": "Tiendas D1",
-                "price": 19950,
-                "image": "https://i.imgur.com/r4FmWWM_d.jpeg?maxwidth=520&shape=thumb&fidelity=high",
-                "description": "cod:04 Aceite de oliva extra virgen 500ml",
-                "category": "tiendas D1",
-            },
+             
             #Tiendas D1 galletas
             {
                 "name": "Tiendas D1",
@@ -687,7 +679,7 @@ def get_products():
                 "description": "cod: Galletas happy wafer 12 unidades ",
                 "category": "tiendas D1",
             },
-            #Tiendas D1
+            #Tiendas D1 azucar
             {
                 "name": "Tiendas D1",
                 "price": 4150,
@@ -695,14 +687,7 @@ def get_products():
                 "description": "cod:04 Azucar morena 10000 grs",
                 "category": "tiendas D1",
             },
-            
-            {
-                "name": "Tiendas D1",
-                "price": 23000,
-                "image": "https://i.imgur.com/Xq3Pfit.jpeg",
-                "description": "cod:04 Bicarbonato de sodio 200 grs",
-                "category": "tiendas D1",
-            },
+            #Tiendas D1 azucar
             {
                 "name": "Tiendas D1",
                 "price": 6150,
@@ -711,7 +696,18 @@ def get_products():
                 "category": "tiendas D1",
             },
             
-            #Tiendas D1
+            #Tiendas D1 ACEITES
+            {
+                "name": "Tiendas D1",
+                "price": 19950,
+                "image": "https://i.imgur.com/r4FmWWM_d.jpeg?maxwidth=520&shape=thumb&fidelity=high",
+                "description": "cod:04 Aceite de oliva extra virgen 500ml",
+                "category": "tiendas D1",
+            },
+            
+            
+            
+            #Tiendas D1 arepas
             {
                 "name": "Tiendas D1",
                 "price": 1990,
@@ -719,7 +715,7 @@ def get_products():
                 "description": "cod:05 Arepa Minitela 600g",
                 "category": "tiendas D1",
             },
-            #Tiendas D1
+            #Tiendas D1 arepas
             {
                 "name": "Tiendas D1",
                 "price": 1890,
@@ -727,10 +723,20 @@ def get_products():
                 "description": "cod:06 Arepa Blanca 500g",
                 "category": "tiendas D1",
             },
+
+
+
+
+            #Tiendas D1 bicarbonato
+            {
+                "name": "Tiendas D1",
+                "price": 23000,
+                "image": "https://i.imgur.com/Xq3Pfit.jpeg",
+                "description": "cod:04 Bicarbonato de sodio 200 grs",
+                "category": "tiendas D1",
+            },
             
-            #Tiendas D1
-            
-            #Tiendas D1
+            #Tiendas D1 vinagre
             {
                 "name": "Tiendas D1",
                 "price": 3400,
@@ -903,6 +909,7 @@ def get_products():
                 "description": "cod:32 Alimento Para Gatos 1000g",
                 "category": "tiendas D1", 
             },
+
 
 
             #cobijas y cortinas
