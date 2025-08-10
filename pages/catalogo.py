@@ -636,7 +636,33 @@ def get_products():
 
             
 
+            #Tiendas D1 salchicha
+            
+            {
+                "name": "Tiendas D1",
+                "price": 9300,
+                "image": "https://i.imgur.com/gnC8O4x.png",
+                "description": "cod:07 Salchicha Camprestre 400g",
+                "category": "tiendas D1",
+            },
             #Tiendas D1 chorizo
+            {
+                "name": "Tiendas D1",
+                "price": 7990,
+                "image": "https://i.imgur.com/FuUuoUV.png",
+                "description": "cod:08 Chorizo Santarrosano 225g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1 chorizo
+            {
+                "name": "Tiendas D1",
+                "price": 7990,
+                "image": "https://i.imgur.com/v7J7Klr.png",
+                "description": "cod:09 Chorizo Antioqueño 225g",
+                "category": "tiendas D1",
+            },
+
+             #Tiendas D1 arepas
             
             {
                 "name": "Tiendas D1",
@@ -645,12 +671,20 @@ def get_products():
                 "description": "cod:04 Aceite de oliva extra virgen 500ml",
                 "category": "tiendas D1",
             },
-            #Tiendas D1
+            #Tiendas D1 galletas
             {
                 "name": "Tiendas D1",
                 "price": 6600,
                 "image": "https://i.imgur.com/pChtWsT_d.jpeg?maxwidth=520&shape=thumb&fidelity=high",
                 "description": "cod:04 saltin noe, 5 tacos 410 gms",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1 galletas
+            {
+                "name": "Tiendas D1",
+                "price": 4650,
+                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005070/galletas-happy-wafer-x-12-und-288g-01.png",
+                "description": "cod: Galletas happy wafer 12 unidades ",
                 "category": "tiendas D1",
             },
             #Tiendas D1
@@ -676,13 +710,7 @@ def get_products():
                 "description": "cod:04 Endulzante con stevia natri 180 grs",
                 "category": "tiendas D1",
             },
-             {
-                "name": "Tiendas D1",
-                "price": 4650,
-                "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005070/galletas-happy-wafer-x-12-und-288g-01.png",
-                "description": "cod: Galletas happy wafer 12 unidades ",
-                "category": "tiendas D1",
-            },
+            
             #Tiendas D1
             {
                 "name": "Tiendas D1",
@@ -699,30 +727,7 @@ def get_products():
                 "description": "cod:06 Arepa Blanca 500g",
                 "category": "tiendas D1",
             },
-            #Tiendas D1
-            {
-                "name": "Tiendas D1",
-                "price": 9300,
-                "image": "https://i.imgur.com/gnC8O4x.png",
-                "description": "cod:07 Salchicha Camprestre 400g",
-                "category": "tiendas D1",
-            },
-            #Tiendas D1
-            {
-                "name": "Tiendas D1",
-                "price": 7990,
-                "image": "https://i.imgur.com/FuUuoUV.png",
-                "description": "cod:08 Chorizo Santarrosano 225g",
-                "category": "tiendas D1",
-            },
-            #Tiendas D1
-            {
-                "name": "Tiendas D1",
-                "price": 7990,
-                "image": "https://i.imgur.com/v7J7Klr.png",
-                "description": "cod:09 Chorizo Antioqueño 225g",
-                "category": "tiendas D1",
-            },
+            
             #Tiendas D1
             
             #Tiendas D1
