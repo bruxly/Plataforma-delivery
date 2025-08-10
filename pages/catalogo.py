@@ -614,7 +614,7 @@ def get_products():
                 "name": "Tiendas D1",
                 "price": 8750,
                 "image": "https://i.imgur.com/LzbTraU.png",
-                "description": "Queso Campesino Bloque 350g",
+                "description": "cod:16. Queso Campesino Bloque 350g",
                 "category": "tiendas D1",
             },
             #Tiendas D1 queso
@@ -622,7 +622,7 @@ def get_products():
                 "name": "Tiendas D1",
                 "price": 3300,
                 "image": "https://i.imgur.com/2FRw5OC.png",
-                "description": "cod:16 Queso Crema 200g",
+                "description": "cod:17. Queso Crema 200g",
                 "category": "tiendas D1",
             },
             #Tiendas D1 Queso
@@ -630,7 +630,7 @@ def get_products():
                 "name": "Tiendas D1",
                 "price": 13650,
                 "image": "https://i.imgur.com/1Z4zfQQ.png",
-                "description": "cod:17 Queso Parmesano Alpina 120g",
+                "description": "cod:18. Queso Parmesano Alpina 120g",
                 "category": "tiendas D1",
             },
             #Tiendas D1 Queso
@@ -638,7 +638,7 @@ def get_products():
                 "name": "Tiendas D1",
                 "price": 9900,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000084/queso-mozzarella-tajado-latti-400-grs-01.png",
-                "description": "cod:18 Queso tajado 18 tajadas 400 grs",
+                "description": "cod:19. Queso tajado 18 tajadas 400 grs",
                 "category": "tiendas D1",
             },
             #Tiendas D1 Queso
@@ -646,7 +646,7 @@ def get_products():
                 "name": "Tiendas D1",
                 "price": 9300,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12006207/queso-mozzarella-tajado-x-250g-latti-01.png",
-                "description": "cod:19 Queso tajado 15 tajadas 250 grs",
+                "description": "cod:20. Queso tajado 15 tajadas 250 grs",
                 "category": "tiendas D1",
             },
             
