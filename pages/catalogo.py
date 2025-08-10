@@ -567,7 +567,7 @@ def get_products():
                 "category": "supermercado",
             },
                 
-            #Tiendas D1
+            #Tiendas D1 leche
             {
                 "name": "Tiendas D1",
                 "price": 3050,
@@ -575,7 +575,7 @@ def get_products():
                 "description": "cod:01. Deslactosada 900ml",
                 "category": "tiendas D1",
             },
-            #Tiendas D1
+            #Tiendas D1 leche
             {
                 "name": "Tiendas D1",
                 "price": 3350,
@@ -583,7 +583,7 @@ def get_products():
                 "description": "cod:02. Leche Entera 900ml",
                 "category": "tiendas D1",
             },
-            #Tiendas D1
+            #Tiendas D1 leche
 
             {
                 "name": "Tiendas D1",
@@ -592,12 +592,45 @@ def get_products():
                 "description": "cod:03 En Polvo Entera 350g",
                 "category": "tiendas D1",
             },
-            #Tiendas D1
+            #Tiendas D1 leche
             {
                 "name": "Tiendas D1",
                 "price": 1200,
                 "image": "https://i.imgur.com/86A2hwi.png",
                 "description": "cod:04 Leche Entera 200ml",
+                "category": "tiendas D1",
+            },
+
+            #tiendas D1 Queso
+            {
+                "name": "Tiendas D1",
+                "price": 5490,
+                "image": "https://i.imgur.com/hSNhJGd.png",
+                "description": "cod:10 Queso Mozzarella Bufala 100g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 8750,
+                "image": "https://i.imgur.com/LzbTraU.png",
+                "description": "Queso Campesino Bloque 350g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 3300,
+                "image": "https://i.imgur.com/2FRw5OC.png",
+                "description": "cod:11 Queso Crema 200g",
+                "category": "tiendas D1",
+            },
+            #Tiendas D1
+            {
+                "name": "Tiendas D1",
+                "price": 13650,
+                "image": "https://i.imgur.com/1Z4zfQQ.png",
+                "description": "cod:12 Queso Parmesano Alpina 120g",
                 "category": "tiendas D1",
             },
 
@@ -688,37 +721,7 @@ def get_products():
                 "category": "tiendas D1",
             },
             #Tiendas D1
-            {
-                "name": "Tiendas D1",
-                "price": 5490,
-                "image": "https://i.imgur.com/hSNhJGd.png",
-                "description": "cod:10 Queso Mozzarella Bufala 100g",
-                "category": "tiendas D1",
-            },
-            #Tiendas D1
-            {
-                "name": "Tiendas D1",
-                "price": 8750,
-                "image": "https://i.imgur.com/LzbTraU.png",
-                "description": "Queso Campesino Bloque 350g",
-                "category": "tiendas D1",
-            },
-            #Tiendas D1
-            {
-                "name": "Tiendas D1",
-                "price": 3300,
-                "image": "https://i.imgur.com/2FRw5OC.png",
-                "description": "cod:11 Queso Crema 200g",
-                "category": "tiendas D1",
-            },
-            #Tiendas D1
-            {
-                "name": "Tiendas D1",
-                "price": 13650,
-                "image": "https://i.imgur.com/1Z4zfQQ.png",
-                "description": "cod:12 Queso Parmesano Alpina 120g",
-                "category": "tiendas D1",
-            },
+            
             #Tiendas D1
             {
                 "name": "Tiendas D1",
