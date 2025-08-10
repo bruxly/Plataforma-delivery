@@ -126,6 +126,46 @@ def get_products():
                 "description": "cod:10. Hot dog Ranchero.",
                 "category": "La tribu",       
             },
+             #la tribu
+            {
+                "name": "La tribu",
+                "price": 0,
+                "image": "https://i.imgur.com/GhQ7CK1.jpeg",
+                "description": "cod:11. ",
+                "category": "La tribu",       
+            },
+            #la tribu
+            {
+                "name": "La tribu",
+                "price": 0,
+                "image": "https://i.imgur.com/OKhW7Vj.jpeg",
+                "description": "cod:12.",
+                "category": "La tribu",       
+            },
+            #la tribu
+            {
+                "name": "La tribu",
+                "price": 0,
+                "image": "https://i.imgur.com/ukNamRy.jpeg",
+                "description": "cod:13",
+                "category": "La tribu",       
+            },
+            #la tribu
+            {
+                "name": "La tribu",
+                "price": 0,
+                "image": "https://i.imgur.com/2T3Ec7T.jpeg",
+                "description": "cod:14",
+                "category": "La tribu",       
+            },
+            #la tribu
+            {
+                "name": "La tribu",
+                "price": 0,
+                "image": "https://i.imgur.com/YRt67vg.jpeg",
+                "description": "cod:15",
+                "category": "La tribu",       
+            },
            
 
             #vaquita costeña
