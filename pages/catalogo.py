@@ -166,6 +166,55 @@ def get_products():
                 "description": "cod:15",
                 "category": "La tribu",       
             },
+            #Punky chicarron
+            {
+                "name": "Punky",
+                "price": 30000,
+                "image": "https://i.imgur.com/zf5R5oc.jpeg",
+                "description": "cod:01 Calentao",
+                "category": "Punky Chicarron",       
+            },
+            #Punky chicarron
+            {
+                "name": "Punky",
+                "price": 26000,
+                "image": "https://i.imgur.com/vL3LUTA.jpeg",
+                "description": "cod:02 Hamburgeza",
+                "category": "Punky Chicarron",       
+            },
+            #Punky chicarron
+            {
+                "name": "Punky",
+                "price": 0,
+                "image": "",
+                "description": "cod:",
+                "category": "Punky Chicarron",       
+            },
+            #Punky chicarron
+            {
+                "name": "Punky",
+                "price": 0,
+                "image": "",
+                "description": "cod:",
+                "category": "Punky Chicarron",       
+            },
+            #Punky chicarron
+            {
+                "name": "Punky",
+                "price": 0,
+                "image": "",
+                "description": "cod:",
+                "category": "Punky Chicarron",       
+            },
+            #Punky chicarron
+            {
+                "name": "Punky",
+                "price": 0,
+                "image": "",
+                "description": "cod:",
+                "category": "Punky Chicarron",       
+            },
+            
            
 
             #vaquita costeña
@@ -1687,10 +1736,11 @@ with col1:
             'La tribu',
             'vaquita costeña',
             "comida china",
-            'comida vegetariana',
+            'Punky Chicarron',
             "El corral",
             'El carriel',
             "Qbano",
+            'comida vegetariana',
             'magdalena',
             "supermercado",
             "tiendas D1",
