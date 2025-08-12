@@ -183,9 +183,6 @@ def get_products():
                 "category": "Punky Chicarron",       
             },
             
-            
-           
-
             #vaquita costeña
             {
                 "name": "Vaquita Costeña",
