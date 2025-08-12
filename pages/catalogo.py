@@ -457,6 +457,22 @@ def get_products():
                 "description": "cod:06. Sándwich Pollo Combo",
                 "category": "Qbano",
             },
+             # QUBANO vegetariano
+            {
+                "name": "Qbano Vegetariano",
+                "price": 25900,
+                "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156056-800-auto?v=638843436041770000&width=800&height=auto&aspect=true",
+                "description": "cod:20. combinación de proteína, verduras y arroz con todo el sabor Qbano",
+                "category": "Qbano",
+            },
+            # QUBANO vegetariano
+            {
+                "name": "Qbano Vegetariano",
+                "price": 31900,
+                "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156094-800-auto?v=638843455088070000&width=800&height=auto&aspect=true",
+                "description": "cod:21. combinación de proteína, verduras y arroz con todo el sabor Qbano",
+                "category": "Qbano",
+            },
                 
             #comida china
             {
@@ -1667,6 +1683,7 @@ with col1:
             'La tribu',
             'vaquita costeña',
             "comida china",
+            'comida vegetariana',
             "El corral",
             'El carriel',
             "Qbano",
