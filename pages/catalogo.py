@@ -1658,7 +1658,7 @@ def create_stripe_button(cart, user_email, user_uid):
 
 # --- LÓGICA PRINCIPAL DE LA PÁGINA ---
 st.markdown(
-    '<div class="main-header"><h1>🛵 Domicilios las 24 horas</h1><p>Bienvenido/a aqui encuentras todo en solo lugar<br>Recibimos todas las tarjetas</p></div>',
+    '<div class="main-header"><h1>🛵 Domicilios las 24 horas</h1><p>Bienvenido/a aqui encuentras todo en solo lugar</p><br>Recibimos todas las tarjetas</div>',
     unsafe_allow_html=True
 )
 
