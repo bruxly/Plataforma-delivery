@@ -463,7 +463,7 @@ def get_products():
                 "price": 25900,
                 "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156056-800-auto?v=638843436041770000&width=800&height=auto&aspect=true",
                 "description": "cod:20. combinación de proteína, verduras y arroz con todo el sabor Qbano",
-                "category": "Qbano",
+                "category": "comida vegetariana",
             },
             # QUBANO vegetariano
             {
@@ -471,7 +471,7 @@ def get_products():
                 "price": 31900,
                 "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156094-800-auto?v=638843455088070000&width=800&height=auto&aspect=true",
                 "description": "cod:21. combinación de proteína, verduras y arroz con todo el sabor Qbano",
-                "category": "Qbano",
+                "category": "comida vegetariana",
             },
                 
             #comida china
@@ -1642,35 +1642,7 @@ with st.sidebar:
 
     st.markdown("---")
 
-    # Carrito de compras
-    # st.markdown("### 🛒 Carrito")
-    # if st.session_state.cart:
-    #     total = 0
-    #     for item in st.session_state.cart:
-    #         st.markdown(f"""
-    #         <div class="cart-item">
-    #             <strong>{item['name']}</strong><br>
-    #             ${item['price']:.2f} x {item['quantity']}
-    #         </div>
-    #         """,unsafe_allow_html=True)
-    #         total += item["price"] * item["quantity"]
-
-    #     st.markdown(f"**Total: ${total:.2f}**")
-
-    #     stripe_button = create_stripe_button(
-    #         st.session_state.cart, 
-    #         st.session_state['usuario']['email'], 
-    #         st.session_state['usuario']['uid']
-    #     )
-
-    #     if stripe_button:
-    #         st.markdown(stripe_button, unsafe_allow_html=True)
-    #     else:
-    #         st.error("Error al crear la sesión de pago")
-
-    # else:
-    #     st.info("Tu carrito está vacío")   
-
+    
 
 # Contenido principal - Catálogo de productos
 st.markdown("## 🛍️ Catálogo de Productosy Servicios")
