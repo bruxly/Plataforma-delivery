@@ -182,38 +182,7 @@ def get_products():
                 "description": "cod:02 Hamburgeza",
                 "category": "Punky Chicarron",       
             },
-            #Punky chicarron
-            {
-                "name": "Punky",
-                "price": 0,
-                "image": "",
-                "description": "cod:",
-                "category": "Punky Chicarron",       
-            },
-            #Punky chicarron
-            {
-                "name": "Punky",
-                "price": 0,
-                "image": "",
-                "description": "cod:",
-                "category": "Punky Chicarron",       
-            },
-            #Punky chicarron
-            {
-                "name": "Punky",
-                "price": 0,
-                "image": "",
-                "description": "cod:",
-                "category": "Punky Chicarron",       
-            },
-            #Punky chicarron
-            {
-                "name": "Punky",
-                "price": 0,
-                "image": "",
-                "description": "cod:",
-                "category": "Punky Chicarron",       
-            },
+            
             
            
 
