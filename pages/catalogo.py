@@ -171,15 +171,65 @@ def get_products():
                 "name": "Punky",
                 "price": 30000,
                 "image": "https://i.imgur.com/zf5R5oc.jpeg",
-                "description": "cod:01 Calentao",
+                "description": "cod:01 Calentao de arroz y frijol,aguacate,patacón,hogao y chicarron 150g",
                 "category": "Punky Chicarron",       
             },
-            #Punky chicarron
+            #Punky 
             {
                 "name": "Punky",
                 "price": 26000,
                 "image": "https://i.imgur.com/vL3LUTA.jpeg",
-                "description": "cod:02 Hamburgeza",
+                "description": "cod:02 Lomo de cerdo,chirrarron carnudo,queso,vegetales,piña, chips de plátano",
+                "category": "Punky Chicarron",       
+            },
+            #Punky 
+            {
+                "name": "Punky",
+                "price": 45000,
+                "image": "https://i.imgur.com/vKPXMAS.jpeg",
+                "description": "cod:03 Corte 100 una costilla entera con chirraron,patacón,hogao,guacamole y suero",
+                "category": "Punky Chicarron",       
+            },
+             #Punky 
+            {
+                "name": "Punky",
+                "price": 27000,
+                "image": "https://i.imgur.com/dNBreze.jpeg",
+                "description": "cod:04 Chuleta lomo apanado, arroz, aguacate, maduro y hogao",
+                "category": "Punky Chicarron",       
+            },
+
+            #Punky 
+            {
+                "name": "Punky",
+                "price": 35000,
+                "image": "https://i.imgur.com/3JKCVmx.jpeg",
+                "description": "cod:05 frijol, arroz, maduro, aguacate, chicarron y huevo frito ",
+                "category": "Punky Chicarron",       
+            },
+            #Punky 
+            {
+                "name": "Punky",
+                "price": 32000,
+                "image": "https://i.imgur.com/m2pIO58.jpeg",
+                "description": "cod:06 Cazuela frijol, plátano, aguacate, chorizo y chicarron",
+                "category": "Punky Chicarron",       
+            },
+            #Punky 
+            {
+                "name": "Punky",
+                "price": 33000,
+                "image": "https://i.imgur.com/315Q4G5.jpeg",
+                "description": "cod:07 Costillas en salsa BBQ artesanal, acompañadas de papa, yuca o plátano, guacamole y suero.",
+                "category": "Punky Chicarron",       
+            },
+
+            #Punky 
+            {
+                "name": "Punky",
+                "price": 26000,
+                "image": "https://i.imgur.com/h91sd9n.jpeg",
+                "description": "cod:07 Chicharron carnudo 200g, papa, yuca o platano, guacamole y suero.",
                 "category": "Punky Chicarron",       
             },
             
