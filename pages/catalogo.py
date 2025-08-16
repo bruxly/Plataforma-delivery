@@ -636,7 +636,7 @@ def get_products():
                 "price": 11400,
                 "image": "https://i.imgur.com/IGHnkaE.jpeg",
                 "description": "cod:01. Aceite 900ml",
-                "category": "supermercado",
+                "category": "Los Ocobos",
             },
                 
 
@@ -645,7 +645,7 @@ def get_products():
                 "price": 14500,
                 "image": "https://i.imgur.com/BTWJj1W.jpeg",
                 "description": "cod:02. Cubeta de huevos",
-                "category": "supermercado",
+                "category": "Los Ocobos",
             },
 
                 
@@ -654,7 +654,7 @@ def get_products():
                 "price": 6100,
                 "image": "https://i.imgur.com/alzkciX.jpeg",
                 "description": "cod:03. Salchicha Zenú, 5 und",
-                "category": "supermercado",
+                "category": "Los Ocobos",
             },
 
             {
@@ -662,14 +662,14 @@ def get_products():
                 "price": 2200,
                 "image": "https://i.imgur.com/vUyo1uM.jpeg",
                 "description": "cod:04. Arroz 460g ",
-                "category": "supermercado",
+                "category": "Los Ocobos",
             },
             {
                 "name": "Los Ocobos",
                 "price": 6800,
                 'image':'https://i.imgur.com/CdWQwAS.jpeg',
                 "description": "cod:05. DON CAT 500g",
-                "category": "supermercado",
+                "category": "Los Ocobos",
             },
 
             {
@@ -677,7 +677,7 @@ def get_products():
                 "price": 8500,
                 "image": "https://i.imgur.com/8mYeRbM.png",
                 "description": "cod:06. Coca-cola 2.5lts",
-                "category": "supermercado",
+                "category": "Los Ocobos",
             },
                 
            #Tiendas D1 leche
@@ -1758,6 +1758,7 @@ with col1:
             "Qbano",
             'comida vegetariana',
             'magdalena',
+            'Los Ocobos',
             "supermercado",
             "tiendas D1",
             "cobijas y cortinas",
