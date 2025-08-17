@@ -1845,7 +1845,7 @@ col1, col2 = st.columns([1, 3])
 with col1:
     # Lista de categorías principales
     categories = [
-        'comida vegetariana',
+        'Comida Vegetariana',
         'Comidas Rapidas',
         
         
