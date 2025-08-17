@@ -1856,21 +1856,38 @@ col1, col2 = st.columns([1, 3])
 with col1:
     # Lista de categorías principales
     categories = [
-        'todos', 'La tribu', 'Punky Chicarron', 'Supermercados',
-        'El corral', 'El carriel', 'Qbano', 'comida vegetariana',
-        'magdalena', 'comida china', 'cobijas y cortinas', 'plomeros'
+        'todos',
+        'Comidas Rapidas',
+        'Supermercados',
+        'El carriel',
+        'Qbano',
+        'comida vegetariana',
+        'magdalena',
+        'comida china',
+        'cobijas y cortinas',
+        'plomeros'
     ]
     
-    # Selector de categoría principal
     selected_category = st.selectbox("Categoría", categories, key="category_selector")
     
-    # Si la categoría seleccionada es Supermercados, muestra el selector de subcategoría
+    # Se inicializa la subcategoría para evitar errores
+    selected_subcategory = 'todos'
+    
+    # Se usa una estructura if/elif para manejar las subcategorías sin conflictos
     if selected_category == "Supermercados":
         subcategories = ['todos', 'Tiendas D1', 'Los Ocobos']
-        selected_subcategory = st.selectbox("Subcategoría", subcategories, key="subcategory_selector")
-    else:
-        # Resetea la subcategoría si se elige otra categoría principal
-        selected_subcategory = 'todos'
+        selected_subcategory = st.selectbox(
+            "Tienda", 
+            subcategories, 
+            key="super_sub_selector" # Clave única
+        )
+    elif selected_category == "Comidas Rapidas":
+        subcategories = ['todos', 'La tribu', 'Punky Chicarron', 'El Corral', 'Vaquita Costeña']
+        selected_subcategory = st.selectbox(
+            "Restaurante", 
+            subcategories, 
+            key="rapidas_sub_selector" # Clave única
+        )
 
 # Cargar productos si no están en la sesión
 if 'productos' not in st.session_state:
@@ -1878,17 +1895,18 @@ if 'productos' not in st.session_state:
         st.session_state['productos'] = get_products()
 
 all_products = st.session_state['productos']
-products_to_show = all_products
+products_to_show = all_products # Por defecto, muestra todos los productos
 
-# Aplicar filtros según la lógica solicitada
+# --- LÓGICA DE FILTRADO GENERALIZADA ---
+# Si la categoría seleccionada no es 'todos'
 if selected_category != 'todos':
-    # Filtra por categoría principal
+    # 1. Filtra por la categoría principal
     products_to_show = [p for p in all_products if p.get('category') == selected_category]
     
-    # Si la categoría es Supermercados Y se ha seleccionado una subcategoría específica
-    if selected_category == "Supermercados" and selected_subcategory != 'todos':
-        # Filtra adicionalmente por subcategoría
+    # 2. Si se ha seleccionado una subcategoría (y no es 'todos'), filtra esa lista más a fondo
+    if selected_subcategory != 'todos':
         products_to_show = [p for p in products_to_show if p.get('subcategory') == selected_subcategory]
+
 
 # Mostrar productos en grid
 if products_to_show:
@@ -1937,17 +1955,3 @@ if products_to_show:
                     """,
                     unsafe_allow_html=True
                 )
-else:
-    st.warning("No se encontraron productos para la selección actual.")
-
-# Footer
-st.markdown("---")
-st.markdown(
-    """
-    <div style="text-align: center; padding: 2rem;">
-        <p>🛵 DOMIRAY SAS - Empresa de domicilios Casanareña</p>
-        <p>Esta app fue desarrollada por Rodrigo Patiño usando Streamlit, Firebase y Stripe</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
