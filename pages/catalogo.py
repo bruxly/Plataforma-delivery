@@ -373,7 +373,8 @@ def get_products():
                 "price": 32000,
                 "image": "https://i.imgur.com/xAvOav3.png",
                 "description": "cod:01. Un Kilo de arroz paisa con chicharron te alcanza pa' 2 o 3 personas",
-                "category": "El carriel",
+                "category": "Restaurantes",
+                "subcategory": "El carriel",
             },
             #EL CARRIEL
             {
@@ -381,7 +382,8 @@ def get_products():
                 "price": 18000,
                 "image": "https://i.imgur.com/tHviOSw.jpeg",
                 "description": "cod:02. Personal con papitas, Porción personal de arroz paisa con papitas y limonada",
-                "category": "El carriel",
+                "category": "Restaurantes",
+                "subcategory": "El carriel",
             },
             #el carriel
             {
@@ -389,7 +391,8 @@ def get_products():
                 "price": 60000,
                 "image": "https://i.imgur.com/sVWsjG8.jpeg",
                 "description": "cod:03. merrada de dos kilos de arroz Paisa y Chicharrón. Oiga! Y rinde hasta pa' 6 personas ",
-                "category": "El carriel",
+                "category": "Restaurantes",
+                "subcategory": "El carriel",
             },
             #el carriel
             {
@@ -397,7 +400,8 @@ def get_products():
                 "price": 32000,
                 "image": "https://i.imgur.com/t0xczti.jpeg",
                 "description": "cod:04. 750 Grs de Arroz Paisa acompañados de papitas a la francesa ideal para compartir",
-                "category": "El carriel",
+                "category": "Restaurantes",
+                "subcategory": "El carriel",
             },
             #el carriel
             {
@@ -405,7 +409,8 @@ def get_products():
                 "price": 90000,
                 "image": "https://i.imgur.com/qvPftTI.jpeg",
                 "description": "cod:05. Donde come 8 comen 10, EXTRA FAMILIAR con semejante merrada de arroz Paisa.",
-                "category": "El carriel",
+                "category": "Restaurantes",
+                "subcategory": "El carriel",
             }, 
              #el carriel
             {
@@ -413,7 +418,8 @@ def get_products():
                 "price": 18000,
                 "image": "https://i.imgur.com/pDfMwf6.jpeg",
                 "description": "cod:06. Cajita personal con una libra de arroz paisa y vaso de limonada del día ",
-                "category": "El carriel",
+                "category": "Restaurantes",
+                "subcategory": "El carriel",
             },    
 
             #MAGDALENA
@@ -513,7 +519,8 @@ def get_products():
                 "price": 30600,
                 "image": "https://i.imgur.com/tyul788.jpeg",
                 "description": "cod:01. Sándwich Ropa Vieja En Combo",
-                "category": "Qbano",
+                "category": "Comidas Rapidas",
+                "subcategory": "Qbano",
             },
              # QUBANO
             {
@@ -521,14 +528,16 @@ def get_products():
                 "price": 24600,
                 "image": "https://i.imgur.com/4EXltWq.jpeg",
                 "description": "cod:02. Sándwich Especial Combo",
-                "category": "Qbano",
+                "category": "Comidas Rapidas",
+                "subcategory": "Qbano",
             },
             {
                 "name": "Qbano",
                 "price": 27600,
                 "image": "https://i.imgur.com/1UhLhOe.jpeg",
                 "description": "cod:03. Sándwich Súper Especial Combo",
-                "category": "Qbano",
+                "category": "Comidas Rapidas",
+                "subcategory": "Qbano",
             },
              # QUBANO
             {
@@ -536,7 +545,8 @@ def get_products():
                 "price": 29600,
                 "image": "https://i.imgur.com/NVfqHoc.jpeg",
                 "description": "cod:04. Sándwich Roast Beef Combo",
-                "category": "Qbano",
+                "category": "Comidas Rapidas",
+                "subcategory": "Qbano",
             },
 
              # QUBANO
@@ -546,7 +556,8 @@ def get_products():
                 "price": 29600,
                 "image": "https://i.imgur.com/0U7wPHo.jpeg",
                 "description": "cod:05. Sándwich Cordero Combo",
-                "category": "Qbano",
+                "category": "Comidas Rapidas",
+                "subcategory": "Qbano",
             },
              # QUBANO
             {
@@ -554,7 +565,8 @@ def get_products():
                 "price": 29600,
                 "image": "https://i.imgur.com/2IRMt6B.jpeg",
                 "description": "cod:06. Sándwich Pollo Combo",
-                "category": "Qbano",
+                "category": "Comidas Rapidas",
+                "subcategory": "Qbano",
             },
              # QUBANO vegetariano
             {
@@ -562,7 +574,8 @@ def get_products():
                 "price": 25900,
                 "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156056-800-auto?v=638843436041770000&width=800&height=auto&aspect=true",
                 "description": "cod:20. combinación de proteína, verduras y arroz con todo el sabor Qbano",
-                "category": "Comida Vegetariana",
+                "category": "Restaurantes",
+                "subcategory": "Comida Vegetariana",
             },
             # QUBANO vegetariano
             {
@@ -570,7 +583,8 @@ def get_products():
                 "price": 31900,
                 "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156094-800-auto?v=638843455088070000&width=800&height=auto&aspect=true",
                 "description": "cod:21. combinación de proteína, verduras y arroz con todo el sabor Qbano",
-                "category": "Comida Vegetariana",
+                "category": "Restaurantes",
+                "subcategory": "Comida Vegetariana",
             },
             # QUBANO vegetariano
             {
@@ -586,7 +600,8 @@ def get_products():
                 "price": 22300,
                 "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156158-800-auto?v=638846752223630000&width=800&height=auto&aspect=true",
                 "description": "cod:23. Tamaño personal 21 cm",
-                "category": "Comida Vegetariana",
+                "category": "Restaurantes",
+                "subcategory": "Comida Vegetariana",
             },
             # QUBANO vegetariano
             {
@@ -594,7 +609,8 @@ def get_products():
                 "price": 27600,
                 "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156062-800-auto?v=638843439879430000&width=800&height=auto&aspect=true",
                 "description": "cod:23. Sándwich ahora en Wrap, con acompañante y bebida",
-                "category": "Comida Vegetariana",
+               "category": "Restaurantes",
+                "subcategory": "Comida Vegetariana",
             },
                     # QUBANO vegetariano
             {
@@ -602,7 +618,8 @@ def get_products():
                 "price": 22300,
                 "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156061-800-auto?v=638843439532930000&width=800&height=auto&aspect=true",
                 "description": "cod:24. Sándwich ahora en Wrap, con acompañante y bebida",
-                "category": "Comida Vegetariana",
+                "category": "Restaurantes",
+                "subcategory": "Comida Vegetariana",
             },
                 
             #comida china
@@ -611,7 +628,8 @@ def get_products():
                 "price": 33000,
                 "image": "https://i.imgur.com/UajBfHQ.jpeg",
                 "description": "cod:01. 1/4 de pollo, papas y arroz.",
-                "category": "comida china",
+                "category": "Restaurantes",
+                "subcategory": "Comida China",
             },
             #comida china
             {
@@ -619,7 +637,8 @@ def get_products():
                 "price": 39000,
                 "image": "https://i.imgur.com/2ZXIdcA.jpeg",
                 "description": "cod:02. 1/4 de pollo, arroz chino.",
-                "category": "comida china",
+                "category": "Restaurantes",
+                "subcategory": "Comida China",
             },
             #comida china
             {
@@ -627,7 +646,8 @@ def get_products():
                 "price": 33000,
                 "image": "https://i.imgur.com/7iCQYxg.jpeg",
                 "description": "cod:03. papas,chop suey y arroz chino.",
-                "category": "comida china",
+                "category": "Restaurantes",
+                "subcategory": "Comida China",
             },
             #comida china
             {
@@ -635,7 +655,8 @@ def get_products():
                 "price": 46000,
                 "image": "https://i.imgur.com/cKI8mR9.jpeg",
                 "description": "cod:04. Arroz para 4 personas y medio pollo frito.",
-                "category": "comida china",
+                "category": "Restaurantes",
+                "subcategory": "Comida China",
             },
             #comida china
             {
@@ -643,7 +664,8 @@ def get_products():
                 "price": 46000,
                 "image": "https://i.imgur.com/evczF8R.jpeg",
                 "description": "cod:05. Arroz para 4 personas con pollo desmellado.",
-                "category": "comida china",
+                "category": "Restaurantes",
+                "subcategory": "Comida China",
             },
             #comida china
             {
@@ -651,7 +673,8 @@ def get_products():
                 "price": 33000,
                 "image": "https://i.imgur.com/U4UKNAI.jpeg",
                 "description": "cod:06. Arroz con camaron para dos personas y una porción de papas.",
-                "category": "comida china",
+                "category": "Restaurantes",
+                "subcategory": "Comida China",
             },
             #comida china
             {
@@ -659,7 +682,8 @@ def get_products():
                 "price": 57000,
                 "image": "https://i.imgur.com/BH2d8Ho.jpeg",
                 "description": "cod:07. Arroz,carne,jamon,pollo desmechado,raizes chinas,verduras y camaron grande,.",
-                "category": "comida china",
+                "category": "Restaurantes",
+                "subcategory": "Comida China",
             },
                 
 
@@ -1858,12 +1882,13 @@ with col1:
     categories = [
         'todos',
         'Comidas Rapidas',
+        'Restaurantes',
         'Supermercados',
-        'El carriel',
-        'Qbano',
-        'Comida Vegetariana',
+        
+        
+        
         'magdalena',
-        'comida china',
+        
         'cobijas y cortinas',
         'plomeros'
     ]
@@ -1882,7 +1907,15 @@ with col1:
             key="super_sub_selector" # Clave única
         )
     elif selected_category == "Comidas Rapidas":
-        subcategories = ['todos', 'La tribu', 'Punky Chicarron', 'El Corral', 'Vaquita Costeña']
+        subcategories = ['todos', 'La tribu', 'Punky Chicarron', 'El Corral', 'Vaquita Costeña',Qbano]
+        selected_subcategory = st.selectbox(
+            "🛵", 
+            subcategories, 
+            key="rapidas_sub_selector" # Clave única
+        )
+        
+    elif selected_category == "Restaurantes":
+        subcategories = ['todos', 'Comida China', 'El Carriel', 'Comida Vegetariana']
         selected_subcategory = st.selectbox(
             "🛵", 
             subcategories, 
