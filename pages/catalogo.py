@@ -356,7 +356,7 @@ def get_products():
                 "image": "https://i.imgur.com/3bJtjzW.png",
                 "description": "cod:09. Con salchicha de 115g a la parrilla.",
                 "category": "Comidas Rapidas",
-                "subcategory": "El Corral",
+                "subcategory": "El Carriel",
             },
             #el corral
             {
@@ -365,7 +365,7 @@ def get_products():
                 "image": "https://i.imgur.com/pfkNBGy.jpeg",
                 "description": "cod:10. Con salchicha a la parrilla, queso,piña y salsas",
                 "category": "Comidas Rapidas",
-                "subcategory": "El Corral",
+                "subcategory": "El Carriel",
             },
             #EL CARRIEL
             {
@@ -374,7 +374,7 @@ def get_products():
                 "image": "https://i.imgur.com/xAvOav3.png",
                 "description": "cod:01. Un Kilo de arroz paisa con chicharron te alcanza pa' 2 o 3 personas",
                 "category": "Restaurantes",
-                "subcategory": "El carriel",
+                "subcategory": "El Carriel",
             },
             #EL CARRIEL
             {
@@ -383,7 +383,7 @@ def get_products():
                 "image": "https://i.imgur.com/tHviOSw.jpeg",
                 "description": "cod:02. Personal con papitas, Porción personal de arroz paisa con papitas y limonada",
                 "category": "Restaurantes",
-                "subcategory": "El carriel",
+                "subcategory": "El Carriel",
             },
             #el carriel
             {
@@ -392,7 +392,7 @@ def get_products():
                 "image": "https://i.imgur.com/sVWsjG8.jpeg",
                 "description": "cod:03. merrada de dos kilos de arroz Paisa y Chicharrón. Oiga! Y rinde hasta pa' 6 personas ",
                 "category": "Restaurantes",
-                "subcategory": "El carriel",
+                "subcategory": "El Carriel",
             },
             #el carriel
             {
@@ -401,7 +401,7 @@ def get_products():
                 "image": "https://i.imgur.com/t0xczti.jpeg",
                 "description": "cod:04. 750 Grs de Arroz Paisa acompañados de papitas a la francesa ideal para compartir",
                 "category": "Restaurantes",
-                "subcategory": "El carriel",
+                "subcategory": "El Carriel",
             },
             #el carriel
             {
@@ -410,7 +410,7 @@ def get_products():
                 "image": "https://i.imgur.com/qvPftTI.jpeg",
                 "description": "cod:05. Donde come 8 comen 10, EXTRA FAMILIAR con semejante merrada de arroz Paisa.",
                 "category": "Restaurantes",
-                "subcategory": "El carriel",
+                "subcategory": "El Carriel",
             }, 
              #el carriel
             {
@@ -419,7 +419,7 @@ def get_products():
                 "image": "https://i.imgur.com/pDfMwf6.jpeg",
                 "description": "cod:06. Cajita personal con una libra de arroz paisa y vaso de limonada del día ",
                 "category": "Restaurantes",
-                "subcategory": "El carriel",
+                "subcategory": "El Carriel",
             },    
 
             #MAGDALENA
