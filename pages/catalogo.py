@@ -1866,16 +1866,9 @@ with col1:
     categories = [
         'Comida Vegetariana',
         'Comidas Rapidas',
-        
-        
-        
         'Supermercados',
-
-        
-        
         'El carriel',
         'Qbano',
-        
         'magdalena',
         'comida china',
         'cobijas y cortinas',
