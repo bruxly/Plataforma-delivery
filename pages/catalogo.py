@@ -1899,7 +1899,7 @@ with col1:
         selected_subcategory = st.selectbox("Subcategoría", subcategories, key="subcategory_selector")
     else:
         # Resetea la subcategoría si se elige otra categoría principal
-        selected_subcategory = 'El corral'
+        selected_subcategory = 'El Corral'
         
 
 # Cargar productos si no están en la sesión
@@ -1911,12 +1911,12 @@ all_products = st.session_state['productos']
 products_to_show = all_products
 
 # Aplicar filtros según la lógica solicitada
-if selected_category != 'todos':
+if selected_category != 'Comida Vegetariana':
     # Filtra por categoría principal
     products_to_show = [p for p in all_products if p.get('category') == selected_category]
     
     # Si la categoría es Supermercados Y se ha seleccionado una subcategoría específica
-    if selected_category == "Supermercados" and selected_subcategory != 'todos':
+    if selected_category == "Supermercados" and selected_subcategory != 'Los Ocobos':
         # Filtra adicionalmente por subcategoría
         products_to_show = [p for p in products_to_show if p.get('subcategory') == selected_subcategory]
 
