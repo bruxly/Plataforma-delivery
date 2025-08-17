@@ -51,7 +51,8 @@ def get_products():
                 "price": 20000,
                 "image": "https://i.imgur.com/JMWsAMd.jpeg",
                 "description": "cod:01. 10 piezas de alitas, papa francesa, ensalada y cascajos verdes",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",
             },
             #la tribu
             {
@@ -59,7 +60,8 @@ def get_products():
                 "price": 24000,
                 "image": "https://i.imgur.com/dAkTO5v.jpeg",
                 "description": "cod:02. 250 gr de carne, papa francesa, plátano chip y ensalada DM ",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",       
             },
 
             #la tribu
@@ -68,7 +70,8 @@ def get_products():
                 "price": 30000,
                 "image": "https://i.imgur.com/F27p0hz.jpeg",
                 "description": "cod:03. Pechuga en salsa camarones, toxineta,queso gratinado,papa francesa,modedas verdes y aguacate  ",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",       
             },
             #la tribu
             {
@@ -76,7 +79,8 @@ def get_products():
                 "price": 17000,
                 "image": "https://i.imgur.com/WpAu4Hk.jpeg",
                 "description": "cod:04. Mazorcada tradicional,carne,pollo,salchicha,chorizo,papa francesa y maiz.",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",       
             },
              #la tribu
             {
@@ -84,7 +88,8 @@ def get_products():
                 "price": 27000,
                 "image": "https://i.imgur.com/8RAX5Xi.jpeg",
                 "description": "cod:05. Costillas BBQ, plátano chips, carne, pollo, salchicha, chorizo, queso gratinado y papa francesa.",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",       
             },
             #la tribu
             {
@@ -92,7 +97,8 @@ def get_products():
                 "price": 15000,
                 "image": "https://i.imgur.com/fUhVmxi.jpeg",
                 "description": "cod:06. Carne, pollo, salchicha, chorizo, queso gratinado, papa francesa y papa fosforito.",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",      
             },
              #la tribu
             {
@@ -100,7 +106,8 @@ def get_products():
                 "price": 10000,
                 "image": "https://i.imgur.com/knXC1RY.jpeg",
                 "description": "cod:07. Choriperro.",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",       
             },
              #la tribu
             {
@@ -108,7 +115,8 @@ def get_products():
                 "price": 21500,
                 "image": "https://i.imgur.com/BPtYSRR.jpeg",
                 "description": "cod:08. Hamburguesa BBQ 150 g de carne, queso de doble crema, costilla bbq, huevo, tocineta y papas a la francesa.",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",       
             },
              #la tribu
             {
@@ -116,7 +124,8 @@ def get_products():
                 "price": 24000,
                 "image": "https://i.imgur.com/KGtDc8f.jpeg",
                 "description": "cod:09. Costillas BBQ 250 g de costilla bbq, papa francesa, ensalada y salsa de la casa.",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",       
             },
              #la tribu
             {
@@ -124,7 +133,8 @@ def get_products():
                 "price": 14000,
                 "image": "https://i.imgur.com/FnxomFP.jpeg",
                 "description": "cod:10. Hot dog Ranchero.",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",       
             },
              #la tribu
             {
@@ -132,7 +142,8 @@ def get_products():
                 "price": 0,
                 "image": "https://i.imgur.com/GhQ7CK1.jpeg",
                 "description": "cod:11. ",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",       
             },
             #la tribu
             {
@@ -140,7 +151,8 @@ def get_products():
                 "price": 0,
                 "image": "https://i.imgur.com/OKhW7Vj.jpeg",
                 "description": "cod:12.",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",       
             },
             #la tribu
             {
@@ -148,7 +160,8 @@ def get_products():
                 "price": 0,
                 "image": "https://i.imgur.com/ukNamRy.jpeg",
                 "description": "cod:13",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",       
             },
             #la tribu
             {
@@ -156,7 +169,8 @@ def get_products():
                 "price": 0,
                 "image": "https://i.imgur.com/2T3Ec7T.jpeg",
                 "description": "cod:14",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",       
             },
             #la tribu
             {
@@ -164,7 +178,8 @@ def get_products():
                 "price": 0,
                 "image": "https://i.imgur.com/YRt67vg.jpeg",
                 "description": "cod:15",
-                "category": "La tribu",       
+                "category": "Comidas Rapidas", 
+                "subcategory": "La tribu",       
             },
             #Punky chicarron
             {
@@ -1830,11 +1845,14 @@ col1, col2 = st.columns([1, 3])
 with col1:
     # Lista de categorías principales
     categories = [
+        'Comidas Rapidas',
         
-        'La tribu',
-        'Punky Chicarron',
+        
+        
         'Supermercados',
-        'El corral',
+
+        
+        
         'El carriel',
         'Qbano',
         'comida vegetariana',
@@ -1854,6 +1872,14 @@ with col1:
     else:
         # Resetea la subcategoría si se elige otra categoría principal
         selected_subcategory = 'Los Ocobos'
+
+    
+    if selected_category == "Comidas Rapidas":
+        subcategories = ['El corral','La tribu','Punky Chicarron']
+        selected_subcategory = st.selectbox("Subcategoría", subcategories, key="subcategory_selector")
+    else:
+        # Resetea la subcategoría si se elige otra categoría principal
+        selected_subcategory = 'El corral'
         
 
 # Cargar productos si no están en la sesión
