@@ -523,6 +523,55 @@ def get_products():
                 "subcategory": "Magdalena",
             },
 
+            #arco iris
+            {
+                "name": "Arco Iris",
+                "price": 18000,
+                "image": "https://i.imgur.com/VZR9dEH.jpeg",
+                "description": "cod:01. Ensaladas de frutas con queso, dos porciones de helados y chantilly.",
+                "category": "Heladerias",
+                "subcategory": "Arco Iris",
+            },
+            #arco iris
+            {
+                "name": "Arco Iris",
+                "price": 15500,
+                "image": "https://i.imgur.com/F7cS28v.jpeg",
+                "description": "cod:02 Fruta variada con crema de leche, queso y una porción de helado.",
+                "category": "Heladerias",
+                "subcategory": "Arco Iris",
+            },
+
+            #arco iris
+            {
+                "name": "Arco Iris",
+                "price": 13000,
+                "image": "https://i.imgur.com/ydhxDIa.jpeg",
+                "description": "cod:03. Brawni con helado",
+                "category": "Heladerias",
+                "subcategory": "Arco Iris",
+            },
+             #arco iris
+            {
+                "name": "Arco Iris",
+                "price": 11500,
+                "image": "https://i.imgur.com/o8e0mj4.jpeg",
+                "description": "cod:04 Parfait",
+                "category": "Heladerias",
+                "subcategory": "Arco Iris",
+            },
+
+             #arco iris
+            {
+                "name": "Arco Iris",
+                "price": 6500,
+                "image": "https://i.imgur.com/Pyt3pfn.jpeg",
+                "description": "cod:05 Granizados de frutas",
+                "category": "Heladerias",
+                "subcategory": "Arco Iris",
+            },
+
+
             # QUBANO
             {
                 "name": "Qbano",
@@ -1808,7 +1857,7 @@ with col1:
         )
 
     elif selected_category == "Heladerias":
-        subcategories = ['todos', 'Magdalena']
+        subcategories = ['todos', 'Magdalena','Arco Iris']
         selected_subcategory = st.selectbox(
             "🛵", 
             subcategories, 
