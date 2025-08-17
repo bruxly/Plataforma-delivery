@@ -1727,44 +1727,6 @@ def add_to_cart(product_id, user_id):
         return False
 
 
-# Funciones de Stripe
-def create_checkout_session(items, user_email):
-    """Crea una sesión de pago con Stripe"""
-    try:
-        line_items = []
-        for item in items:
-            line_items.append({
-                'price_data': {
-                    'currency': 'brl',
-                    'product_data': {
-                        'name': item['name'],
-                        'images': [item['image']],
-                    },
-                    'unit_amount': int(item['price'] * 100),
-                },
-                'quantity': item['quantity'],
-            })
-        
-        checkout_session = stripe.checkout.Session.create(
-            payment_method_types=['card'],
-            line_items=line_items,
-            mode='payment',
-            success_url='https://xperience-ecommerce.streamlit.app?payment=success&session_id={CHECKOUT_SESSION_ID}',
-            cancel_url='https://xperience-ecommerce.streamlit.app?payment=cancelled&session_id={CHECKOUT_SESSION_ID}',
-            customer_email=user_email,
-            metadata={
-                'user_id': st.session_state['usuario']['uid'],
-                'user_name': st.session_state['usuario']['nombre']
-            }
-        )
-        
-        return checkout_session.url, checkout_session.id
-    
-    except Exception as e:
-        st.error(f"Error al crear sesión de pago: {str(e)}")
-        return None
-
-
 
 
 # --- LÓGICA PRINCIPAL DE LA PÁGINA ---
