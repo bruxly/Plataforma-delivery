@@ -709,7 +709,8 @@ def get_products():
                 "price": 8300,
                 "image": "https://i.imgur.com/IEdmQX3.png",
                 "description": "cod:03 En Polvo Entera 350g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 leche
             {
@@ -717,7 +718,8 @@ def get_products():
                 "price": 1200,
                 "image": "https://i.imgur.com/86A2hwi.png",
                 "description": "cod:04 Leche Entera 200ml",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
 
             #tiendas D1 Queso
@@ -726,7 +728,8 @@ def get_products():
                 "price": 5490,
                 "image": "https://i.imgur.com/hSNhJGd.png",
                 "description": "cod:15 Queso Mozzarella Bufala 100g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 Queso 
             {
@@ -742,7 +745,8 @@ def get_products():
                 "price": 3300,
                 "image": "https://i.imgur.com/2FRw5OC.png",
                 "description": "cod:17. Queso Crema 200g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 Queso
             {
@@ -750,7 +754,8 @@ def get_products():
                 "price": 13650,
                 "image": "https://i.imgur.com/1Z4zfQQ.png",
                 "description": "cod:18. Queso Parmesano Alpina 120g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 Queso
             {
@@ -758,7 +763,8 @@ def get_products():
                 "price": 9900,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000084/queso-mozzarella-tajado-latti-400-grs-01.png",
                 "description": "cod:19. Queso tajado 18 tajadas 400 grs",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 Queso
             {
@@ -766,7 +772,8 @@ def get_products():
                 "price": 9300,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12006207/queso-mozzarella-tajado-x-250g-latti-01.png",
                 "description": "cod:20. Queso tajado 15 tajadas 250 grs",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             
 
@@ -779,7 +786,8 @@ def get_products():
                 "price": 9300,
                 "image": "https://i.imgur.com/gnC8O4x.png",
                 "description": "cod:30 Salchicha Camprestre 400g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 chorizo
             {
@@ -787,7 +795,8 @@ def get_products():
                 "price": 7990,
                 "image": "https://i.imgur.com/FuUuoUV.png",
                 "description": "cod:45 Chorizo Santarrosano 225g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 chorizo
             {
@@ -795,7 +804,8 @@ def get_products():
                 "price": 7990,
                 "image": "https://i.imgur.com/v7J7Klr.png",
                 "description": "cod:46 Chorizo Antioqueño 225g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
 
              
@@ -805,7 +815,8 @@ def get_products():
                 "price": 6600,
                 "image": "https://i.imgur.com/pChtWsT_d.jpeg?maxwidth=520&shape=thumb&fidelity=high",
                 "description": "cod:60 saltin noe, 5 tacos 410 gms",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 galletas
             {
@@ -813,7 +824,8 @@ def get_products():
                 "price": 5700,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000096/galleta-2-tacos-ducales-noel-241-grs-01.png",
                 "description": "cod:61. Galletas 2 tacos noel 241g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 galletas
             {
@@ -821,7 +833,8 @@ def get_products():
                 "price": 4650,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005070/galletas-happy-wafer-x-12-und-288g-01.png",
                 "description": "cod:62. Galletas happy wafer 12 unidades ",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 azucar
             {
@@ -829,7 +842,8 @@ def get_products():
                 "price": 4150,
                 "image": "https://i.imgur.com/ydGhqpe.jpeg",
                 "description": "cod:75. Azucar morena 10000 grs",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 azucar
             {
@@ -837,7 +851,8 @@ def get_products():
                 "price": 6150,
                 "image": "https://i.imgur.com/JQD4LEm.jpeg",
                 "description": "cod:76. Endulzante con stevia natri 180 grs",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #tiendas d1 arvejas
             {
@@ -845,7 +860,8 @@ def get_products():
                 "price": 5990,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12006459/arveja-verde-congelada-cooltivo-500-g-01.png",
                 "description": "cod:80 Arveja verde congelada 500g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #tiendas d1 lenteja
             {
@@ -853,7 +869,8 @@ def get_products():
                 "price": 3200,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000042/lenteja-el-estio-500-grs-01.png",
                 "description": "cod:85. Lenteja el estio 500g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #tiendas d1 arina de trigo
             {
@@ -869,7 +886,8 @@ def get_products():
                 "price": 2150,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12003539/0722.png",
                 "description": "cod:89. Harina de trigo con plovo para hornear 500g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #tiendas d1 arroz
             {
@@ -877,7 +895,8 @@ def get_products():
                 "price": 1990,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12002073/arroz-diana-500-g-01.png",
                 "description": "cod:90. Arroz Diana 500g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
 
             #Tiendas D1 SAL
@@ -886,7 +905,8 @@ def get_products():
                 "price": 2550,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12002874/caldo-de-gallina-condimentos-12002946-1.png",
                 "description": "cod:97. sal refisal 1000 g ",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
 
             
@@ -896,7 +916,8 @@ def get_products():
                 "price": 19950,
                 "image": "https://i.imgur.com/r4FmWWM_d.jpeg?maxwidth=520&shape=thumb&fidelity=high",
                 "description": "cod:001. Aceite de oliva extra virgen 500ml",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 ATUN
             {
@@ -904,7 +925,8 @@ def get_products():
                 "price": 5990,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005690/duopack-atun-en-agua-c-f-160-g-neto-01.png",
                 "description": "cod:010. Atún en agua x 2",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 ATUN
             {
@@ -912,7 +934,8 @@ def get_products():
                 "price": 7990,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12004368/duopack-atun-a.oliva-cf-160-g-neto-01.png",
                 "description": "cod:002. Atún x 2 aceite de oliva",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
 
 
@@ -922,7 +945,8 @@ def get_products():
                 "price": 1400,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000457/avena-en-hojuelas-fit-graan-250-g-01.png",
                 "description": "cod:010. Avena en hojuelas fit graan 250g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 cafe
             {
@@ -930,7 +954,8 @@ def get_products():
                 "price": 16950,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12006609/cafe-sello-rojo-300g-01.png",
                 "description": "cod:015 Cafe sello rojo 300g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             
             #Tiendas D1 salsa de tomate
@@ -939,7 +964,8 @@ def get_products():
                 "price": 4490,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000266/salsa-de-tomate-zev-500-g-01.png",
                 "description": "cod:025. Salsa de tomate zev 500g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             
             
@@ -949,7 +975,8 @@ def get_products():
                 "price": 1990,
                 "image": "https://i.imgur.com/PNtDPaH.png",
                 "description": "cod:035. Arepa Minitela 600g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 arepas
             {
@@ -957,7 +984,8 @@ def get_products():
                 "price": 1890,
                 "image": "https://i.imgur.com/BB48JmZ.png",
                 "description": "cod:036. Arepa Blanca 500g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 pan tajado
             {
@@ -965,7 +993,8 @@ def get_products():
                 "price": 5990,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005835/pan-tajado-multigranos-450-g-01.png",
                 "description": "cod:045. Pan tajado multigranos 450g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 pan tajado
             {
@@ -973,7 +1002,8 @@ def get_products():
                 "price": 3650,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005834/pan-tajado-mantequilla-450g-01.png",
                 "description": "cod:046. Pan tajado mantequilla 450g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 pan tajado
             {
@@ -981,7 +1011,8 @@ def get_products():
                 "price": 6900,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12004942/pan-tajado-brioche-horneaditos-380-g-01.png",
                 "description": "cod:047. Pan tajado brioche horneaditos 380g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1 manzana
             {
@@ -997,7 +1028,8 @@ def get_products():
                 "price": 10990,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000109/manzana-royal-gala-1000-grs-01.png",
                 "description": "cod:056. Manzana royal gala 1000g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1  papaya
             {
@@ -1005,7 +1037,8 @@ def get_products():
                 "price": 8200,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12006187/papaya-unidad-01.png",
                 "description": "cod:057. Papaya unidad",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1  Banano
             {
@@ -1013,7 +1046,8 @@ def get_products():
                 "price": 450,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005468/banano-unidad-01.png",
                 "description": "cod:058. Banano unidad",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1  fresas
             {
@@ -1021,7 +1055,8 @@ def get_products():
                 "price": 5990,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12002531/fresa-congelada-tree-fruts-500-g-01.png",
                 "description": "cod:059 Fresa congelada tree fruts 500g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
 
 
@@ -1031,7 +1066,8 @@ def get_products():
                 "price": 7200,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12006032/champinon-250-gr-01.png",
                 "description": "cod:069 Champiñon 1 bandeja 250g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #tiendas d1 brocoli
             {
@@ -1039,7 +1075,8 @@ def get_products():
                 "price": 6990,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12006464/brocoli-congelado-cooltivo-500g-01.png",
                 "description": "cod:070. Brocoli congelado cooltivo 500g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
 
             #tiendas d1 tomate
@@ -1048,7 +1085,8 @@ def get_products():
                 "price": 4800,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005556/tomate-chonto-x-1000-g-01.png",
                 "description": "cod:080. tomate chonto 1000g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #tiendas d1 zanahoria
             {
@@ -1056,7 +1094,8 @@ def get_products():
                 "price": 4300,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12002258/zanahoria-x-1000-g-01.png",
                 "description": "cod:081. Zanahoria 1000g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #tiendas d1 pimenton
             {
@@ -1072,7 +1111,8 @@ def get_products():
                 "price": 3300,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005767/cebolla-cabezona-x-1000g-01.png",
                 "description": "cod:083. Cebolla cabezona 1000g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #tiendas d1 cebolla larga
             {
@@ -1080,7 +1120,8 @@ def get_products():
                 "price": 3900,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12003363/cebolla-larga-500-gr-01.png",
                 "description": "cod:084. Cebolla larga 500g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #tiendas d1 lechuga crespa
             {
@@ -1088,7 +1129,8 @@ def get_products():
                 "price": 2200,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005805/lechuga-verde-crespa-x-180-g-01.png",
                 "description": "cod:084. Lechuga verde crespa 180g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #tiendas d1 piña
             {
@@ -1096,7 +1138,8 @@ def get_products():
                 "price": 5990,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12003720/pinas-golden-unidad-01.png",
                 "description": "cod:085. Piña golden unidad",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #tiendas d1 naranjas
             {
@@ -1104,7 +1147,8 @@ def get_products():
                 "price": 4500,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12000182/naranja-x-2000-gr-01.png",
                 "description": "cod:086. naranja x 2000 gr",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #tiendas d1 fazenda
             {
@@ -1112,7 +1156,8 @@ def get_products():
                 "price": 7950,
                 "image": "https://stockimages.tiendasd1.com/stockimages.tiendasd1.com/kobastockimages/IMAGENES/12005983/chicharron-500-g-01.png",
                 "description": "cod:D1 Chicarron 500g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
 
 
@@ -1124,7 +1169,8 @@ def get_products():
                 "price": 23000,
                 "image": "https://i.imgur.com/Xq3Pfit.jpeg",
                 "description": "cod:D5 Bicarbonato de sodio 200 grs",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             
             #Tiendas D1 vinagre
@@ -1133,7 +1179,8 @@ def get_products():
                 "price": 3400,
                 "image": "https://i.imgur.com/Iohkn2c.png",
                 "description": "cod:D6 Vinagre de Limpieza 1 Litro",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1
             {
@@ -1141,7 +1188,8 @@ def get_products():
                 "price": 4990,
                 "image": "https://i.imgur.com/6oH9v21.png",
                 "description": "cod:D15 Toalla de Papel Green 3h 80 Hojas",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #Tiendas D1
             {
@@ -1149,7 +1197,8 @@ def get_products():
                 "price": 2200,
                 "image": "https://i.imgur.com/A1hnmlq.png",
                 "description": "cod:D16 Esponja Multiusos 2 und",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
 
             #TIENDAS D1 JABONES
@@ -1158,7 +1207,8 @@ def get_products():
                 "price": 4990,
                 "image": "https://i.imgur.com/B9i9eMg.png",
                 "description": "cod:D17 Jabón Líquido Aloe Vera 1000ml",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #TIENDAS D1 JABONES
             {
@@ -1166,7 +1216,8 @@ def get_products():
                 "price": 4450,
                 "image": "https://i.imgur.com/XRVq0dJ.png",
                 "description": "cod:D18 Jabón Liquido King 1000ml",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #TIENDAS D1 JABONES
             {
@@ -1174,7 +1225,8 @@ def get_products():
                 "price": 12600,
                 "image": "https://i.imgur.com/NK302TQ.png",
                 "description": "cod:D19 Jabón Liquido King 3 litros",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #TIENDAS D1 JABONES
             {
@@ -1182,7 +1234,8 @@ def get_products():
                 "price": 8990,
                 "image": "https://i.imgur.com/wel8N6J.png",
                 "description": "cod:D20 Suavisante Floral 3 litros",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #TIENDAS D1 JABONES
             {
@@ -1190,7 +1243,8 @@ def get_products():
                 "price": 3850,
                 "image": "https://i.imgur.com/cXarf1W.png",
                 "description": "cod:20 Quitamanchas Liquido 1 Litro",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #TIENDAS D1 JABONES
             {
@@ -1198,7 +1252,8 @@ def get_products():
                 "price": 2900,
                 "image": "https://i.imgur.com/Zus88nZ.png",
                 "description": "cod:D21. Ropa Color",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #TIENDAS D1 JABONES
             {
@@ -1206,7 +1261,8 @@ def get_products():
                 "price": 3500,
                 "image": "https://i.imgur.com/uk04WVV.png",
                 "description": "cod:D22 Detergente Multiusos 900g",
-                "category": "tiendas D1",
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
                     
             },
             #TIENDAS D1 JABONES
@@ -1215,7 +1271,8 @@ def get_products():
                 "price": 2550,
                 "image": "https://i.imgur.com/msG0WSF.png",
                 "description": "cod:22 Crema Lavaloza King 500g",
-                "category": "tiendas D1", 
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
             #TIENDAS D1 JABONES
             {
@@ -1223,7 +1280,8 @@ def get_products():
                 "price": 2600,
                 "image": "https://i.imgur.com/t2ugmq4.jpg",
                 "description": "cod:D23 Lavaloza King 500g",
-                "category": "tiendas D1", 
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1", 
             },
             #TIENDAS D1 GASEOSAS
             {
@@ -1231,7 +1289,8 @@ def get_products():
                 "price": 5650,
                 "image": "https://i.imgur.com/z3iXdbD.jpeg",
                 "description": "cod:D24 Coca-Cola Zero 1750ml",
-                "category": "tiendas D1", 
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1",
             },
 
             #TIENDAS D1 GASEOSAS
@@ -1240,7 +1299,8 @@ def get_products():
                 "price": 13750,
                 "image": "https://i.imgur.com/f7kFe65.jpeg",
                 "description": "cod:D40. Coca-Cola Zero 2x2.5L",
-                "category": "tiendas D1", 
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1", 
             },
             #TIENDAS D1 GASEOSAS
             {
@@ -1248,7 +1308,8 @@ def get_products():
                 "price": 14450,
                 "image": "https://i.imgur.com/fshZ1Cx.jpeg",
                 "description": "cod:D42. Coca-Cola 2x2.5L",
-                "category": "tiendas D1", 
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1", 
             },
                 
             
@@ -1258,7 +1319,8 @@ def get_products():
                 "price": 2990,
                 "image": "https://i.imgur.com/0Quuyks.png",
                 "description": "cod:D42. Gaseosa Cola Negra 1700ml",
-                "category": "tiendas D1", 
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1", 
             },
             #TIENDAS D1 GASEOSAS
             {
@@ -1266,7 +1328,8 @@ def get_products():
                 "price": 5950,
                 "image": "https://i.imgur.com/2SKowfM.jpeg",
                 "description": "cod:D43. Pony Malta 2 Litros",
-                "category": "tiendas D1", 
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1", 
             },
             #TIENDAS D1 GASEOSAS
             {
@@ -1274,7 +1337,8 @@ def get_products():
                 "price": 1300,
                 "image": "https://i.imgur.com/oJXFpvw.jpeg",
                 "description": "cod:D44 Pony Malta 200 ml",
-                "category": "tiendas D1", 
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1", 
             },
             #TIENDAS D1 ARENAS PARA GATOS
             {
@@ -1282,7 +1346,8 @@ def get_products():
                 "price": 14850,
                 "image": "https://i.imgur.com/SYwZkz9.jpeg",
                 "description": "cod:D60. Arena Para Gatos 4500g",
-                "category": "tiendas D1", 
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1", 
             },
             #TIENDAS D1 COMIDAS PARA GATOS
             {
@@ -1290,7 +1355,8 @@ def get_products():
                 "price": 6250,
                 "image": "https://i.imgur.com/Gcoj65q.png",
                 "description": "cod:D65. Alimento Para Gatos 1000g",
-                "category": "tiendas D1", 
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1", 
             },
             #TIENDAS D1 COMIDAS PARA GATOS
             {
@@ -1298,7 +1364,8 @@ def get_products():
                 "price": 10950,
                 "image": "https://i.imgur.com/HoYUpfp.jpeg",
                 "description": "cod:D66. Alimento Para Gatos 1000g",
-                "category": "tiendas D1", 
+                "category": "Supermercados", 
+                "subcategory": "Tiendas D1", 
             },
 
 
