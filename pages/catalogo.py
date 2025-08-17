@@ -428,7 +428,8 @@ def get_products():
                 "price": 48000,
                 "image": "https://i.imgur.com/VX1OoNT.png",
                 "description": "cod:01. Mulata Torta a elección: chocolate, zanahoria o naranja ",
-                "category": "magdalena",
+                "category": "Heladerias",
+                "subcategory": "Magdalena",
             },
              #MAGDALENA
             {
@@ -436,7 +437,8 @@ def get_products():
                 "price": 78000,
                 "image": "https://i.imgur.com/05RR79d.png",
                 "description": "cod:02. Me Latte Elixir de frutas Sándwich Llanero",
-                "category": "magdalena",
+                "category": "Heladerias",
+                "subcategory": "Magdalena",
             },
 
             #MAGDALENA
@@ -445,7 +447,8 @@ def get_products():
                 "price": 59000,
                 "image": "https://i.imgur.com/lZGVX0C.png",
                 "description": "cod:03. Antojo ácido 🥭🧋Mini fresas🍓Sandwich de pollo Napoleón",
-                "category": "magdalena",
+                "category": "Heladerias",
+                "subcategory": "Magdalena",
             },
 
             #MAGDALENA
@@ -454,7 +457,8 @@ def get_products():
                 "price": 52000,
                 "image": "https://i.imgur.com/XPuJn5F.png",
                 "description": "cod:04. Cherrymocca🧋Sándwich Marco polo🥪",
-                "category": "magdalena",
+                "category": "Heladerias",
+                "subcategory": "Magdalena",
             },
 
             #MAGDALENA
@@ -463,7 +467,8 @@ def get_products():
                 "price": 46000,
                 "image": "https://i.imgur.com/JHY6d7o.png",
                 "description": "cod:05. Smoothie frutos rojos 🥤Torta de chocolate, zanahoria o naranja🎂",
-                "category": "magdalena",
+                "category": "Heladerias",
+                "subcategory": "Magdalena",
             },
 
             #MAGDALENA
@@ -472,7 +477,8 @@ def get_products():
                 "price": 65000,
                 "image": "https://i.imgur.com/IaUeplo.png",
                 "description": "cod:06. Me Latte🧋Mini Elixir ✨Sándwich de pollo Napoleón🥪",
-                "category": "magdalena",
+                "category": "Heladerias",
+                "subcategory": "Magdalena",
             },
 
             
@@ -482,7 +488,8 @@ def get_products():
                 "price": 23000,
                 "image": "https://i.imgur.com/MaI4Nox.png",
                 "description": "cod:07. Con crema chantilly, topping de chocolate o lecherita.",
-                "category": "magdalena",
+                "category": "Heladerias",
+                "subcategory": "Magdalena",
             },
 
             
@@ -492,7 +499,8 @@ def get_products():
                 "price": 23000,
                 "image": "https://i.imgur.com/ldV1vj7.png",
                 "description": "cod:08. Fressas con durazno Con crema chantilly, topping de chocolate o lecherita.",
-                "category": "magdalena",
+                "category": "Heladerias",
+                "subcategory": "Magdalena",
             },
 
             #MAGDALENA
@@ -501,7 +509,8 @@ def get_products():
                 "price": 18000,
                 "image": "https://i.imgur.com/HsqYXky.png",
                 "description": "cod:09. Delicioso Bowl fresas con helado.",
-                 "category": "magdalena",
+                "category": "Heladerias",
+                "subcategory": "Magdalena",
             },
 
             #MAGDALENA
@@ -510,7 +519,8 @@ def get_products():
                 "price": 25000,
                 "image": "https://i.imgur.com/e897HRS.png",
                 "description": "cod:10. Mini fresas kiwi X3, durazno con chantilly y topping de chocolate.",
-                "category": "magdalena",
+                "category": "Heladerias",
+                "subcategory": "Magdalena",
             },
 
             # QUBANO
@@ -1759,11 +1769,10 @@ with col1:
         'todos',
         'Comidas Rapidas',
         'Restaurantes',
+        'Eladerias',
         'Supermercados',
         
         
-        
-        'magdalena',
         
         'cobijas y cortinas',
         'plomeros'
@@ -1792,6 +1801,14 @@ with col1:
         
     elif selected_category == "Restaurantes":
         subcategories = ['todos', 'Comida China', 'El Carriel', 'Comida Vegetariana']
+        selected_subcategory = st.selectbox(
+            "🛵", 
+            subcategories, 
+            key="rapidas_sub_selector" # Clave única
+        )
+
+    elif selected_category == "Heladerias":
+        subcategories = ['todos', 'Magdalena']
         selected_subcategory = st.selectbox(
             "🛵", 
             subcategories, 
