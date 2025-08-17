@@ -1728,7 +1728,6 @@ def add_to_cart(product_id, user_id):
 
 
 
-
 # --- LÓGICA PRINCIPAL DE LA PÁGINA ---
 st.markdown(
     '<div class="main-header"><h1>🛵 Domicilios las 24 horas</h1><p>Bienvenido/a aqui encuentras todo en solo lugar, recibimos todas las tarjetas</p></div>',
@@ -1746,13 +1745,21 @@ with st.sidebar:
 # Contenido principal - Catálogo de productos
 st.markdown("## 🛍️ Catálogo de Productos y Servicios")
 
-# Inicializar estados de sesión si no existen
-if 'selected_category' not in st.session_state:
-    st.session_state.selected_category = 'todos'
-if 'selected_subcategory' not in st.session_state:
-    st.session_state.selected_subcategory = 'todos'
+# --- INICIO DEL BLOQUE MODIFICADO ---
 
-# --- LÓGICA DE FILTROS CON SUBCATEGORÍAS ---
+# Cargar la lista completa de productos (solo la información)
+if 'productos' not in st.session_state:
+    with st.spinner("🛵 Cargando productos disponibles..."):
+        st.session_state['productos'] = get_products()
+all_products = st.session_state['productos']
+
+
+# --- SECCIÓN DE FILTROS ---
+
+# Función para reiniciar la paginación cuando cambia un filtro
+def reiniciar_paginacion():
+    st.session_state.pagina_actual = 0
+
 col1, col2 = st.columns([1, 3])
 with col1:
     # Lista de categorías principales
@@ -1761,34 +1768,37 @@ with col1:
         'Comidas Rapidas',
         'Restaurantes',
         'Supermercados',
-        
-        
-        
         'magdalena',
-        
         'cobijas y cortinas',
         'plomeros'
     ]
     
-    selected_category = st.selectbox("Categoría", categories, key="category_selector")
+    selected_category = st.selectbox(
+        "Categoría", 
+        categories, 
+        key="category_selector",
+        on_change=reiniciar_paginacion # IMPORTANTE: Reinicia la página al cambiar
+    )
     
-    # Se inicializa la subcategoría para evitar errores
     selected_subcategory = 'todos'
     
-    # Se usa una estructura if/elif para manejar las subcategorías sin conflictos
+    # Estructura if/elif para manejar las subcategorías sin conflictos
     if selected_category == "Supermercados":
         subcategories = ['todos', 'Tiendas D1', 'Los Ocobos']
         selected_subcategory = st.selectbox(
             "Tienda", 
             subcategories, 
-            key="super_sub_selector" # Clave única
+            key="super_sub_selector",
+            on_change=reiniciar_paginacion # IMPORTANTE: Reinicia la página al cambiar
         )
+
     elif selected_category == "Comidas Rapidas":
-        subcategories = ['todos', 'La tribu', 'Punky Chicarron', 'El Corral', 'Vaquita Costeña','Qbano']
+        subcategories = ['todos', 'La tribu', 'Punky Chicarron', 'El Corral', 'Vaquita Costeña', 'Qbano']
         selected_subcategory = st.selectbox(
             "🛵", 
             subcategories, 
-            key="rapidas_sub_selector" # Clave única
+            key="rapidas_sub_selector",
+            on_change=reiniciar_paginacion # IMPORTANTE: Reinicia la página al cambiar
         )
         
     elif selected_category == "Restaurantes":
@@ -1796,29 +1806,32 @@ with col1:
         selected_subcategory = st.selectbox(
             "🛵", 
             subcategories, 
-            key="rapidas_sub_selector" # Clave única
+            key="restaurantes_sub_selector", # Clave ÚNICA para evitar errores
+            on_change=reiniciar_paginacion # IMPORTANTE: Reinicia la página al cambiar
         )
 
-# Cargar productos si no están en la sesión
-if 'productos' not in st.session_state:
-    with st.spinner("🛵 Cargando productos disponibles..."):
-        st.session_state['productos'] = get_products()
-
-all_products = st.session_state['productos']
-products_to_show = all_products # Por defecto, muestra todos los productos
-
-# --- LÓGICA DE FILTRADO GENERALIZADA ---
-# Si la categoría seleccionada no es 'todos'
+# --- LÓGICA DE FILTRADO ---
+filtered_products = all_products
 if selected_category != 'todos':
-    # 1. Filtra por la categoría principal
-    products_to_show = [p for p in all_products if p.get('category') == selected_category]
-    
-    # 2. Si se ha seleccionado una subcategoría (y no es 'todos'), filtra esa lista más a fondo
+    filtered_products = [p for p in all_products if p.get('category') == selected_category]
     if selected_subcategory != 'todos':
-        products_to_show = [p for p in products_to_show if p.get('subcategory') == selected_subcategory]
+        filtered_products = [p for p in filtered_products if p.get('subcategory') == selected_subcategory]
 
 
-# Mostrar productos en grid
+# --- LÓGICA DE PAGINACIÓN ---
+if 'pagina_actual' not in st.session_state:
+    st.session_state.pagina_actual = 0
+
+productos_por_pagina = 9  # Múltiplo de 3 para que la cuadrícula se vea bien
+
+start_idx = st.session_state.pagina_actual * productos_por_pagina
+end_idx = start_idx + productos_por_pagina
+
+# Cortamos la lista YA FILTRADA para mostrar solo la página actual
+products_to_show = filtered_products[start_idx:end_idx]
+
+
+# --- MOSTRAR PRODUCTOS EN GRID ---
 if products_to_show:
     cols = st.columns(3)
     for idx, product in enumerate(products_to_show):
@@ -1850,14 +1863,9 @@ if products_to_show:
                     f"""
                     <a href="https://checkout.wompi.co/l/VPOS_s3EEBF" target="_blank">
                         <button style="
-                            background: linear-gradient(45deg, #667eea, #764ba2);
-                            color: white;
-                            border: none;
-                            border-radius: 25px;
-                            padding: 0.75rem 2rem;
-                            font-weight: bold;
-                            cursor: pointer;
-                            margin-bottom: 1.5rem;
+                            background: linear-gradient(45deg, #667eea, #764ba2); color: white; border: none;
+                            border-radius: 25px; padding: 0.75rem 2rem; font-weight: bold;
+                            cursor: pointer; margin-bottom: 1.5rem;
                         ">
                             Pagar el producto
                         </button>
@@ -1865,3 +1873,24 @@ if products_to_show:
                     """,
                     unsafe_allow_html=True
                 )
+else:
+    st.warning("No se encontraron productos para la selección actual.")
+
+st.markdown("---")
+
+
+# --- CONTROLES DE PAGINACIÓN (BOTONES) ---
+col_btn1, col_btn2, col_btn3 = st.columns([1, 1, 1])
+
+with col_btn1:
+    if st.session_state.pagina_actual > 0:
+        if st.button("⬅️ Anterior"):
+            st.session_state.pagina_actual -= 1
+            st.rerun()
+
+with col_btn3:
+    # Comprueba si hay más productos en la siguiente página
+    if end_idx < len(filtered_products):
+        if st.button("Siguiente ➡️"):
+            st.session_state.pagina_actual += 1
+            st.rerun()
