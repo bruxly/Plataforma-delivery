@@ -1859,10 +1859,11 @@ if 'selected_subcategory' not in st.session_state:
     st.session_state.selected_subcategory = 'todos'
 
 
-# --- LÓGICA DE FILTROS CON SUBCATEGORÍAS ---
+# --- LÓGICA DE FILTROS CORREGIDA ---
 col1, col2 = st.columns([1, 3])
 with col1:
     # Lista de categorías principales
+    # Se pone 'Comida Vegetariana' de primero para que sea el default.
     categories = [
         'Comida Vegetariana',
         'Comidas Rapidas',
@@ -1875,25 +1876,34 @@ with col1:
         'plomeros'
     ]
     
-    # Selector de categoría principal
-    selected_category = st.selectbox("Categoría", categories, key="category_selector")
+    # Selector de categoría principal. index=0 hace que 'Comida Vegetariana' sea la opción por defecto.
+    selected_category = st.selectbox(
+        "Categoría",
+        categories,
+        index=0, # REQUISITO 1: Vista inicial por defecto.
+        key="category_selector"
+    )
     
-    # Si la categoría seleccionada es Supermercados, muestra el selector de subcategoría
-    if selected_category == "Supermercados":
-        subcategories = ['Los Ocobos','Tiendas D1']
-        selected_subcategory = st.selectbox("Subcategoría", subcategories, key="subcategory_selector")
-    else:
-        # Resetea la subcategoría si se elige otra categoría principal
-        selected_subcategory = 'Los Ocobos'
-
+    # Se inicializa la subcategoría como None (ninguna seleccionada)
+    selected_subcategory = None
     
+    # Se usa una estructura if/elif para manejar correctamente las subcategorías
     if selected_category == "Comidas Rapidas":
-        subcategories = ['El Corral','La tribu','Punky Chicarron','Vaquita Costeña']
-        selected_subcategory = st.selectbox("Subcategoría", subcategories, key="subcategory_selector")
-    else:
-        # Resetea la subcategoría si se elige otra categoría principal
-        selected_subcategory = 'El Corral'
-        
+        subcategories = ['El Corral', 'La tribu', 'Punky Chicarron', 'Vaquita Costeña']
+        # 'El Corral' será el default porque es el primer elemento de la lista.
+        selected_subcategory = st.selectbox(
+            "Restaurante", 
+            subcategories,
+            key="subcategory_rapidas" # Clave única para este selector
+        ) # REQUISITO 2: 'El Corral' es la subcategoría por defecto.
+
+    elif selected_category == "Supermercados":
+        subcategories = ['Los Ocobos', 'Tiendas D1']
+        selected_subcategory = st.selectbox(
+            "Tienda", 
+            subcategories, 
+            key="subcategory_super" # Clave única para este selector
+        )
 
 # Cargar productos si no están en la sesión
 if 'productos' not in st.session_state:
@@ -1901,79 +1911,12 @@ if 'productos' not in st.session_state:
         st.session_state['productos'] = get_products()
 
 all_products = st.session_state['productos']
-products_to_show = all_products
 
-# Aplicar filtros según la lógica solicitada
-if selected_category != 'Comida Vegetariana':
-    # Filtra por categoría principal
-    products_to_show = [p for p in all_products if p.get('category') == selected_category]
-    
-    # Si la categoría es Supermercados Y se ha seleccionado una subcategoría específica
-    if selected_category == "Supermercados" and selected_subcategory != 'Los Ocobos':
-        # Filtra adicionalmente por subcategoría
-        products_to_show = [p for p in products_to_show if p.get('subcategory') == selected_subcategory]
+# --- LÓGICA DE FILTRADO CORREGIDA ---
 
-# Mostrar productos en grid
-if products_to_show:
-    cols = st.columns(3)
-    for idx, product in enumerate(products_to_show):
-        with cols[idx % 3]:
-            mensaje = f"Hola, estoy interesado en el producto: {product['name']} {product['description']} con precio ${product.get('price', 0):.2f}. mi dirección es: "
-            mensaje_url = urllib.parse.quote(mensaje)
+# 1. Siempre se filtra primero por la categoría principal seleccionada.
+products_to_show = [p for p in all_products if p.get('category') == selected_category]
 
-            st.markdown(f"""
-                <div class="product-card" style="text-align:center;">
-                    <img src="{product['image']}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                    <h3 style="margin: 1rem 0 0.5rem 0; color: #333;">{product.get('name', 'Sin nombre')}</h3>
-                    <p style="color: #666; margin-bottom: 1rem;">{product.get('description', '')}</p>
-                    <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 1rem;">
-                        <div class="price-tag" style="background-color:#FF5C5C;padding:0.5rem 1rem;border-radius:12px;display:inline-block;">
-                            ${product.get('price', 0):.2f}
-                        </div>
-                        <a href="https://wa.me/573212033979?text={mensaje_url}" target="_blank" style="text-decoration:none;">
-                            <button style="background-color:#FF5C5C;padding:0.5rem 1rem;border-radius:12px;display:inline-block;border:none;color:white;cursor:pointer;">
-                                Chat
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            """, unsafe_allow_html=True)
-
-            col4, col5, col6 = st.columns([0.5, 2, 0.5])
-            with col5:
-                st.markdown(
-                    f"""
-                    <a href="https://checkout.wompi.co/l/VPOS_s3EEBF" target="_blank">
-                        <button style="
-                            background: linear-gradient(45deg, #667eea, #764ba2);
-                            color: white;
-                            border: none;
-                            border-radius: 25px;
-                            padding: 0.75rem 2rem;
-                            font-weight: bold;
-                            cursor: pointer;
-                            margin-bottom: 1.5rem;
-                        ">
-                            Pagar el producto
-                        </button>
-                    </a>
-                    """,
-                    unsafe_allow_html=True
-                )
-else:
-    st.warning("No se encontraron productos para la selección actual.")
-
-# Footer
-st.markdown("---")
-st.markdown(
-    """
-    <div style="text-align: center; padding: 2rem;">
-        <p>🛵 DOMIRAY SAS - Empresa de domicilios Casanareña</p>
-        <p>Esta app fue desarrollada por Rodrigo Patiño usando Streamlit, Firebase y Stripe</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-
-
+# 2. Si se ha seleccionado una subcategoría (es decir, no es None), se filtra esa lista más a fondo.
+if selected_subcategory:
+    products_to_show = [p for p in products_to_show if p.get('subcategory') == selected_subcategory]
