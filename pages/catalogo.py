@@ -543,7 +543,7 @@ def get_products():
                 "price": 25900,
                 "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156056-800-auto?v=638843436041770000&width=800&height=auto&aspect=true",
                 "description": "cod:20. combinación de proteína, verduras y arroz con todo el sabor Qbano",
-                "category": "comida vegetariana",
+                "category": "Comida Vegetariana",
             },
             # QUBANO vegetariano
             {
@@ -551,7 +551,7 @@ def get_products():
                 "price": 31900,
                 "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156094-800-auto?v=638843455088070000&width=800&height=auto&aspect=true",
                 "description": "cod:21. combinación de proteína, verduras y arroz con todo el sabor Qbano",
-                "category": "comida vegetariana",
+                "category": "Comida Vegetariana",
             },
             # QUBANO vegetariano
             {
@@ -559,7 +559,7 @@ def get_products():
                 "price": 27600,
                 "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156160-800-auto?v=638846752535070000&width=800&height=auto&aspect=true",
                 "description": "cod:22. Tamaño personal 21 cm",
-                "category": "comida vegetariana",
+                "category": "Comida Vegetariana",
             },
              # QUBANO vegetariano
             {
@@ -567,7 +567,7 @@ def get_products():
                 "price": 22300,
                 "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156158-800-auto?v=638846752223630000&width=800&height=auto&aspect=true",
                 "description": "cod:23. Tamaño personal 21 cm",
-                "category": "comida vegetariana",
+                "category": "Comida Vegetariana",
             },
             # QUBANO vegetariano
             {
@@ -575,7 +575,7 @@ def get_products():
                 "price": 27600,
                 "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156062-800-auto?v=638843439879430000&width=800&height=auto&aspect=true",
                 "description": "cod:23. Sándwich ahora en Wrap, con acompañante y bebida",
-                "category": "comida vegetariana",
+                "category": "Comida Vegetariana",
             },
                     # QUBANO vegetariano
             {
@@ -583,7 +583,7 @@ def get_products():
                 "price": 22300,
                 "image": "https://b2cqbano.vtexassets.com/arquivos/ids/156061-800-auto?v=638843439532930000&width=800&height=auto&aspect=true",
                 "description": "cod:24. Sándwich ahora en Wrap, con acompañante y bebida",
-                "category": "comida vegetariana",
+                "category": "Comida Vegetariana",
             },
                 
             #comida china
