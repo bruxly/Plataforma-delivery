@@ -1861,7 +1861,7 @@ with col1:
         'Supermercados',
         'El carriel',
         'Qbano',
-        'comida vegetariana',
+        'Comida Vegetariana',
         'magdalena',
         'comida china',
         'cobijas y cortinas',
