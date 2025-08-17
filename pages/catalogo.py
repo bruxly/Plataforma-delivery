@@ -1830,9 +1830,18 @@ col1, col2 = st.columns([1, 3])
 with col1:
     # Lista de categorías principales
     categories = [
-        'todos', 'La tribu', 'Punky Chicarron', 'Supermercados',
-        'El corral', 'El carriel', 'Qbano', 'comida vegetariana',
-        'magdalena', 'comida china', 'cobijas y cortinas', 'plomeros'
+        
+        'La tribu',
+        'Punky Chicarron',
+        'Supermercados',
+        'El corral',
+        'El carriel',
+        'Qbano',
+        'comida vegetariana',
+        'magdalena',
+        'comida china',
+        'cobijas y cortinas',
+        'plomeros'
     ]
     
     # Selector de categoría principal
@@ -1845,6 +1854,7 @@ with col1:
     else:
         # Resetea la subcategoría si se elige otra categoría principal
         selected_subcategory = 'Los Ocobos'
+        
 
 # Cargar productos si no están en la sesión
 if 'productos' not in st.session_state:
