@@ -1884,7 +1884,7 @@ with col1:
     elif selected_category == "Comidas Rapidas":
         subcategories = ['todos', 'La tribu', 'Punky Chicarron', 'El Corral', 'Vaquita Costeña']
         selected_subcategory = st.selectbox(
-            "Restaurante", 
+            "🛵", 
             subcategories, 
             key="rapidas_sub_selector" # Clave única
         )
