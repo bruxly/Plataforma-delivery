@@ -1769,7 +1769,7 @@ with col1:
         'todos',
         'Comidas Rapidas',
         'Restaurantes',
-        'Eladerias',
+        'Heladerias',
         'Supermercados',
         
         
