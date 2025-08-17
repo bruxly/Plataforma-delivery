@@ -1840,11 +1840,11 @@ with col1:
     
     # Si la categoría seleccionada es Supermercados, muestra el selector de subcategoría
     if selected_category == "Supermercados":
-        subcategories = ['todos', 'Tiendas D1', 'Los Ocobos']
+        subcategories = ['Tiendas D1', 'Los Ocobos']
         selected_subcategory = st.selectbox("Subcategoría", subcategories, key="subcategory_selector")
     else:
         # Resetea la subcategoría si se elige otra categoría principal
-        selected_subcategory = 'todos'
+        selected_subcategory = 'Los Ocobos'
 
 # Cargar productos si no están en la sesión
 if 'productos' not in st.session_state:
