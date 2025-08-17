@@ -187,7 +187,8 @@ def get_products():
                 "price": 30000,
                 "image": "https://i.imgur.com/zf5R5oc.jpeg",
                 "description": "cod:01 Calentao de arroz y frijol,aguacate,patacón,hogao y chicarron 150g",
-                "category": "Punky Chicarron",       
+                "category": "Comidas Rapidas",
+                "subcategory": "Punky Chicarron",       
             },
             #Punky 
             {
@@ -203,7 +204,8 @@ def get_products():
                 "price": 45000,
                 "image": "https://i.imgur.com/vKPXMAS.jpeg",
                 "description": "cod:03 Corte 100 una costilla entera con chirraron,patacón,hogao,guacamole y suero",
-                "category": "Punky Chicarron",       
+                "category": "Comidas Rapidas",
+                "subcategory": "Punky Chicarron",       
             },
              #Punky 
             {
@@ -211,7 +213,8 @@ def get_products():
                 "price": 27000,
                 "image": "https://i.imgur.com/dNBreze.jpeg",
                 "description": "cod:04 Chuleta lomo apanado, arroz, aguacate, maduro y hogao",
-                "category": "Punky Chicarron",       
+                "category": "Comidas Rapidas",
+                "subcategory": "Punky Chicarron",       
             },
 
             #Punky 
@@ -220,7 +223,8 @@ def get_products():
                 "price": 35000,
                 "image": "https://i.imgur.com/3JKCVmx.jpeg",
                 "description": "cod:05 frijol, arroz, maduro, aguacate, chicarron y huevo frito ",
-                "category": "Punky Chicarron",       
+                "category": "Comidas Rapidas",
+                "subcategory": "Punky Chicarron",       
             },
             #Punky 
             {
@@ -228,7 +232,8 @@ def get_products():
                 "price": 32000,
                 "image": "https://i.imgur.com/m2pIO58.jpeg",
                 "description": "cod:06 Cazuela frijol, plátano, aguacate, chorizo y chicarron",
-                "category": "Punky Chicarron",       
+                "category": "Comidas Rapidas",
+                "subcategory": "Punky Chicarron",       
             },
             #Punky 
             {
@@ -236,7 +241,8 @@ def get_products():
                 "price": 33000,
                 "image": "https://i.imgur.com/315Q4G5.jpeg",
                 "description": "cod:07 Costillas en salsa BBQ artesanal, acompañadas de papa, yuca o plátano, guacamole y suero.",
-                "category": "Punky Chicarron",       
+                "category": "Comidas Rapidas",
+                "subcategory": "Punky Chicarron",       
             },
 
             #Punky 
@@ -245,7 +251,8 @@ def get_products():
                 "price": 26000,
                 "image": "https://i.imgur.com/h91sd9n.jpeg",
                 "description": "cod:07 Chicharron carnudo 200g, papa, yuca o platano, guacamole y suero.",
-                "category": "Punky Chicarron",       
+                "category": "Comidas Rapidas",
+                "subcategory": "Punky Chicarron",       
             },
             
             #vaquita costeña
@@ -254,7 +261,8 @@ def get_products():
                 "price": 0,
                 "image": "https://i.imgur.com/eNn0Blr.jpeg",
                 "description": "cod:01. Vaquita Quesuda papa francesa, cerdo, pollo, ranchera, maiz, queso, cabello de angel, lechuga..",
-                "category": "vaquita costeña",       
+                "category": "Comidas Rapidas",
+                "subcategory": "Vaquita Costeña",          
             },
             #vaquita costeña
             {
@@ -262,7 +270,8 @@ def get_products():
                 "price": 0,
                 "image": "https://i.imgur.com/EdvytEF.jpeg",
                 "description": "cod:02. Picada Mixta papa francesa, carne, pollo, chorizo, butifarra, maíz, cabello de ángel, lechuga, queso costeño.",
-                "category": "vaquita costeña",       
+                "category": "Comidas Rapidas",
+                "subcategory": "Vaquita Costeña",      
             },
             
             
@@ -273,7 +282,8 @@ def get_products():
                 "price": 43900,
                 "image": "https://i.imgur.com/l4Nb5BG.jpeg",
                 "description": "cod:01. dos carnes de 125g cada una",
-                "category": "El corral",       
+                "category": "Comidas Rapidas",
+                "subcategory": "El Corral", 
             },
             #el corral
             {
@@ -281,7 +291,8 @@ def get_products():
                 "price": 45900,
                 "image": "https://i.imgur.com/xgFtkGx.jpeg",
                 "description": "cod:02. dos carnes de 125g cada una",
-                "category": "El corral",
+                "category": "Comidas Rapidas",
+                "subcategory": "El Corral",
             },
             #el corral
             {
@@ -289,7 +300,8 @@ def get_products():
                 "price": 35900,
                 "image": "https://i.imgur.com/7i5h1T4.jpeg",
                 "description": "cod:03. dos carnes de 125g cada una",
-                "category": "El corral",
+                "category": "Comidas Rapidas",
+                "subcategory": "El Corral",
             },
             #el corral
             {
@@ -297,7 +309,8 @@ def get_products():
                 "price": 37900,
                 "image": "https://i.imgur.com/PsjQLna.jpeg",
                 "description": "cod:04. dos carnes de 125g cada una",
-                "category": "El corral",
+                "category": "Comidas Rapidas",
+                "subcategory": "El Corral",
             },
             #el corral
             {
@@ -305,7 +318,8 @@ def get_products():
                 "price": 37900,
                 "image": "https://i.imgur.com/XTBJnYc.jpeg",
                 "description": "cod:05. dos carnes de 125g cada una",
-                "category": "El corral",
+                "category": "Comidas Rapidas",
+                "subcategory": "El Corral",
             },
             #el corral
             {
@@ -313,7 +327,8 @@ def get_products():
                 "price": 22900,
                 "image": "https://i.imgur.com/a3H6uCS.jpeg",
                 "description": "cod:06. Carne de 90g,tomate y cebolla en rodajas",
-                "category": "El corral",
+                "category": "Comidas Rapidas",
+                "subcategory": "El Corral",
             },
 
             {  
@@ -321,7 +336,8 @@ def get_products():
                 "price": 23900,
                 "image": "https://i.imgur.com/l9VNcfu.jpeg",
                 "description": "cod:07. Carne de 125g,tomate y cebolla en rodajas",
-                "category": "El corral",
+                "category": "Comidas Rapidas",
+                "subcategory": "El Corral",
             },
             #el corral
             {
@@ -329,7 +345,8 @@ def get_products():
                 "price": 25900,
                 "image": "https://i.imgur.com/dK9p11X.jpeg",
                 "description": "cod:08. Pechuga de pollo de 154g con salsa bbq.",
-                "category": "El corral",
+                "category": "Comidas Rapidas",
+                "subcategory": "El Corral",
             },
 
               #el corral  
@@ -338,7 +355,8 @@ def get_products():
                 "price": 28900,
                 "image": "https://i.imgur.com/3bJtjzW.png",
                 "description": "cod:09. Con salchicha de 115g a la parrilla.",
-                "category": "El corral",
+                "category": "Comidas Rapidas",
+                "subcategory": "El Corral",
             },
             #el corral
             {
@@ -346,7 +364,8 @@ def get_products():
                 "price": 32900,
                 "image": "https://i.imgur.com/pfkNBGy.jpeg",
                 "description": "cod:10. Con salchicha a la parrilla, queso,piña y salsas",
-                "category": "El corral",
+                "category": "Comidas Rapidas",
+                "subcategory": "El Corral",
             },
             #EL CARRIEL
             {
@@ -1876,7 +1895,7 @@ with col1:
 
     
     if selected_category == "Comidas Rapidas":
-        subcategories = ['El corral','La tribu','Punky Chicarron']
+        subcategories = ['El Corral','La tribu','Punky Chicarron','Vaquita Costeña']
         selected_subcategory = st.selectbox("Subcategoría", subcategories, key="subcategory_selector")
     else:
         # Resetea la subcategoría si se elige otra categoría principal
